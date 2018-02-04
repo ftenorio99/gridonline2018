@@ -125,13 +125,36 @@ foreach($result as $row)
                   if ($_SESSION['user_nivel']=="A") {
                     echo "
                         <li><a href='panel.php'>Início</a></li>
-                        <li><a href='frmnumeracaooficial.php'>Alterar Número Asseto Corsa</a></li> 
-                        <li><a href='frminserirskin.php'>Inserir Skin</a></li>
-                        <li><a href='frmextrairskin.php'>Extrair Skins</a></li>
-                        <li><a href='frminserirpiloto.php'>Atualizar Piloto</a></li>
-                        <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>             
-                        <li><a href='pilotos.php'>Lista de pilotos</a></li>
-                        <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>
+                        <li><a href='frmnumeracaooficial.php'>Alterar Número Asseto Corsa</a></li>                        
+                        <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>
+
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Skin
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='frminserirskin.php'>Inserir Skin</a></li>
+                            <li><a href='frmextrairskin.php'>Extrair Skins</a></li> 
+                          </ul>
+                        </li>
+
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Piloto
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='pilotos.php'>Lista de pilotos</a></li>
+                            <li><a href='frminserirpiloto.php'>Atualizar Piloto</a></li>
+                          </ul>
+                        </li>  
+
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Equipe
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>
+                          </ul>
+                        </li>                          
+
+
                         <li class='dropdown'>
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Carmodel
                           <span class='caret'></span></a>
