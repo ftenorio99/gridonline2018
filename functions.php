@@ -32,12 +32,5 @@ function isLoggedIn()
     return true;
 }
 
-function postgree_connect()
-{
-    $PDO = new pg_connect('host='.postgres_host. ' dbname='.postgres_db. ' user='.postgres_user. ' password='.postgres_pwd);    
-    
-    return $PDO;
-}
-
 
 ?>

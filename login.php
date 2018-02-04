@@ -9,8 +9,8 @@ require_once 'PHPMailer/src/Exception.php';
 require_once 'PHPMailer/src/PHPMailer.php';
 require_once 'PHPMailer/src/SMTP.php';
 
-echo (extension_loaded('openssl')?'SSL loaded':'SSL not loaded')."\n";
-echo "<br>";
+// echo (extension_loaded('openssl')?'SSL loaded':'SSL not loaded')."\n";
+// echo "<br>";
 
 if ($_POST['RecuperarSenha']=='RecuperarSenha') {
 
@@ -92,7 +92,7 @@ if ($_POST['RecuperarSenha']=='RecuperarSenha') {
 							//Set who the message is to be sent to
 							$mail->addAddress($rowemail, 'John Doe');
 							//Set the subject line
-							$mail->Subject = 'GridOnline - Recuperação de Senha';
+							$mail->Subject = 'GridOnline - Recuperacao de Senha';
 /*							//Read an HTML message body from an external file, convert referenced images to embedded,
 							//convert HTML into a basic plain-text alternative body
 							$mail->msgHTML(file_get_contents('contents.html'), __DIR__);*/
@@ -159,7 +159,7 @@ if ($_POST['Entrar']=='Entrar') {
 			$_SESSION['user_name'] = $user['name'];
 			$_SESSION['user_nivel'] = $user['status'];
 			 
-			if ($_SESSION['user_nivel']=="A" || $_SESSION['user_nivel']=="B") {
+			if ($_SESSION['user_nivel']=="A" || $_SESSION['user_nivel']=="B" || $_SESSION['user_nivel']=="I"){
 			 	header('Location: panel.php');
 			 } else {
 			 	header('Location: index.php');

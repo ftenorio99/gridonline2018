@@ -15,90 +15,11 @@ $PDO = db_connect();
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="http://web.crea.acsta.net/rep_dif/Smart/Warner/BatmanVsSuperman/Arrobas-250/Contagem/dest/jquery.countdown.js"></script>
  
-
-  <?php
-
-    $sql = "SELECT data FROM `pistatorneio` WHERE data>CURRENT_DATE LIMIT 1";
-
-    $select = $PDO->query( $sql );
-    $result = $select->fetchAll( PDO::FETCH_ASSOC );
-
-    foreach($result as $row)            
-                    {   
-                      $data = $row["data"];
-                    }
-
-  ?>
-  
-  <script type="text/javascript">
-      var dataproxima = "<?php print $data; ?>";
-
-      $(function( ) {
-
-        var endDate = dataproxima+", 19:00:00";
- 
-        $('.countdown.simple').countdown({ date: endDate });
- 
-        $('.countdown.styled').countdown({
-          date: endDate,
-          render: function(data) {
-            $(this.el).html("<div>" + this.leadingZeros(data.days, 2) + " dias " + this.leadingZeros(data.hours, 2) + " horas " + this.leadingZeros(data.min, 2) + " min " + this.leadingZeros(data.sec, 2) + " seg</div>");
-
-        if(this.leadingZeros(data.days, 2)=="00" && this.leadingZeros(data.hours, 2)=="00" && this.leadingZeros(data.min, 2)=="00" && this.leadingZeros(data.sec, 2) == "00") {
-        alert("fim da contagem");
-        }
-  
-
-        }
-        });
- 
-        $('.countdown.callback').countdown({
-          date: +(new Date) + 10000,
-          render: function(data) {
-            $(this.el).text(this.leadingZeros(data.sec, 2) + " sec");
-          },
-          onEnd: function() {
-            $(this.el).addClass('ended');
-          }
-        }).on("click", function() {
-          $(this).removeClass('ended').data('countdown').update(+(new Date) + 10000).start();
-        });
- 
-        // End time for diff purposes
-        var endTimeDiff = new Date().getTime() + 15000;
-        // This is server's time
-        var timeThere = new Date();
-        // This is client's time (delayed)
-        var timeHere = new Date(timeThere.getTime() - 5434);
-        // Get the difference between client time and server time
-        var diff_ms = timeHere.getTime() - timeThere.getTime();
-        // Get the rounded difference in seconds
-        var diff_s = diff_ms / 1000 | 0;
- 
-        var notice = [];
-        notice.push('Server time: ' + timeThere.toDateString() + ' ' + timeThere.toTimeString());
-        notice.push('Your time: ' + timeHere.toDateString() + ' ' + timeHere.toTimeString());
-        notice.push('Time difference: ' + diff_s + ' seconds (' + diff_ms + ' milliseconds to be precise). Your time is a bit behind.');
- 
-        $('.offset-notice').html(notice.join('<br />'));
- 
-        $('.offset-server .countdown').countdown({
-          date: endTimeDiff,
-          offset: diff_s * 1000,
-          onEnd: function() {
-            $(this.el).addClass('ended');
-          }
-        });
- 
-        $('.offset-client .countdown').countdown({
-          date: endTimeDiff,
-          onEnd: function() {
-            $(this.el).addClass('ended');
-          }
-        });
- 
-      });
-  </script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 
 
   <style>
@@ -143,14 +64,17 @@ $PDO = db_connect();
 
   <body>
 
-<!-- <?php    
+<?php    
     include 'menu.php';
 ?>
- -->
+
       <div class="container-fluid text-center">  
-<!--         <?php    
+        <?php    
             include 'menucampeonatos.php';
-        ?> -->
+        ?>
+        <hr>
+
+
         <hr>
         <div class="col-sm-12 text-left"> 
            
@@ -160,7 +84,8 @@ $PDO = db_connect();
                 <fieldset>                   
                     <div class="form-group">
                       <label> GUID: </label>   
-                        <input type="text" class="form-control" id="guid" name="guid" placeholder="Número de identificação do Steam" >   
+                        <input type="text" class="form-control" id="guid" name="guid" placeholder="Número de identificação do Steam" >  
+                        <a href="#" data-toggle="popover" title="Como achar o seu Steam GUID" data-content="Na pasta Documentos\Assetto Corsa\logs , abra o arquivo log e ache a linha Steam Community ID: (essa é sua GUID).">Como achar o seu Steam GUID</a> 
                     </div>   
                     <div class="form-group">
                       <br>

@@ -50,7 +50,7 @@ RESTRICTOR=0
 
     fclose($myfile);
 
-    $destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/cfg/entry_list.ini';
+    $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
 
     unlink($destino);
 

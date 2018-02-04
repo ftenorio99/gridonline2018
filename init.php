@@ -20,6 +20,8 @@ date_default_timezone_set( 'America/Sao_Paulo' );
  
 // inclui o arquivo de funçõees
 require_once 'functions.php';
+
+
 ?>
 
  

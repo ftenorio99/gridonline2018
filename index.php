@@ -152,11 +152,11 @@ $PDO = db_connect();
             include 'menucampeonatos.php';
         ?>
         <hr>
-<!--         <div class="col-sm-8 text-left"> 
-           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/geral/"></iframe>            
-          </div>
-        </div> -->
+        
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/geral/"></iframe>            
+        </div>
+        
 
 <!--           <div class="col-sm-3 sidenav" align="center">
             <div class="panel panel-default col-lg-8 col-lg-offset-2">

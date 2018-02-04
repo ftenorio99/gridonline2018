@@ -6,9 +6,8 @@
       require '../../check.php';
     }
 
-    $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
-    ?>
-
+    $PDO = db_connect(); 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
