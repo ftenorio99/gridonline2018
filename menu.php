@@ -175,7 +175,7 @@ foreach($result as $row)
                  if ($_SESSION['user_nivel']=="I") {
                     echo "
                         <li><a href='panel.php'>Início</a></li> 
-                        <li><a href='frminserirpiloto.php'>Atualizar Piloto</a></li> 
+                        <li><a href='frminserirpiloto.php'>Atualizar Dados</a></li> 
 
                          ";
                  }                                                                                

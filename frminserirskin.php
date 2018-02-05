@@ -100,7 +100,7 @@ $PDO = db_connect();
                           <select id="carmodel" class="form-control" name="carmodel" >
                                   <option id="carmodel" value="0">Escolha o Carro</option>                                  
                                   <?php
-                                    $sql = "SELECT * FROM  carmodel";
+                                    $sql = "SELECT * FROM  carmodel where status='A'";
                                   try{
                                         $query = $PDO->query($sql);
                                         $resultado = $query->fetchAll(PDO::FETCH_ASSOC);

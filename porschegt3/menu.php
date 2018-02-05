@@ -121,7 +121,7 @@ foreach($result as $row)
               <ul class="nav navbar-nav">    
 
                 <li><a href="../index.php">Início</a></li>  
-                <li><a href="racereportporschegt3.php">Race Report</a></li>                   
+<!--                 <li><a href="racereportporschegt3.php">Race Report</a></li>   -->                 
                 <li><a href="pilotos.php">Pilotos</a></li>
                 <li><a href="classificacao.php">Classificação</a></li>
                 <li><a href="porschegt3resultados.php">Calendário/Resutados</a></li>

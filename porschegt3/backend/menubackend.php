@@ -148,7 +148,16 @@ foreach($result as $row)
                       if ($_SESSION['user_nivel']=="I") {
                       echo 
                         "             
-                        <li><a href='../../panel.php'>Início</a></li>                                                      
+                        <li><a href='../../panel.php'>Início</a></li>                                                     
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Piloto no Torneio
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='frminscrevertorneio.php'>Inscrever no Torneio</a></li>
+                            <li><a href='frmatualizarinscricao.php'>Atualizar Piloto no Torneio</a></li>
+                            <li><a href='frmexcluirinscricao.php'>Excluir Piloto no Torneio</a></li>
+                          </ul>
+                        </li>                                                    
                         ";
                       }                                                                   
                     }                  

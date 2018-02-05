@@ -81,21 +81,17 @@ $PDO = db_connect();
     include 'menubackend.php';
 ?>
 
-  
     <div class="container-fluid"><!-- container -->  
       <div class="row">
         <main>
-          <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4" id="form-cadastro">
-                   
+          <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4" id="form-cadastro">                   
             <form id="form" name="form" action="atualizarinscricao.php" method="post" enctype="multipart/form-data">             
 
                 <fieldset>
                     <legend>Inscrição</legend>
-
-<!-- Se tiver nivel de admin constroi este combo -->
+      <!-- Se tiver nivel de admin constroi este combo -->
       <?php if ($_SESSION['user_nivel']=='A') { ?>
-
-                    <div>
+                    <div>                      
                       <label> Nome </label>
                       <select id="piloto" class="form-control" name="piloto" required="required">
                         <?php
@@ -103,13 +99,11 @@ $PDO = db_connect();
                                                 piloto.idpiloto  
                                                ,piloto.name
                                                 from
-
                                                 pilototorneio
-
-                          INNER JOIN piloto     ON    pilototorneio.idpiloto = piloto.idpiloto 
-                          INNER JOIN torneio    ON    pilototorneio.idtorneio = torneio.idtorneio
-                          where
-                          torneio.idtorneio=3  ; ";
+                                                INNER JOIN piloto     ON    pilototorneio.idpiloto = piloto.idpiloto 
+                                                INNER JOIN torneio    ON    pilototorneio.idtorneio = torneio.idtorneio
+                                                where
+                                                torneio.idtorneio=3  ; ";
                             $select = $PDO->query( $sqlpiloto );
                             $resultpiloto = $select->fetchAll( PDO::FETCH_ASSOC );
 
@@ -120,69 +114,8 @@ $PDO = db_connect();
                             <?php
                             }
                             ?>
-                        ?>
                       </select> 
-                    </div>
-
-<!-- Se tiver nivel de piloto constroi este combo -->
-      <?php } else {?>
-                    <div>
-                      <label> Nome </label>
-                      <select id="piloto" class="form-control" name="piloto" required="required">
-                        <?php
-
-                              $sqlpiloto = "Select  
-                                                  piloto.idpiloto  
-                                                 ,piloto.name
-                                                  from
-
-                                                  piloto
-                                                  where
-                                                  piloto.idpiloto =:piloto
-                                                  and
-                                                  piloto.idpiloto in (SELECT idpiloto FROM pilototorneio WHERE idtorneio = 3)  ; ";  
-
-                              $stmt = $PDO->prepare($sqlpiloto); 
-                              $stmt->bindParam(':piloto', $_SESSION['user_id'], PDO::PARAM_STR);
-                              $stmt->execute(); 
-                              $total = $stmt->rowCount(); 
-                              $resultpiloto = $stmt->fetchAll( PDO::FETCH_ASSOC );  
-                              if ($total==1) {
-                                foreach($resultpiloto as $row)            
-                                    {               
-                                     ?>
-                                     <option value="<?php echo $row["idpiloto"] ?>"> <?php echo $row["name"] ?></option>
-                                    <?php
-                                    }
-                                ?>
-                                 </select> 
-                    </div>
-                       <?php
-                       }
-                       }
-                       ?>
-
-                    <br>
-                    <div class="form-group">
-                        <label for="team">Equipe</label>
-
-                        <select id="team" class="form-control" name="team" required="required">
-                        <?php
-                            $sqlteam = "SELECT * FROM  team; ";
-                            $select = $PDO->query( $sqlteam );
-                            $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
-
-                          foreach($resultteam as $row)            
-                            {               
-                             ?>
-                             <option value="<?php echo $row["idteam"] ?>"> <?php echo $row["name"] ?></option>
-                            <?php
-                            }
-                            ?>
-                        ?>
-                        </select>                               
-                    </div>
-
+                    </div> 
                     <div class="form-group">
                         <label for="carmodel">Carro</label>
                           <select id="carmodel" class="form-control" name="carmodel" >
@@ -204,7 +137,6 @@ $PDO = db_connect();
                           ?>
                           </select>                              
                     </div>    
-
                     <div class="form-group">
                         <label for="skin">Skin</label>
                           <select id="skin" class="form-control" name="skin">
@@ -215,21 +147,125 @@ $PDO = db_connect();
                       <button type="button" class="btn btn-default" onclick="skinselec()">Visualizar Skin</button>                        
                     </div>
                     <br>
-                    <br>
-                    
+                    <br>                    
                     <div class="polaroid">   
                       <img id="imgskin"  class="img-responsive" >
                     </div>
 
                     <br>
                     <br>
-                </fieldset>
-                <input class="btn btn-primary btn-block" type="submit" id="enviar" disabled="true">
-                <?php
+                  <input class="btn btn-primary btn-block" type="submit" id="enviar" disabled="true">
 
-                ?>
+      <?php } ?>
+
+      <?php if ($_SESSION['user_nivel']=='B') {
+                      $sqlpiloto = "Select  
+                                          piloto.idpiloto  
+                                         ,piloto.name
+                                          from
+                                          piloto
+                                          where
+                                          piloto.idpiloto =:piloto
+                                          and
+                                          piloto.idpiloto in (SELECT idpiloto FROM pilototorneio WHERE idtorneio = 3); ";  
+                      $stmt = $PDO->prepare($sqlpiloto); 
+                      $stmt->bindParam(':piloto', $_SESSION['user_id'], PDO::PARAM_STR);
+                      $stmt->execute(); 
+                      $total = $stmt->rowCount(); 
+                      $resultpiloto = $stmt->fetchAll( PDO::FETCH_ASSOC );
+
+                                if ($total==1) { ?>
+                                    <div>
+                                      <label> Nome </label>
+                                        <select id="piloto" class="form-control" name="piloto" required="required">
+                                        <?php                                                       
+                                          foreach($resultpiloto as $row)            
+                                              {               
+                                               ?>
+                                               <option value="<?php echo $row["idpiloto"] ?>"> <?php echo $row["name"] ?></option>
+                                              <?php
+                                              }
+                                        ?>
+                                        </select> 
+                                    </div>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="team">Equipe</label>
+
+                                        <select id="team" class="form-control" name="team" required="required">
+                                        <?php
+                                            $sqlteam = "SELECT * FROM  team; ";
+                                            $select = $PDO->query( $sqlteam );
+                                            $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
+                                            foreach($resultteam as $row)            
+                                            {               
+                                             ?>
+                                             <option value="<?php echo $row["idteam"] ?>"> <?php echo $row["name"] ?></option>
+                                            <?php
+                                            }
+                                            ?>
+                                        ?>
+                                        </select>                               
+                                    </div>                              
+                                    <div class="form-group">
+                                        <label for="carmodel">Carro</label>
+                                          <select id="carmodel" class="form-control" name="carmodel" >
+                                                  <option id="carmodel" value="0">Escolha o Carro</option>
+                                                  <!-- Aqui você preenche a combo com as cidades existentes na sua base-->
+                                                  <?php
+                                                    $sql = "SELECT * FROM  carmodel where idcarmodel=16;";
+                                                  try{
+                                                        $query = $PDO->query($sql);
+                                                        $resultado = $query->fetchAll(PDO::FETCH_ASSOC);
+                                                      }catch(PDOException $erro){
+                                                  echo 'Erro '.$erro->getMessage(); 
+                                                  }
+                                                  foreach($resultado as $result){
+                                                  ?>
+                                                  <option value="<?php echo $result['idcarmodel']; ?>"><?php echo $result['desccarmodel']; ?></option>
+                                                  <?php 
+                                                  }
+                                                  ?>
+                                          </select>                              
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="skin">Skin</label>
+                                          <select id="skin" class="form-control" name="skin">
+                                               <option value="0" disabled="disabled">Escolha o skin</option>
+                                          </select>                              
+                                    </div> 
+                                    <div align="center">
+                                      <button type="button" class="btn btn-default" onclick="skinselec()">Visualizar Skin</button>                        
+                                    </div>
+                                    <br>
+                                    <br>                    
+                                    <div class="polaroid">   
+                                      <img id="imgskin"  class="img-responsive" >
+                                    </div>
+                                    <br>
+                                    <br>
+                                  <input class="btn btn-primary btn-block" type="submit" id="enviar" disabled="true">
+                                <?php
+                                 } 
+                                 else 
+                                      { ?> 
+                                        <label>Piloto não inscrito no Torneio</label> 
+                                      <?php } ?>
+        <?php 
+        }
+        ?>
+
+    
+
+
+      <?php if ($_SESSION['user_nivel']=='I') { ?>   
+          <label>Piloto não inscrito no Torneio</label>
+      <?php } ?>
+
+
+
+              </fieldset>
             </form>  
-
         </div>
       </div>   
     </div>

@@ -31,6 +31,20 @@ if (!empty($_SESSION['user_id']) && !empty($_POST["team"]) && !empty($_POST["car
 
 		$stmtp->execute();   
 
+		$status = "B";
+		$sql3 = "UPDATE piloto SET 
+                                
+            status = :status
+
+            WHERE idpiloto = :idpiloto";          
+
+
+			$stmtp = $PDO->prepare($sql3);                                  
+			       
+			$stmtp->bindParam(':idpiloto', $_SESSION['user_id'], PDO::PARAM_STR); 
+			$stmtp->bindParam(':status', $status, PDO::PARAM_STR); 
+			$stmtp->execute();  
+
 
 		 echo "<script>alert('Inscrição inserida com sucesso')</script>";   
 		 echo "<script>window.location = 'porschegt3backend.php';</script>";
