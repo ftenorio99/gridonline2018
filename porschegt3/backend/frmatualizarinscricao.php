@@ -4,6 +4,13 @@ require_once '../../init.php';
 require '../../check.php';
 $PDO = db_connect(); 
 
+function clearBrowserCache() {
+    header("Pragma: no-cache");
+    header("Cache: no-cache");
+    header("Cache-Control: no-cache, must-revalidate");
+    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT");
+}
+
 ?>
 
 
@@ -78,6 +85,7 @@ $PDO = db_connect();
 <body>
 
 <?php    
+    clearBrowserCache();
     include 'menubackend.php';
 ?>
 
