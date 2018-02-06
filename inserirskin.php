@@ -5,6 +5,76 @@ require 'check.php';
 
 $PDO = db_connect();
 
+
+				function copiar_diretorio($diretorio, $destino, $ver_acao ){
+
+
+				if ($destino{strlen($destino) - 1} == '/'){
+				 $destino = substr($destino, 0, -1);
+				}
+				if (!is_dir($destino)){
+				 if ($ver_acao){
+				    echo "Criando diretorio {$destino}<br>";
+				    }
+				 mkdir($destino, 0755);
+				}
+				 
+				$folder = opendir($diretorio);     
+				while ($item = readdir($folder)){
+				 if ($item == '.' || $item == '..'){
+				    continue;
+				    }
+				 if (is_dir("{$diretorio}/{$item}")){
+
+				    $dir=$diretorio."/".$item;
+				    $listDir = scandir($dir, 1);// Recebendo todos os dados do diretório
+				    $total = count($listDir);//Verificando total do array
+				    for($i = 0; $i < $total; $i++){//Percorre todo o array
+				        if(is_dir($listDir[$i])){//Verifica se é arquivo ou diretório e transfere só os arquivos
+				        } else {
+				        copy($dir."/".$listDir[$i], $destino."/".$listDir[$i]);
+				        }
+
+				    }
+
+				    //Implementação antiga
+				    // copy_dir("{$diretorio}/{$item}", "{$destino}/{$item}", $ver_acao);
+
+				 }else{
+				    if ($ver_acao){
+				       echo "Copiando {$item} para {$destino}"."<br>";
+				    }
+				    copy("{$diretorio}/{$item}", "{$destino}/{$item}");
+				    }
+
+				}
+				}
+
+				function deleteDirectory($dir) {
+				if (!file_exists($dir)) {
+				    return true;
+				}
+
+				if (!is_dir($dir)) {
+				    return unlink($dir);
+				}
+
+				foreach (scandir($dir) as $item) {
+				    if ($item == '.' || $item == '..') {
+				        continue;
+				    }
+
+				    if (!deleteDirectory($dir . DIRECTORY_SEPARATOR . $item)) {
+				        return false;
+				    }
+
+				}
+
+				return rmdir($dir);
+				}
+
+
+
 if (!empty($_POST["piloto"]) && !empty($_POST["carmodel"]) && !empty($_FILES["arquivo"]['name'])): 
 
 $diretorio = "C:/xampp/htdocs/gridonline/uploads/";
@@ -172,74 +242,12 @@ $total = $stmt->rowCount();
 				$patchskin = "C:/xampp/htdocs/gridonline/img/porschegt3/skin/";
 				$diretorio = "C:/xampp/htdocs/gridonline/uploads/";
 
+				//Diretorio Servidor Producao
+				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/ks_porsche_911_gt3_cup_2017/skins/"
 
-				function copiar_diretorio($diretorio, $destino, $ver_acao ){
-
-
-				if ($destino{strlen($destino) - 1} == '/'){
-				 $destino = substr($destino, 0, -1);
-				}
-				if (!is_dir($destino)){
-				 if ($ver_acao){
-				    echo "Criando diretorio {$destino}<br>";
-				    }
-				 mkdir($destino, 0755);
-				}
-				 
-				$folder = opendir($diretorio);     
-				while ($item = readdir($folder)){
-				 if ($item == '.' || $item == '..'){
-				    continue;
-				    }
-				 if (is_dir("{$diretorio}/{$item}")){
-
-				    $dir=$diretorio."/".$item;
-				    $listDir = scandir($dir, 1);// Recebendo todos os dados do diretório
-				    $total = count($listDir);//Verificando total do array
-				    for($i = 0; $i < $total; $i++){//Percorre todo o array
-				        if(is_dir($listDir[$i])){//Verifica se é arquivo ou diretório e transfere só os arquivos
-				        } else {
-				        copy($dir."/".$listDir[$i], $destino."/".$listDir[$i]);
-				        }
-
-				    }
-
-				    //Implementação antiga
-				    // copy_dir("{$diretorio}/{$item}", "{$destino}/{$item}", $ver_acao);
-
-				 }else{
-				    if ($ver_acao){
-				       echo "Copiando {$item} para {$destino}"."<br>";
-				    }
-				    copy("{$diretorio}/{$item}", "{$destino}/{$item}");
-				    }
-
-				}
-				}
-
-				function deleteDirectory($dir) {
-				if (!file_exists($dir)) {
-				    return true;
-				}
-
-				if (!is_dir($dir)) {
-				    return unlink($dir);
-				}
-
-				foreach (scandir($dir) as $item) {
-				    if ($item == '.' || $item == '..') {
-				        continue;
-				    }
-
-				    if (!deleteDirectory($dir . DIRECTORY_SEPARATOR . $item)) {
-				        return false;
-				    }
-
-				}
-
-				return rmdir($dir);
-				}
-
+				//Diretorio servidro Teste
+				//$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/ks_porsche_911_gt3_cup_2017/skins/";
+				
 				$dh = opendir($path);
 
 				try {
@@ -275,6 +283,10 @@ $total = $stmt->rowCount();
 				            
 				            deleteDirectory($nomedir);  
 				            unlink($diretorio.$filename);
+				            //copiar para diretorio skin do servidor
+				            mkdir($diretorioservidor.$nomedir, 0755);
+				            
+				            copiar_diretorio($diretorio.$nomedir, $diretorioservidor.$nomedir , $ver_acao = false);
 				        } 
 				    }
 				 

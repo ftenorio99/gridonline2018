@@ -52,6 +52,9 @@ RESTRICTOR=0
     fclose($myfile);
 
 
+    //Destino do Servidor de Teste
+    //$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/cfg/entry_list.ini';
+    //Destino do servidor de Producao
     $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
 
     unlink($destino);
