@@ -35,7 +35,7 @@ try{
       {
               
 $txt ="[SERVER]
-NAME=GridOnline ".$row["torneionome"]." - ".$row["nome"]."
+NAME=".$row["torneionome"]." - ".$row["nome"]."
 CARS=ks_porsche_911_gt3_cup_2017
 CONFIG_TRACK=".$row["config"]."
 TRACK=".$row["nome"]."
