@@ -55,25 +55,12 @@
     include 'menu.php';
 ?>
 
-        <div class="jumbotron" id="div-back-image">
-          <div class="container text-center">
-            <div align="center">
-            <br>          
-            <br>          
-            <br>          
-            <br>          
-            <br>
-            <br>
-            </div>
-          </div>
-        </div>
 
-<!--         <div class="embed-responsive embed-responsive-16by9">
+
+<!--    <div class="embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/acgeralporsche/"></iframe>
         </div> -->
         
-
-
 <br>
 
 <hr>

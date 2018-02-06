@@ -202,17 +202,19 @@ foreach($result as $row)
         </div>
       </div>
     </nav>
-            <br>
+
+<!--     <div class="jumbotron" id="div-back-image">
+      <div class="container text-center">
+        <div align="center"> -->
+            
             <br>
             <br>          
             <br>
             <br> 
             
-<!--     <div class="jumbotron" id="div-back-image">
-      <div class="container text-center">
-        <div align="center">
+
           
-        </div>
+  <!--       </div>
       </div>
     </div> -->
 

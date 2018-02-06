@@ -57,18 +57,7 @@
     include 'menu.php';
 ?>
 
-        <div class="jumbotron" id="div-back-image">
-          <div class="container text-center">
-            <div align="center">
-            <br>          
-            <br>          
-            <br>          
-            <br>          
-            <br>
-            <br>            
-            </div>
-          </div>
-        </div>
+
 
         <div class="container-fluid bg-3 text-center"> 
           <hr>

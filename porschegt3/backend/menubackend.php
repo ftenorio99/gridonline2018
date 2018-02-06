@@ -180,15 +180,13 @@ foreach($result as $row)
           </div>
         </nav>        
 
-        <div class="jumbotron" id="div-back-image">
+<!--         <div class="jumbotron" id="div-back-image">
           <div class="container text-center">
-            <div align="center">
-            <br>          
-            <br>          
+            <div align="center"> -->          
             <br>          
             <br>          
             <br>
             <br>
-            </div>
+<!--             </div>
           </div>
-        </div>
+        </div> -->
