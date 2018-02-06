@@ -89,8 +89,6 @@ foreach($result as $row)
  
 
 <?php
-
-
     $sql = "SELECT pistatorneio.data, pista.nome, torneio.nome as torneionome FROM pistatorneio INNER JOIN pista ON  pistatorneio.idpista = pista.idpista INNER JOIN torneio on pistatorneio.idtorneio = torneio.idtorneio WHERE pistatorneio.data>=CURRENT_DATE  order by pistatorneio.data LIMIT 1";
 
     $select = $PDO->query( $sql );
@@ -111,7 +109,6 @@ foreach($result as $row)
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -198,7 +195,6 @@ foreach($result as $row)
                  echo '<li><a href="#"><span></span>Próxima corrida: '.$nometorneio.' - '.$nomepista.' - '.$data.' </a></li>';                 
                 // echo '<li ><a href="#"><span class="countdown styled"></span></a></li>';
                  
-
                  echo '<li><a href="form-login.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>';                 
                 }              
               ?>                  
@@ -215,8 +211,7 @@ foreach($result as $row)
             <br>          
             <br>          
             <br>
-            <br>
-            <?php echo $_SESSION;  ?>
+            <br>           
         </div>
       </div>
     </div>

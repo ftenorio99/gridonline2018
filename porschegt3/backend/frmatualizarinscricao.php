@@ -125,6 +125,24 @@ function clearBrowserCache() {
                       </select> 
                     </div> 
                     <div class="form-group">
+                        <label for="team">Equipe</label>
+
+                        <select id="team" class="form-control" name="team" required="required">
+                        <?php
+                            $sqlteam = "SELECT * FROM  team; ";
+                            $select = $PDO->query( $sqlteam );
+                            $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
+                            foreach($resultteam as $row)            
+                            {               
+                             ?>
+                             <option value="<?php echo $row["idteam"] ?>"> <?php echo $row["name"] ?></option>
+                            <?php
+                            }
+                            ?>
+                        ?>
+                        </select>                               
+                    </div>                    
+                    <div class="form-group">
                         <label for="carmodel">Carro</label>
                           <select id="carmodel" class="form-control" name="carmodel" >
                                   <option id="carmodel" value="0">Escolha o Carro</option>

@@ -67,8 +67,8 @@
         </div> 
   
 
-        <div class="container-fluid" align="center">
-          <div class="container-fluid">
+          <div class="container">
+            <div class="row">
               <?php
                 $sql =  "Select  
                                piloto.name as piloto
@@ -94,28 +94,20 @@
                         //alterar o idtorneio para o torneio que quer mostrar na página
               $select = $PDO->query( $sql );
               $result = $select->fetchAll( PDO::FETCH_ASSOC );
-
               foreach($result as $row)            
-                {               
+                {   
                  ?>
-                <div class="col-md-4" id="font">
-                  <div>   
-                      <img src=<?php echo "../../img/porschegt3/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" >                      
-                  </div>    
-                  <div>
-                    #<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?>                  
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                  <div class="col-lg-4" id="font">                         
+                      <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>               
+                      <img src=<?php echo "../../img/porschegt3/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" width="350" height="200" >                                        
+                      <br>                  
+                      <br>
                   </div>
-                </div>
-
                 <?php
                 }
                 ?>
           </div>  
-        </div> 
+        </div>
 <hr>
 </body>
 </html>
