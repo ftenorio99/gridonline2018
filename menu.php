@@ -130,7 +130,7 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminserirskin.php'>Inserir Skin</a></li>
-                            <li><a href='frmextrairskin.php'>Extrair Skins</a></li> 
+
                           </ul>
                         </li>
 
@@ -206,7 +206,7 @@ foreach($result as $row)
 <!--     <div class="jumbotron" id="div-back-image">
       <div class="container text-center">
         <div align="center"> -->
-            
+
             <br>
             <br>          
             <br>
