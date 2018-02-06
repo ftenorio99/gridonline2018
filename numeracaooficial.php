@@ -20,7 +20,7 @@ $sql2 = "UPDATE piloto SET
 			$stmtp->execute();
 
             echo "<script>alert('Número atualizado com sucesso')</script>";   
-            echo "<script>window.location = 'piloto.php';</script>";  
+            echo "<script>window.location = 'pilotos.php';</script>";  
 	}
 	catch(PDOException $erro){   
 	 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";                  			

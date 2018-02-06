@@ -50,6 +50,7 @@ RESTRICTOR=0
 
     fclose($myfile);
 
+
     $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
 
     unlink($destino);

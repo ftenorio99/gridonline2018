@@ -203,7 +203,7 @@ foreach($result as $row)
       </div>
     </nav>
 
-    <div class="jumbotron" id="div-back-image">
+<!--     <div class="jumbotron" id="div-back-image">
       <div class="container text-center">
         <div align="center">
             <br>          
@@ -214,5 +214,5 @@ foreach($result as $row)
             <br>           
         </div>
       </div>
-    </div>
+    </div> -->
 
