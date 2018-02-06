@@ -4,7 +4,6 @@ require_once 'init.php';
 require 'check.php';
 $PDO = db_connect(); 
 
-
 if (!empty($_POST["guid2"]) && !empty($_POST["numero2"])):   
 try{
 

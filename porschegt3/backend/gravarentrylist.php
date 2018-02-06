@@ -4,6 +4,7 @@ require_once '../../init.php';
 require '../../check.php';
 $PDO = db_connect(); 
 
+
 try{   
 
     $myfile = fopen("entry_list.ini", "w") or die("Unable to open file!");
