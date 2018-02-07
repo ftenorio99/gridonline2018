@@ -1,59 +1,124 @@
 <?php
-	// $PDO2 = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99");
-
-	$PDO2 = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
-
+session_start();
+require_once 'init.php';
+require 'check.php';
 ?>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <title>Upload arquivos de corrida</title>
+  <title>Grid Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+  
+</script>
+
+
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+      background-color: white;
+    }
+    
+    #div-back-image{
+        background-image: url("img/fundoheader.png");
+      
+      }
+
+    .affix {
+      top: 0;
+      width: 100%;
+    }
+
+     .affix + .container-fluid {
+      padding-top: 70px;
+     }
+     #font{
+      color:#000000;
+      font-family:Roboto, sans-serif;
+      line-height:1.5;
+    }
+
+  </style>
 </head>
 <body>
-   <form action="#" method="POST" enctype="multipart/form-data">
-   <label>
-   <span>Etapa</span>
-		<select  name="etapa" >
-		        <option id="etapa" value="-1">Escolha a Etapa</option>
-		        <!-- Aqui combo com as Etapas-->
-		        <?php
-		     		$sql2 = "SELECT 
-							a.idpistatorneio
-							,b.nome
-							 FROM pistatorneio as a
-							 inner join
-							 pista as b on a.idpista=b.idpista";
-		         try{
-		                $query2 = $PDO2->query($sql2);
-					    $resultado2 = $query2->fetchAll(PDO::FETCH_ASSOC);
-					}catch(PDOException $erro){
-			   		 echo 'Erro '.$erro->getMessage();	
-			 		}
-		               foreach($resultado2 as $result){
-						?>
-				        <option value="<?php echo $result['idpistatorneio']; ?>"><?php echo $result['nome']; ?></option>
-				        <?php 
-				}
-				?>
-		</select>		
-	</label>
+
+<?php    
+    include 'menu.php';
+    $PDO2 = db_connect(); //db_connect();
+?>
+  
+        <div class="container-fluid"><!-- container -->  
+          <div class="row">
+            <main>
+              <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4" id="form-cadastro">   
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+                    <fieldset>
+
+                    <legend>Envio de Resultados - GridOnline Asseto Corsa</legend>  
 
 
+                    <div class="form-group">
+                      <label for="name">Etapa:</label>
+							<select class="form-control" name="etapa" >
+							        <option id="etapa" value="-1">Escolha a Etapa</option>
+							        <!-- Aqui combo com as Etapas-->
+							        <?php
+							     		$sql2 = "SELECT 
+												a.idpistatorneio
+												,b.nome
+												 FROM pistatorneio as a
+												 inner join
+												 pista as b on a.idpista=b.idpista";
+							         try{
+							                $query2 = $PDO2->query($sql2);
+										    $resultado2 = $query2->fetchAll(PDO::FETCH_ASSOC);
+										}catch(PDOException $erro){
+								   		 echo 'Erro '.$erro->getMessage();	
+								 		}
+							               foreach($resultado2 as $result){
+											?>
+									        <option value="<?php echo $result['idpistatorneio']; ?>"><?php echo $result['nome']; ?></option>
+									        <?php 
+									}
+									?>
+							</select>	
+                    </div>     
 
-   	<p>Arquivo de Race</p>	
-      <input type="file" name="fileRaceUpload">
-      <br>
-     <p>Arquivo de Qualy</p>
-      <input type="file" name="fileQualyUpload">
-      <br>
-      <br>
-      <input type="submit" value="Enviar">
+                    <div class="form-group">
+                      <label for="name">Arquivo de Qualy:</label>
+                      <input class="form-control" type="file" name="fileQualyUpload">
+                    </div>                     
+
+                    <div class="form-group">
+                      <label for="name">Arquivo de Race:</label>
+                      <input class="form-control" type="file" name="fileRaceUpload">
+                    </div>  
+
+                    </fieldset>
+                  <input class="btn btn-primary btn-block" type="submit" value="Enviar" name="botao">
+                </form>  
+            </div>
+          </div>   
+        </div>
+       
+<br>
+
+<hr>
 
 
-   </form>
 </body>
-</html>
-
+</html>      
+      
 
 <?php
 	
@@ -64,7 +129,7 @@
 
 	
 	// $PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
-	$PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
+	$PDO = db_connect();
 
 
 	// Atribui o conteúdo do arquivo para variável $arquivo
@@ -237,7 +302,7 @@
 				//Passar a session como parâmetro
 
 				// $PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
-				$PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
+				$PDO = db_connect();
 
 
 				// Atribui o conteúdo do arquivo para variável $arquivo

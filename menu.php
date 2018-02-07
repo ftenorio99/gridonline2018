@@ -124,6 +124,7 @@ foreach($result as $row)
                         <li><a href='panel.php'>Início</a></li>
                         <li><a href='frmnumeracaooficial.php'>Alterar Número Asseto Corsa</a></li>                        
                         <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>
+                        <li><a href='DaoReadJason.php'>Envio de Resultados</a></li>
 
                         <li class='dropdown'>
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Skin
