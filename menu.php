@@ -158,7 +158,8 @@ foreach($result as $row)
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Carmodel
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
-                            <li><a href='frmcarmodel.php'>Inserir Carmodel</a></li>
+                            <li><a href='frminserircarmodel.php'>Inserir Carmodel</a></li>
+                            <li><a href='frmexcluircarmodel.php'>Desativar Carmodel</a></li>
                           </ul>
                         </li>                            
                          ";
@@ -168,7 +169,8 @@ foreach($result as $row)
                         <li><a href='panel.php'>Início</a></li>
                         <li><a href='frmnumeracaooficial.php'>Alterar Número</a></li> 
                         <li><a href='frminserirskin.php'>Enviar Skin</a></li>                        
-                        <li><a href='frminserirpiloto.php'>Atualizar Dados</a></li>                        
+                        <li><a href='frminserirpiloto.php'>Atualizar Dados</a></li> 
+                        <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>                       
                          ";
                  } 
                  if ($_SESSION['user_nivel']=="I") {

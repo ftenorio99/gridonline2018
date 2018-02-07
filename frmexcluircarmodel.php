@@ -63,27 +63,34 @@ require 'check.php';
 
                   <fieldset>
 
-                  <legend>Cadastro de Carmodel na GridOnline Asseto Corsa</legend>  
+                  <legend>Excluir Carmodel na GridOnline Asseto Corsa</legend>  
 
+                        <div class="form-group">
+                          <label for="name">Carmodel:</label>
+                            <select id="carmodel" class="form-control" name="carmodel" required="required">
+                              <?php
+                                  $sqlteam = "SELECT * FROM  carmodel; ";
+                                  $select = $PDO->query( $sqlteam );
+                                  $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
 
-                  <div class="form-group">
-                    <label for="name">Nome do Carmodel:</label>
-                    <input type="text" class="form-control" id="carmodel" name="carmodel" >
-                  </div>     
+                                foreach($resultteam as $row)            
+                                  {               
+                                   ?>
+                                   <option value="<?php echo $row["idcarmodel"] ?>"> <?php echo $row["desccarmodel"] ?></option>
+                                  <?php
+                                  }
+                                  ?>
+                              ?>
+                            </select> 
+                        <br>
+                        </div>     
 
-                  <div class="form-group">
-                    <label for="name">Descrição do Carmodel:</label>
-                    <input type="text" class="form-control" id="desccarmodel" name="desccarmodel" >
-                  </div>                     
-
-                  </fieldset>
-
-                    <input class="btn btn-primary btn-block" type="submit">
+                    </fieldset>
+                  <input class="btn btn-primary btn-block" type="submit" value="Excluir" name="botao">
                 </form>  
             </div>
           </div>   
         </div>
-
        
 <br>
 

@@ -7,8 +7,9 @@ $PDO = db_connect();
 
 print_r($_POST);
 
-/*if (!empty($_POST)):   
+if (!empty($_POST)):   
 try{
+
 	if ($_POST["botao"]=="Inserir") {
 
 			if (!empty($_POST["carmodel"]) && !empty($_POST["desccarmodel"])):   
@@ -53,25 +54,27 @@ try{
 				}
 			endif; 	
 			echo "<script>window.location = 'frmcarmodel.php';</script>"; 
+		}
 
-
-	if ($_POST["botao"]=="Excluir") {
-
-							$sql2 = "DELETE FROM carmodel WHERE idcarmodel =  :idcarmodel  ";                 
-
-									$stmtp = $PDO->prepare($sql2);                                  
-									$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_STR);        
-									$stmtp->execute(); 
-									echo "<script>alert('Carmodel excluído com sucesso')</script>";   
-					            	echo "<script>window.location = 'panel.php';</script>"; 
-				}
+		if ($_POST["botao"]=="Excluir") {
+									$status="I";
+									$sql2 = "UPDATE carmodel SET status = :status 
+									            		WHERE idcarmodel = :idcarmodel";                 
+											$stmtp = $PDO->prepare($sql2);                                  
+											$stmtp->bindParam(':status', $status , PDO::PARAM_STR); 
+											$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_STR);  
+											$stmtp->execute();               
+		 
+											echo "<script>alert('Carmodel excluído com sucesso')</script>";   
+							            	echo "<script>window.location = 'panel.php';</script>"; 
+						}
 
 
 	}
 				catch(PDOException $erro){   
 				 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";                  			
 				}
-endif; */	
+endif; 	
 
 ?>
 
