@@ -148,6 +148,8 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>
+                            <li><a href='frmalterarequipe.php'>Alterar Equipe</a></li>
+                            <li><a href='frmexcluirequipe.php'>Excluir Equipe</a></li>
                           </ul>
                         </li>                          
 

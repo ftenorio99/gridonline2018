@@ -30,7 +30,7 @@ $PDO = db_connect();
     }
     
     #div-back-image{
-        background-image: url("img/fundoheader.png");
+        background-image: url("../../img/porschegt3/porschegt3header.png");
       }
 
     .affix {
@@ -64,15 +64,30 @@ $PDO = db_connect();
 
                   <fieldset>
 
-                  <legend>Inscrição da Equipe na GridOnline Asseto Corsa</legend>  
+                  <legend>Alterar Equipe na GridOnline Asseto Corsa</legend>  
 
                         <div class="form-group">
                           <label for="name">Name:</label>
-                          <input type="text" class="form-control" id="name" name="name" >
+                            <select id="team" class="form-control" name="team" required="required">
+                              <?php
+                                  $sqlteam = "SELECT * FROM  team; ";
+                                  $select = $PDO->query( $sqlteam );
+                                  $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
+
+                                foreach($resultteam as $row)            
+                                  {               
+                                   ?>
+                                   <option value="<?php echo $row["idteam"] ?>"> <?php echo $row["name"] ?></option>
+                                  <?php
+                                  }
+                                  ?>
+                              ?>
+                            </select> 
+                        <br>
                         </div>     
 
                     </fieldset>
-                    <input class="btn btn-primary btn-block" type="submit" value="Inserir" name="botao">
+                    <input class="btn btn-primary btn-block" type="submit" value="Excluir" name="botao">
                 </form>  
             </div>
           </div>   

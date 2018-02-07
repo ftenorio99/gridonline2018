@@ -1,7 +1,7 @@
 <?php
 session_start();
-require_once '../../init.php';
-require '../../check.php';
+require_once 'init.php';
+require 'check.php';
 $PDO = db_connect(); 
 
 ?>
@@ -52,7 +52,7 @@ $PDO = db_connect();
 <body>
 
 <?php    
-    include 'menubackend.php';
+    include 'menu.php';
 ?>
   
         <div class="container-fluid"><!-- container -->  
@@ -64,15 +64,35 @@ $PDO = db_connect();
 
                   <fieldset>
 
-                  <legend>Inscrição da Equipe na GridOnline Asseto Corsa</legend>  
+                  <legend>Alterar Equipe na GridOnline Asseto Corsa</legend>  
 
                         <div class="form-group">
                           <label for="name">Name:</label>
-                          <input type="text" class="form-control" id="name" name="name" >
+                            <select id="team" class="form-control" name="team" required="required">
+                              <?php
+                                  $sqlteam = "SELECT * FROM  team; ";
+                                  $select = $PDO->query( $sqlteam );
+                                  $resultteam = $select->fetchAll( PDO::FETCH_ASSOC );
+
+                                foreach($resultteam as $row)            
+                                  {               
+                                   ?>
+                                   <option value="<?php echo $row["idteam"] ?>"> <?php echo $row["name"] ?></option>
+                                  <?php
+                                  }
+                                  ?>
+                              ?>
+                            </select> 
+                        <br>
+                        <div class="form-group">
+                          <label for="name">Alterar o nome para:</label>
+                          <input type="text" class="form-control" id="namenovo" name="namenovo" >
+                        </div> 
+
                         </div>     
 
                     </fieldset>
-                    <input class="btn btn-primary btn-block" type="submit">
+                    <input class="btn btn-primary btn-block" type="submit" value="Alterar" name="botao">
                 </form>  
             </div>
           </div>   
