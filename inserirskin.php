@@ -243,7 +243,7 @@ $total = $stmt->rowCount();
 				$diretorio = "C:/xampp/htdocs/gridonline/uploads/";
 
 				//Diretorio Servidor Producao
-				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/ks_porsche_911_gt3_cup_2017/skins/"
+				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/ks_porsche_911_gt3_cup_2017/skins/";
 
 				//Diretorio servidro Teste
 				//$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/ks_porsche_911_gt3_cup_2017/skins/";
