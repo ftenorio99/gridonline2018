@@ -128,7 +128,7 @@ foreach($result as $row)
                           </ul>
                         </li>                         
                         <li><a href='gravarentrylist.php'>Gerar entry_list do servidor</a></li>
-                        <li><a href='gravarserver_cfg.php'>Gerar server_cfg do servidor</a></li> 
+                        <li><a href='gravarserver_cfg.php'>Gerar server_cfg do servidor</a></li>                          
                         ";
                       } 
                       if ($_SESSION['user_nivel']=="B") {
