@@ -35,7 +35,7 @@ try{
      foreach($result as $row)
       {
                     
-    $txt ="[CAR_".$i."]
+$txt ="[CAR_".$i."]
 MODEL=".$row["carmodel"]."
 SKIN=".$row["skin"]."
 SPECTATOR_MODE=0

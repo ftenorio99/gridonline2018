@@ -167,7 +167,7 @@ WELCOME_PATH=
     //Destino do Servidor de Teste
     //$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/cfg/server_cfg.ini';
     //Destino do servidor de Producao
-    $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
+    $destino = 'C:/Gridonline/acPackage/server2/cfg/server_cfg.ini';
 
     unlink($destino);
 
