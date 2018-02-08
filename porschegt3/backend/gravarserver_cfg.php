@@ -35,7 +35,7 @@ try{
       {
               
 $txt ="[SERVER]
-NAME=".$row["torneionome"]." Corrida - ".$row["nome"]."
+NAME=".$row["torneionome"]." - Corrida - ".$row["nome"]."
 CARS=ks_porsche_911_gt3_cup_2017
 CONFIG_TRACK=".$row["config"]."
 TRACK=".$row["pista"]."
@@ -96,6 +96,18 @@ LINUX=0
 [PRACTICE]
 NAME=Practice
 TIME=180
+IS_OPEN=1
+
+[QUALIFY]
+NAME=Qualify
+TIME=15
+IS_OPEN=1
+
+[RACE]
+NAME=Race
+LAPS=0
+TIME=70
+WAIT_TIME=100
 IS_OPEN=1
 
 [DYNAMIC_TRACK]
