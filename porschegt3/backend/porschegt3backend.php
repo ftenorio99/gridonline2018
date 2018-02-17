@@ -99,7 +99,7 @@
                  ?>
                   <div class="col-lg-4" id="font">                         
                       <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>               
-                      <img src=<?php echo "../../img/porschegt3/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" width="350" height="200" >                                        
+                      <img src=<?php echo "../../img/porschegt3/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">                                        
                       <br>                  
                       <br>
                   </div>
