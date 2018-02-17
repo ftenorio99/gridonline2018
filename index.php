@@ -153,12 +153,14 @@ $PDO = db_connect();
         ?>
         <hr>
         
-<!--         <div class="embed-responsive embed-responsive-16by9">
+      
+        <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/geral/"></iframe>            
         </div>
-        
- -->
-<!--           <div class="col-sm-3 sidenav" align="center">
+
+
+<!--           
+          <div class="col-sm-3 sidenav" align="center">
             <div class="panel panel-default col-lg-8 col-lg-offset-2">
               <h2 class="title">
                 <a href="#" title="">
@@ -192,10 +194,14 @@ $PDO = db_connect();
               </div>
             </div>
             <br>
-            <br> -->
-<!--               <div>
+            <br> 
+-->
+
+<!--               
+              <div>
                  <iframe  src="https://discordapp.com/widget?id=265546426908540939&theme=dark" width="350" height="350" allowtransparency="true" frameborder="0"></iframe> 
-              </div>   -->         
+              </div>  
+-->         
           </div>
         </div>
       </div>

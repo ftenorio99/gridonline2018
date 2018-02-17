@@ -154,7 +154,7 @@ $(document).ready(function(){
       </div>
 
 <!--       <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <p>©  2018 Grid Online</p>
       </footer> -->
 
 
