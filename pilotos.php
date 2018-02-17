@@ -78,6 +78,7 @@ $PDO = db_connect();
                       <th>Número</th>
                       <th>Nome</th>                      
                       <th>Email</th> 
+                      <th>Celular</th> 
                     </tr>
                   </thead>
                   <tbody>
@@ -92,7 +93,8 @@ $PDO = db_connect();
                             <tr> 
                              <td width=10%><?php echo $row["numero"] ?></td>
                              <td width=40%><?php echo $row["name"] ?></td>                                         
-                             <td width=50%><?php echo $row["email"] ?></td>    
+                             <td width=50%><?php echo $row["email"] ?></td> 
+                             <td width=50%><?php echo $row["telefone"] ?></td>     
                             </tr>
                           <?php
                           }
@@ -108,7 +110,7 @@ $PDO = db_connect();
       </div>
 
       <footer class="container-fluid text-center">
-        <p>Footer Text</p>
+        <p>©  2018 Grid Online</p>
       </footer>
 
 
