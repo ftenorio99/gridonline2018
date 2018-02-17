@@ -101,7 +101,7 @@ $(document).ready(function(){
                     <div class="form-group">
                       <br>
                       <label for="name">Número do Celular:</label>
-                      <input type="text" class="form-control" id="celular" name="celular" placeholder="Celular com DDD para comunicação por Whatsap">   
+                      <input type="number" class="form-control" id="celular" name="celular" placeholder="Celular com DDD e caso seja de fora do Brasil,código do País para aplicativo Whatsapp">   
                     </div>      
                     <button type="submit" class="btn btn-primary btn-block" value="enviar"  >Enviar</button>
                 </fieldset>                               

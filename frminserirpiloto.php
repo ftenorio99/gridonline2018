@@ -104,7 +104,7 @@ $PDO = db_connect();
  
                     <div class="form-group">
                       <label for="name">Telefone:</label>
-                      <input class="form-control" id="telefone" type="text" name="telefone" placeholder="ex.(11)-1111-1111" value="<?php echo $row["telefone"]?>">
+                      <input class="form-control" id="telefone" type="number" name="telefone" placeholder="Insira seu número de telefone" value="<?php echo $row["telefone"]?>">
                     </div>                                                 
 
                     <div class="form-group">
