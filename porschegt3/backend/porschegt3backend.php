@@ -90,7 +90,8 @@
                           INNER JOIN skin     ON    pilototorneio.idskin = skin.idskin 
                           INNER JOIN torneio    ON    pilototorneio.idtorneio = torneio.idtorneio
                           where
-                          torneio.idtorneio=3                        ";
+                          torneio.idtorneio=3 
+                          order by team.name                        ";
                         //alterar o idtorneio para o torneio que quer mostrar na página
               $select = $PDO->query( $sql );
               $result = $select->fetchAll( PDO::FETCH_ASSOC );
