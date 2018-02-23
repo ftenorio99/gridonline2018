@@ -140,6 +140,7 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='pilotos.php'>Lista de pilotos</a></li>
+                            <li class='divider'></li>
                             <li><a href='frminserirpiloto.php'>Atualizar Piloto</a></li>
                           </ul>
                         </li>  
@@ -149,7 +150,9 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmalterarequipe.php'>Alterar Equipe</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmexcluirequipe.php'>Excluir Equipe</a></li>
                           </ul>
                         </li>                          
@@ -160,6 +163,7 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminserircarmodel.php'>Inserir Carmodel</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmexcluircarmodel.php'>Desativar Carmodel</a></li>
                           </ul>
                         </li>                            

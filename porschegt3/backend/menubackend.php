@@ -123,7 +123,9 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminseririnscricao.php'>Inserir Piloto no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmatualizarinscricao.php'>Atualizar Piloto no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmexcluirinscricao.php'>Excluir Piloto no Torneio</a></li>                            
                           </ul>
                         </li>                         
@@ -140,7 +142,9 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminscrevertorneio.php'>Inscrever no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmatualizarinscricao.php'>Atualizar Piloto no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmexcluirinscricao.php'>Excluir Piloto no Torneio</a></li>
                           </ul>
                         </li> 
@@ -155,7 +159,9 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminscrevertorneio.php'>Inscrever no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmatualizarinscricao.php'>Atualizar Piloto no Torneio</a></li>
+                            <li class='divider'></li>
                             <li><a href='frmexcluirinscricao.php'>Excluir Piloto no Torneio</a></li>
                           </ul>
                         </li>                                                    
