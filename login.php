@@ -40,7 +40,7 @@ if ($_POST['RecuperarSenha']=='RecuperarSenha') {
 							
 							//enviar um email para variavel email juntamente com a variável senha;
 							$mensage ='
-							Você solicitou a recuperação de senhha confira seu dados.
+							Você solicitou a recuperação de senha confira seu dados.
 							E-mail: '.$rowemail.'
 							Senha: '.$rowsenha;
 						
@@ -90,7 +90,7 @@ if ($_POST['RecuperarSenha']=='RecuperarSenha') {
 /*							//Set an alternative reply-to address
 							$mail->addReplyTo('gridonline2018@gmail.com', 'gridonline2018');*/
 							//Set who the message is to be sent to
-							$mail->addAddress($rowemail, 'John Doe');
+							$mail->addAddress($rowemail, $_POST['nome']);
 							//Set the subject line
 							$mail->Subject = 'GridOnline - Recuperacao de Senha';
 /*							//Read an HTML message body from an external file, convert referenced images to embedded,

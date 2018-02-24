@@ -25,9 +25,9 @@ if($stmt->rowCount()==1){
 		}
 		
 //enviar um email para variavel email juntamente com a variável senha;
-$mensage ="Você solicitou a recuperacao de senhha confira seu dados.";
+$mensage ="Você solicitou a recuperacao de senha, confira seu dados.";
 $mensage .="E-mail= " . $rowemail;
-$mensage .="Senha:" . $rowsenha;
+$mensage .="Senha=" . $rowsenha;
 mail($rowemail, "Grid Online, recuperação de senha", $mensage);
 
 echo"<script>alert(Sua senha foi enviada para o e-mail indicado.),window.open('recuperar_senha_enviado.php','_self')</script>";
