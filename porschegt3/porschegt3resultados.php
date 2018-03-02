@@ -166,7 +166,7 @@ $PDO3 = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root"
                                             </table>                         
                                       </div>
                                       <div class="modal-footer">
-                                        <a href="#" class="btn btn-info" role="button">Detalhes</a>
+                                        <a href="http://simresults.net/180302-XC8" class="btn btn-info" role="button">Detalhes</a>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                       </div>
                                     </div>                    
