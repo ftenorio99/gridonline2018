@@ -386,7 +386,7 @@ require 'check.php';
 			      					try {
 
 										// $PDOEtapa = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99");
-										$PDOEtapa = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", "");
+										$PDOEtapa =  db_connect();
 
 										$sql ="UPDATE pistatorneio
 													SET idsessionrace =:sessaorace, idsessionqualy =:sessaoqualy
