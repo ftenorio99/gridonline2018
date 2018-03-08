@@ -1,0 +1,4341 @@
+{
+	"TrackName": "mills",
+	"TrackConfig": "mills_long",
+	"Type": "QUALIFY",
+	"DurationSecs": 0,
+	"RaceLaps": 0,
+	"Cars": [
+		{
+			"CarId": 0,
+			"Driver": {
+				"Name": "sergio justen",
+				"Team": "Machine Maker",
+				"Nation": "",
+				"Guid": "76561198146617780",
+				"GuidsList": [
+					"76561198146617780"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "sergio_justen_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 1,
+			"Driver": {
+				"Name": "Rodrigo Flores",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198322695941",
+				"GuidsList": [
+					"76561198322695941"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Rodrigo_Flores_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 2,
+			"Driver": {
+				"Name": "Ale Di Pietro",
+				"Team": "",
+				"Nation": "ARG",
+				"Guid": "76561198087396860",
+				"GuidsList": [
+					"76561198087396860"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "dipiale__16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 3,
+			"Driver": {
+				"Name": "Victor Veloso",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198119680294",
+				"GuidsList": [
+					"76561198119680294"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Victor_Veloso_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 4,
+			"Driver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "tibone__16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 5,
+			"Driver": {
+				"Name": "Gustavo Maia",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198066676011",
+				"GuidsList": [
+					"76561198066676011"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Gustavo_Maia_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 6,
+			"Driver": {
+				"Name": "Raphael Alves",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198096286731",
+				"GuidsList": [
+					"76561198096286731"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Raphael_Guilherme_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 7,
+			"Driver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Fabio_Lopes_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 8,
+			"Driver": {
+				"Name": "Marcelo Neiva",
+				"Team": "Energy SimRacing",
+				"Nation": "",
+				"Guid": "76561198061380163",
+				"GuidsList": [
+					"76561198061380163"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Marcelo_Neiva_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 9,
+			"Driver": {
+				"Name": "Renato Tavares",
+				"Team": "Energy SimRacing",
+				"Nation": "",
+				"Guid": "76561198097047320",
+				"GuidsList": [
+					"76561198097047320"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Renato_Tavares_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Ricardo_Campos_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 11,
+			"Driver": {
+				"Name": "Eduardo Lima",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198093334559",
+				"GuidsList": [
+					"76561198093334559"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Eduardo_Mennocchi_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 12,
+			"Driver": {
+				"Name": "Ruthem BERGER",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197987393416",
+				"GuidsList": [
+					"76561197987393416"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Ruthem_BERGER_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 13,
+			"Driver": {
+				"Name": "Fernando Igor",
+				"Team": "Energy Virtual Racing",
+				"Nation": "",
+				"Guid": "76561197986970418",
+				"GuidsList": [
+					"76561197986970418"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Fernando_Igor_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Henrique_Ferreira_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 15,
+			"Driver": {
+				"Name": "Thiago Moya",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197988820213",
+				"GuidsList": [
+					"76561197988820213"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Thiago_Moya_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 16,
+			"Driver": {
+				"Name": "Dalla Stella",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197984788684",
+				"GuidsList": [
+					"76561197984788684"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Dalla_Stella_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 17,
+			"Driver": {
+				"Name": "Gustavo Vidal",
+				"Team": "Make your Point E-Sports",
+				"Nation": "",
+				"Guid": "76561198173992161",
+				"GuidsList": [
+					"76561198173992161"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Gustavo_Vidal_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 18,
+			"Driver": {
+				"Name": "Walter Rubens",
+				"Team": "GTCup Brasil",
+				"Nation": "",
+				"Guid": "76561197986209847",
+				"GuidsList": [
+					"76561197986209847"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "00_Almera_05",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 19,
+			"Driver": {
+				"Name": "Andre Motta",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197991343191",
+				"GuidsList": [
+					"76561197991343191"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "00_Alzen_Motorsport_04",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 20,
+			"Driver": {
+				"Name": "Eduardo Kissilevitch",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197990207543",
+				"GuidsList": [
+					"76561197990207543"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "00_Alzen_Motorsport_03",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 21,
+			"Driver": {
+				"Name": "Alexandre Sene",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198014528971",
+				"GuidsList": [
+					"76561198014528971"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Alexandre_Sene_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 22,
+			"Driver": {
+				"Name": "Luciano Cesar",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198076779739",
+				"GuidsList": [
+					"76561198076779739"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Luciano_Cesar_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"CarId": 23,
+			"Driver": {
+				"Name": "Fernando Tenorio",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198015055341",
+				"GuidsList": [
+					"76561198015055341"
+				]
+			},
+			"Model": "ks_porsche_911_gt3_cup_2017",
+			"Skin": "Fernando_Tenorio_16",
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Result": [
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 75793,
+			"TotalTime": 863414,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 75796,
+			"TotalTime": 895661,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 75823,
+			"TotalTime": 905583,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76144,
+			"TotalTime": 840041,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76332,
+			"TotalTime": 853526,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76518,
+			"TotalTime": 922094,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76562,
+			"TotalTime": 813555,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76752,
+			"TotalTime": 561473,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 76992,
+			"TotalTime": 892706,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 77199,
+			"TotalTime": 924135,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 77597,
+			"TotalTime": 803244,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Alexandre Sene",
+			"DriverGuid": "76561198014528971",
+			"CarId": 21,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 77802,
+			"TotalTime": 851890,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 77899,
+			"TotalTime": 677255,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ruthem BERGER",
+			"DriverGuid": "76561197987393416",
+			"CarId": 12,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 78738,
+			"TotalTime": 873025,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 79091,
+			"TotalTime": 745291,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 79632,
+			"TotalTime": 512675,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 80325,
+			"TotalTime": 772155,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Henrique Ferreira",
+			"DriverGuid": "76561198082121288",
+			"CarId": 14,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 82982,
+			"TotalTime": 588645,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Renato Tavares",
+			"DriverGuid": "76561198097047320",
+			"CarId": 9,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Walter Rubens",
+			"DriverGuid": "76561197986209847",
+			"CarId": 18,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "sergio justen",
+			"DriverGuid": "76561198146617780",
+			"CarId": 0,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Marcelo Neiva",
+			"DriverGuid": "76561198061380163",
+			"CarId": 8,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Igor",
+			"DriverGuid": "76561197986970418",
+			"CarId": 13,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Vidal",
+			"DriverGuid": "76561198173992161",
+			"CarId": 17,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"BestLap": 999999999,
+			"TotalTime": 0,
+			"BallastKG": 0,
+			"Restrictor": 0
+		}
+	],
+	"Laps": [
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7403847,
+			"LapTime": 90155,
+			"Sectors": [
+				35017,
+				32571,
+				22567
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7408810,
+			"LapTime": 96776,
+			"Sectors": [
+				41147,
+				32468,
+				23161
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7410984,
+			"LapTime": 95990,
+			"Sectors": [
+				41972,
+				31132,
+				22886
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7411683,
+			"LapTime": 99629,
+			"Sectors": [
+				46007,
+				30992,
+				22630
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7418893,
+			"LapTime": 106819,
+			"Sectors": [
+				51446,
+				31456,
+				23917
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7423786,
+			"LapTime": 111696,
+			"Sectors": [
+				58091,
+				30758,
+				22847
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7431905,
+			"LapTime": 119859,
+			"Sectors": [
+				64751,
+				31689,
+				23419
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7435423,
+			"LapTime": 123375,
+			"Sectors": [
+				67862,
+				31887,
+				23626
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7440384,
+			"LapTime": 128342,
+			"Sectors": [
+				73978,
+				31239,
+				23125
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7442485,
+			"LapTime": 130440,
+			"Sectors": [
+				75445,
+				31703,
+				23292
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7443851,
+			"LapTime": 130106,
+			"Sectors": [
+				75801,
+				31072,
+				23233
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7447137,
+			"LapTime": 135105,
+			"Sectors": [
+				77190,
+				33893,
+				24022
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7480432,
+			"LapTime": 76584,
+			"Sectors": [
+				23726,
+				30456,
+				22402
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7486848,
+			"LapTime": 78041,
+			"Sectors": [
+				23929,
+				30757,
+				23355
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7487056,
+			"LapTime": 76075,
+			"Sectors": [
+				23272,
+				30276,
+				22527
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7489463,
+			"LapTime": 77785,
+			"Sectors": [
+				23735,
+				31460,
+				22590
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7497173,
+			"LapTime": 78283,
+			"Sectors": [
+				24152,
+				30861,
+				23270
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7500333,
+			"LapTime": 76554,
+			"Sectors": [
+				23436,
+				30595,
+				22523
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7511537,
+			"LapTime": 79632,
+			"Sectors": [
+				24335,
+				31501,
+				23796
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7518982,
+			"LapTime": 76499,
+			"Sectors": [
+				23526,
+				30519,
+				22454
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7527461,
+			"LapTime": 80325,
+			"Sectors": [
+				24812,
+				31771,
+				23742
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7530863,
+			"LapTime": 218694,
+			"Sectors": [
+				163074,
+				32665,
+				22955
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Henrique Ferreira",
+			"DriverGuid": "76561198082121288",
+			"CarId": 14,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7546851,
+			"LapTime": 234750,
+			"Sectors": [
+				166952,
+				42850,
+				24948
+			],
+			"Cuts": 3,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7557461,
+			"LapTime": 77030,
+			"Sectors": [
+				23724,
+				30595,
+				22711
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7560722,
+			"LapTime": 120342,
+			"Sectors": [
+				65766,
+				31697,
+				22879
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7562896,
+			"LapTime": 119046,
+			"Sectors": [
+				64438,
+				31774,
+				22834
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7566591,
+			"LapTime": 77127,
+			"Sectors": [
+				24004,
+				30429,
+				22694
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7575743,
+			"LapTime": 78575,
+			"Sectors": [
+				24040,
+				31266,
+				23269
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7576971,
+			"LapTime": 76643,
+			"Sectors": [
+				23517,
+				30446,
+				22680
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7592174,
+			"LapTime": 80639,
+			"Sectors": [
+				24628,
+				31653,
+				24358
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7594845,
+			"LapTime": 108002,
+			"Sectors": [
+				50529,
+				34469,
+				23004
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7595345,
+			"LapTime": 76367,
+			"Sectors": [
+				23582,
+				30384,
+				22401
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7607650,
+			"LapTime": 76796,
+			"Sectors": [
+				23463,
+				30330,
+				23003
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7609182,
+			"LapTime": 81724,
+			"Sectors": [
+				24475,
+				32054,
+				25195
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7612070,
+			"LapTime": 120547,
+			"Sectors": [
+				65426,
+				31766,
+				23355
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7614858,
+			"LapTime": 179433,
+			"Sectors": [
+				123952,
+				31928,
+				23553
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7619926,
+			"LapTime": 132873,
+			"Sectors": [
+				70754,
+				36383,
+				25736
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7626510,
+			"LapTime": 250435,
+			"Sectors": [
+				185086,
+				38794,
+				26555
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7641766,
+			"LapTime": 78875,
+			"Sectors": [
+				23602,
+				30757,
+				24516
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7642445,
+			"LapTime": 81728,
+			"Sectors": [
+				24115,
+				32035,
+				25578
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7653525,
+			"LapTime": 77785,
+			"Sectors": [
+				24015,
+				30852,
+				22918
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7672541,
+			"LapTime": 77699,
+			"Sectors": [
+				23587,
+				31225,
+				22887
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7677675,
+			"LapTime": 85503,
+			"Sectors": [
+				24460,
+				31248,
+				29795
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7683986,
+			"LapTime": 76332,
+			"Sectors": [
+				23380,
+				30353,
+				22599
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7690199,
+			"LapTime": 78134,
+			"Sectors": [
+				23860,
+				31360,
+				22914
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7690847,
+			"LapTime": 81667,
+			"Sectors": [
+				24891,
+				31652,
+				25124
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7694236,
+			"LapTime": 136775,
+			"Sectors": [
+				83113,
+				31005,
+				22657
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7694940,
+			"LapTime": 128357,
+			"Sectors": [
+				74488,
+				31063,
+				22806
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7704268,
+			"LapTime": 77757,
+			"Sectors": [
+				23918,
+				31069,
+				22770
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7707426,
+			"LapTime": 112080,
+			"Sectors": [
+				57800,
+				31194,
+				23086
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7719428,
+			"LapTime": 77664,
+			"Sectors": [
+				23690,
+				30709,
+				23265
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7720393,
+			"LapTime": 77952,
+			"Sectors": [
+				23924,
+				31082,
+				22946
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Henrique Ferreira",
+			"DriverGuid": "76561198082121288",
+			"CarId": 14,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7726798,
+			"LapTime": 179946,
+			"Sectors": [
+				104075,
+				50986,
+				24885
+			],
+			"Cuts": 3,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7731163,
+			"LapTime": 77640,
+			"Sectors": [
+				24121,
+				30695,
+				22824
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7751017,
+			"LapTime": 78478,
+			"Sectors": [
+				24015,
+				31293,
+				23170
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7760658,
+			"LapTime": 76675,
+			"Sectors": [
+				23310,
+				30572,
+				22793
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7764111,
+			"LapTime": 144193,
+			"Sectors": [
+				90769,
+				30829,
+				22595
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7767540,
+			"LapTime": 77344,
+			"Sectors": [
+				23744,
+				30745,
+				22855
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7770957,
+			"LapTime": 76727,
+			"Sectors": [
+				23537,
+				30789,
+				22401
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7772369,
+			"LapTime": 77430,
+			"Sectors": [
+				23614,
+				30883,
+				22933
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7774066,
+			"LapTime": 83220,
+			"Sectors": [
+				24746,
+				34335,
+				24139
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7781540,
+			"LapTime": 77274,
+			"Sectors": [
+				23827,
+				30631,
+				22816
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7785332,
+			"LapTime": 77908,
+			"Sectors": [
+				23940,
+				31589,
+				22379
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7794631,
+			"LapTime": 217668,
+			"Sectors": [
+				163681,
+				31334,
+				22653
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7796737,
+			"LapTime": 77310,
+			"Sectors": [
+				23840,
+				30861,
+				22609
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7808755,
+			"LapTime": 77597,
+			"Sectors": [
+				23750,
+				30736,
+				23111
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Henrique Ferreira",
+			"DriverGuid": "76561198082121288",
+			"CarId": 14,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7817689,
+			"LapTime": 90890,
+			"Sectors": [
+				31670,
+				33516,
+				25704
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7818158,
+			"LapTime": 203301,
+			"Sectors": [
+				124141,
+				53995,
+				25165
+			],
+			"Cuts": 3,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7824687,
+			"LapTime": 147015,
+			"Sectors": [
+				91953,
+				31265,
+				23797
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7837030,
+			"LapTime": 76379,
+			"Sectors": [
+				23531,
+				30344,
+				22504
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7840120,
+			"LapTime": 76011,
+			"Sectors": [
+				23361,
+				30266,
+				22384
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7845041,
+			"LapTime": 77504,
+			"Sectors": [
+				23621,
+				30902,
+				22981
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7846781,
+			"LapTime": 75823,
+			"Sectors": [
+				23231,
+				30128,
+				22464
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7849374,
+			"LapTime": 77008,
+			"Sectors": [
+				23782,
+				30636,
+				22590
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7854583,
+			"LapTime": 80522,
+			"Sectors": [
+				24740,
+				31739,
+				24043
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7858100,
+			"LapTime": 76562,
+			"Sectors": [
+				23530,
+				30357,
+				22675
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7861436,
+			"LapTime": 76105,
+			"Sectors": [
+				23379,
+				30357,
+				22369
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fernando Tenorio",
+			"DriverGuid": "76561198015055341",
+			"CarId": 23,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7873488,
+			"LapTime": 76752,
+			"Sectors": [
+				23705,
+				30461,
+				22586
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7876081,
+			"LapTime": 81450,
+			"Sectors": [
+				24741,
+				33691,
+				23018
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7884510,
+			"LapTime": 133498,
+			"Sectors": [
+				79439,
+				31087,
+				22972
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7898323,
+			"LapTime": 80158,
+			"Sectors": [
+				25078,
+				31559,
+				23521
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Henrique Ferreira",
+			"DriverGuid": "76561198082121288",
+			"CarId": 14,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7900668,
+			"LapTime": 82982,
+			"Sectors": [
+				26111,
+				32292,
+				24579
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7905649,
+			"LapTime": 80963,
+			"Sectors": [
+				24183,
+				31162,
+				25618
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7911359,
+			"LapTime": 190971,
+			"Sectors": [
+				136385,
+				31806,
+				22780
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7915911,
+			"LapTime": 75793,
+			"Sectors": [
+				23310,
+				30230,
+				22253
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7926210,
+			"LapTime": 76838,
+			"Sectors": [
+				23648,
+				30484,
+				22706
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Alexandre Sene",
+			"DriverGuid": "76561198014528971",
+			"CarId": 21,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7929210,
+			"LapTime": 291263,
+			"Sectors": [
+				235976,
+				31856,
+				23431
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7956946,
+			"LapTime": 110166,
+			"Sectors": [
+				55562,
+				31946,
+				22658
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7961706,
+			"LapTime": 77199,
+			"Sectors": [
+				23630,
+				30735,
+				22834
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7964171,
+			"LapTime": 102736,
+			"Sectors": [
+				49091,
+				30366,
+				23279
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7970466,
+			"LapTime": 125431,
+			"Sectors": [
+				71152,
+				31450,
+				22829
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7978214,
+			"LapTime": 79899,
+			"Sectors": [
+				24949,
+				31572,
+				23378
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ale Di Pietro",
+			"DriverGuid": "76561198087396860",
+			"CarId": 2,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7987857,
+			"LapTime": 82209,
+			"Sectors": [
+				27592,
+				31239,
+				23378
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Dalla Stella",
+			"DriverGuid": "76561197984788684",
+			"CarId": 16,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7989256,
+			"LapTime": 77899,
+			"Sectors": [
+				24016,
+				31135,
+				22748
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 7999328,
+			"LapTime": 123254,
+			"Sectors": [
+				70154,
+				30439,
+				22661
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8003331,
+			"LapTime": 77124,
+			"Sectors": [
+				23727,
+				30748,
+				22649
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Alexandre Sene",
+			"DriverGuid": "76561198014528971",
+			"CarId": 21,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8007548,
+			"LapTime": 78343,
+			"Sectors": [
+				24725,
+				30938,
+				22680
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8012432,
+			"LapTime": 154334,
+			"Sectors": [
+				91704,
+				37444,
+				25186
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8022871,
+			"LapTime": 106966,
+			"Sectors": [
+				53934,
+				30514,
+				22518
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8035789,
+			"LapTime": 198759,
+			"Sectors": [
+				145163,
+				30632,
+				22964
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8035932,
+			"LapTime": 78988,
+			"Sectors": [
+				23814,
+				30546,
+				24628
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8037215,
+			"LapTime": 228472,
+			"Sectors": [
+				174494,
+				31032,
+				22946
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8047455,
+			"LapTime": 76992,
+			"Sectors": [
+				23531,
+				30718,
+				22743
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Rodrigo Flores",
+			"DriverGuid": "76561198322695941",
+			"CarId": 1,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8057300,
+			"LapTime": 79091,
+			"Sectors": [
+				24367,
+				31464,
+				23260
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8075917,
+			"LapTime": 76593,
+			"Sectors": [
+				23483,
+				30511,
+				22599
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8079847,
+			"LapTime": 76518,
+			"Sectors": [
+				23850,
+				30302,
+				22366
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8084155,
+			"LapTime": 229575,
+			"Sectors": [
+				173504,
+				31753,
+				24318
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Alexandre Sene",
+			"DriverGuid": "76561198014528971",
+			"CarId": 21,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8086090,
+			"LapTime": 78544,
+			"Sectors": [
+				23698,
+				31486,
+				23360
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8091169,
+			"LapTime": 129465,
+			"Sectors": [
+				74969,
+				31492,
+				23004
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8099461,
+			"LapTime": 76582,
+			"Sectors": [
+				23271,
+				30820,
+				22491
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ruthem BERGER",
+			"DriverGuid": "76561197987393416",
+			"CarId": 12,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8106291,
+			"LapTime": 140707,
+			"Sectors": [
+				85847,
+				31865,
+				22995
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Luciano Cesar",
+			"DriverGuid": "76561198076779739",
+			"CarId": 22,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8115262,
+			"LapTime": 78049,
+			"Sectors": [
+				24027,
+				30739,
+				23283
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ricardo Campos",
+			"DriverGuid": "76561198012154649",
+			"CarId": 10,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8125641,
+			"LapTime": 113209,
+			"Sectors": [
+				58430,
+				31978,
+				22801
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8127540,
+			"LapTime": 80086,
+			"Sectors": [
+				26478,
+				31131,
+				22477
+			],
+			"Cuts": 1,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8131871,
+			"LapTime": 167702,
+			"Sectors": [
+				112902,
+				31297,
+				23503
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8137299,
+			"LapTime": 101368,
+			"Sectors": [
+				47391,
+				31238,
+				22739
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Fabio Lopes",
+			"DriverGuid": "76561198053334382",
+			"CarId": 7,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8152059,
+			"LapTime": 76144,
+			"Sectors": [
+				23323,
+				30325,
+				22496
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8157346,
+			"LapTime": 77499,
+			"Sectors": [
+				23985,
+				30726,
+				22788
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Alexandre Sene",
+			"DriverGuid": "76561198014528971",
+			"CarId": 21,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8163889,
+			"LapTime": 77802,
+			"Sectors": [
+				24135,
+				30672,
+				22995
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Lima",
+			"DriverGuid": "76561198093334559",
+			"CarId": 11,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8165586,
+			"LapTime": 129797,
+			"Sectors": [
+				76841,
+				30479,
+				22477
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Juliano Flores",
+			"DriverGuid": "76561198009193147",
+			"CarId": 4,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8173546,
+			"LapTime": 89396,
+			"Sectors": [
+				25856,
+				39929,
+				23611
+			],
+			"Cuts": 2,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Thiago Moya",
+			"DriverGuid": "76561197988820213",
+			"CarId": 15,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8175418,
+			"LapTime": 75974,
+			"Sectors": [
+				23320,
+				30290,
+				22364
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Ruthem BERGER",
+			"DriverGuid": "76561197987393416",
+			"CarId": 12,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8185027,
+			"LapTime": 78738,
+			"Sectors": [
+				24314,
+				31383,
+				23041
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Andre Motta",
+			"DriverGuid": "76561197991343191",
+			"CarId": 19,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8204710,
+			"LapTime": 77176,
+			"Sectors": [
+				23621,
+				30862,
+				22693
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Raphael Alves",
+			"DriverGuid": "76561198096286731",
+			"CarId": 6,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8207666,
+			"LapTime": 75796,
+			"Sectors": [
+				23303,
+				30083,
+				22410
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Victor Veloso",
+			"DriverGuid": "76561198119680294",
+			"CarId": 3,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8217614,
+			"LapTime": 80312,
+			"Sectors": [
+				25192,
+				32089,
+				23031
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Eduardo Kissilevitch",
+			"DriverGuid": "76561197990207543",
+			"CarId": 20,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8234098,
+			"LapTime": 76752,
+			"Sectors": [
+				23247,
+				30663,
+				22842
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		},
+		{
+			"DriverName": "Gustavo Maia",
+			"DriverGuid": "76561198066676011",
+			"CarId": 5,
+			"CarModel": "ks_porsche_911_gt3_cup_2017",
+			"Timestamp": 8236141,
+			"LapTime": 144976,
+			"Sectors": [
+				88982,
+				32283,
+				23711
+			],
+			"Cuts": 0,
+			"BallastKG": 0,
+			"Tyre": "H",
+			"Restrictor": 0
+		}
+	],
+	"Events": [
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 23.42374,
+			"WorldPosition": {
+				"X": 556.5465,
+				"Y": -2.5853362,
+				"Z": 420.21533
+			},
+			"RelPosition": {
+				"X": -0.8437408,
+				"Y": -0.31994772,
+				"Z": 2.2517443
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 80.77052,
+			"WorldPosition": {
+				"X": 763.7292,
+				"Y": -1.5247617,
+				"Z": 278.72174
+			},
+			"RelPosition": {
+				"X": -0.9697601,
+				"Y": 0.46569136,
+				"Z": 0.6016655
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 0.43912697,
+			"WorldPosition": {
+				"X": 759.56055,
+				"Y": -1.5252979,
+				"Z": 274.41125
+			},
+			"RelPosition": {
+				"X": -0.99504423,
+				"Y": 0.47591195,
+				"Z": 0.612794
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 16,
+			"Driver": {
+				"Name": "Dalla Stella",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197984788684",
+				"GuidsList": [
+					"76561197984788684"
+				]
+			},
+			"OtherCarId": 23,
+			"OtherDriver": {
+				"Name": "Fernando Tenorio",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198015055341",
+				"GuidsList": [
+					"76561198015055341"
+				]
+			},
+			"ImpactSpeed": 52.799297,
+			"WorldPosition": {
+				"X": 546.6564,
+				"Y": -2.0386877,
+				"Z": 315.69424
+			},
+			"RelPosition": {
+				"X": -0.76738286,
+				"Y": 0.34367415,
+				"Z": -1.6768829
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 23,
+			"Driver": {
+				"Name": "Fernando Tenorio",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198015055341",
+				"GuidsList": [
+					"76561198015055341"
+				]
+			},
+			"OtherCarId": 16,
+			"OtherDriver": {
+				"Name": "Dalla Stella",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197984788684",
+				"GuidsList": [
+					"76561197984788684"
+				]
+			},
+			"ImpactSpeed": 50.174084,
+			"WorldPosition": {
+				"X": 546.6515,
+				"Y": -2.0520482,
+				"Z": 315.66553
+			},
+			"RelPosition": {
+				"X": -0.8687901,
+				"Y": 0.36494222,
+				"Z": 0.78690016
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 5,
+			"Driver": {
+				"Name": "Gustavo Maia",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198066676011",
+				"GuidsList": [
+					"76561198066676011"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 16.952883,
+			"WorldPosition": {
+				"X": 574.79083,
+				"Y": -2.870865,
+				"Z": 319.47714
+			},
+			"RelPosition": {
+				"X": 0.84375167,
+				"Y": -0.31994802,
+				"Z": 2.2517416
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 15,
+			"Driver": {
+				"Name": "Thiago Moya",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197988820213",
+				"GuidsList": [
+					"76561197988820213"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 14.577364,
+			"WorldPosition": {
+				"X": 535.7849,
+				"Y": -1.3732274,
+				"Z": 488.385
+			},
+			"RelPosition": {
+				"X": -0.9950565,
+				"Y": 0.47591135,
+				"Z": 0.6127959
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 1,
+			"Driver": {
+				"Name": "Rodrigo Flores",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198322695941",
+				"GuidsList": [
+					"76561198322695941"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 34.272156,
+			"WorldPosition": {
+				"X": -49.109455,
+				"Y": -2.354702,
+				"Z": 446.07156
+			},
+			"RelPosition": {
+				"X": 0.47298256,
+				"Y": -0.32008207,
+				"Z": 2.5076632
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 18.230486,
+			"WorldPosition": {
+				"X": 755.91113,
+				"Y": -1.1395272,
+				"Z": 270.63266
+			},
+			"RelPosition": {
+				"X": -0.89292395,
+				"Y": 0.8341344,
+				"Z": -1.9633418
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 54.480377,
+			"WorldPosition": {
+				"X": 722.73315,
+				"Y": -1.3386087,
+				"Z": 230.77263
+			},
+			"RelPosition": {
+				"X": 0.87856615,
+				"Y": 0.6123109,
+				"Z": -1.684163
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": 3,
+			"OtherDriver": {
+				"Name": "Victor Veloso",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198119680294",
+				"GuidsList": [
+					"76561198119680294"
+				]
+			},
+			"ImpactSpeed": 68.76209,
+			"WorldPosition": {
+				"X": 679.2627,
+				"Y": -1.8807306,
+				"Z": 178.46718
+			},
+			"RelPosition": {
+				"X": 0.42058945,
+				"Y": -0.032407254,
+				"Z": -1.8779353
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 3,
+			"Driver": {
+				"Name": "Victor Veloso",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198119680294",
+				"GuidsList": [
+					"76561198119680294"
+				]
+			},
+			"OtherCarId": 14,
+			"OtherDriver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"ImpactSpeed": 65.64754,
+			"WorldPosition": {
+				"X": 679.2464,
+				"Y": -2.107464,
+				"Z": 178.5185
+			},
+			"RelPosition": {
+				"X": 0.0039045215,
+				"Y": -0.16372816,
+				"Z": 2.5430796
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 42.179703,
+			"WorldPosition": {
+				"X": 633.9571,
+				"Y": -1.0952246,
+				"Z": 137.45581
+			},
+			"RelPosition": {
+				"X": 0.8929486,
+				"Y": 0.8341343,
+				"Z": -1.9633603
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 32.36643,
+			"WorldPosition": {
+				"X": 553.3404,
+				"Y": -1.2376333,
+				"Z": 430.68097
+			},
+			"RelPosition": {
+				"X": -0.8929635,
+				"Y": 0.8341349,
+				"Z": -1.9633422
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 2.6821039,
+			"WorldPosition": {
+				"X": 661.4931,
+				"Y": -2.2624393,
+				"Z": 145.181
+			},
+			"RelPosition": {
+				"X": 0.9241407,
+				"Y": -0.32109082,
+				"Z": 1.8843058
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 15,
+			"Driver": {
+				"Name": "Thiago Moya",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197988820213",
+				"GuidsList": [
+					"76561197988820213"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 35.570366,
+			"WorldPosition": {
+				"X": 374.2487,
+				"Y": -2.3524106,
+				"Z": -6.922997
+			},
+			"RelPosition": {
+				"X": 0.47298062,
+				"Y": -0.3200816,
+				"Z": 2.5076761
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 7,
+			"Driver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"OtherCarId": 1,
+			"OtherDriver": {
+				"Name": "Rodrigo Flores",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198322695941",
+				"GuidsList": [
+					"76561198322695941"
+				]
+			},
+			"ImpactSpeed": 55.459675,
+			"WorldPosition": {
+				"X": -101.817085,
+				"Y": -1.4923005,
+				"Z": 257.33234
+			},
+			"RelPosition": {
+				"X": -0.22154826,
+				"Y": -0.13773265,
+				"Z": 2.5085034
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 1,
+			"Driver": {
+				"Name": "Rodrigo Flores",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198322695941",
+				"GuidsList": [
+					"76561198322695941"
+				]
+			},
+			"OtherCarId": 7,
+			"OtherDriver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"ImpactSpeed": 56.697987,
+			"WorldPosition": {
+				"X": -102.00766,
+				"Y": -1.4932973,
+				"Z": 257.3397
+			},
+			"RelPosition": {
+				"X": 0.11343256,
+				"Y": -0.23566091,
+				"Z": -1.9598885
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 7,
+			"Driver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 27.756332,
+			"WorldPosition": {
+				"X": -94.23974,
+				"Y": -1.4373682,
+				"Z": 273.47363
+			},
+			"RelPosition": {
+				"X": 0.8437491,
+				"Y": -0.31994796,
+				"Z": 2.2517195
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 22,
+			"Driver": {
+				"Name": "Luciano Cesar",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198076779739",
+				"GuidsList": [
+					"76561198076779739"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 54.62672,
+			"WorldPosition": {
+				"X": 606.5096,
+				"Y": -1.5135517,
+				"Z": 176.9403
+			},
+			"RelPosition": {
+				"X": 0.93240136,
+				"Y": 0.40716752,
+				"Z": 0.6713731
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 41.505222,
+			"WorldPosition": {
+				"X": 593.31494,
+				"Y": -2.3608375,
+				"Z": 568.6394
+			},
+			"RelPosition": {
+				"X": -0.00002348423,
+				"Y": -0.32011902,
+				"Z": 2.5793445
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 11.242531,
+			"WorldPosition": {
+				"X": 600.3468,
+				"Y": -1.1296159,
+				"Z": 563.3853
+			},
+			"RelPosition": {
+				"X": -0.89292145,
+				"Y": 0.83413476,
+				"Z": -1.9633491
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 7,
+			"Driver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 27.397512,
+			"WorldPosition": {
+				"X": 589.2586,
+				"Y": -2.3643057,
+				"Z": 571.6831
+			},
+			"RelPosition": {
+				"X": -0.4730016,
+				"Y": -0.32008123,
+				"Z": 2.5077028
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": 4,
+			"OtherDriver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"ImpactSpeed": 118.4767,
+			"WorldPosition": {
+				"X": 19.589329,
+				"Y": -2.1411355,
+				"Z": 427.58896
+			},
+			"RelPosition": {
+				"X": -0.32470703,
+				"Y": -0.23566891,
+				"Z": -1.9425857
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 4,
+			"Driver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"OtherCarId": 14,
+			"OtherDriver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"ImpactSpeed": 107.06909,
+			"WorldPosition": {
+				"X": 19.45463,
+				"Y": -2.1521373,
+				"Z": 427.9502
+			},
+			"RelPosition": {
+				"X": -0.45794493,
+				"Y": -0.12497561,
+				"Z": 2.4489748
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": 4,
+			"OtherDriver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"ImpactSpeed": 25.371931,
+			"WorldPosition": {
+				"X": 20.717686,
+				"Y": -1.7064936,
+				"Z": 428.3681
+			},
+			"RelPosition": {
+				"X": -0.78301734,
+				"Y": 0.36059257,
+				"Z": -1.2454255
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 4,
+			"Driver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 42.871716,
+			"WorldPosition": {
+				"X": 51.433075,
+				"Y": -2.342836,
+				"Z": 411.65717
+			},
+			"RelPosition": {
+				"X": 0.8437498,
+				"Y": -0.31994787,
+				"Z": 2.251749
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 5,
+			"Driver": {
+				"Name": "Gustavo Maia",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198066676011",
+				"GuidsList": [
+					"76561198066676011"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 14.905841,
+			"WorldPosition": {
+				"X": 608.2911,
+				"Y": -0.98031735,
+				"Z": 136.45592
+			},
+			"RelPosition": {
+				"X": -0.89293045,
+				"Y": 0.83413416,
+				"Z": -1.9633784
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 75.31125,
+			"WorldPosition": {
+				"X": 465.13287,
+				"Y": -1.0640937,
+				"Z": 320.94736
+			},
+			"RelPosition": {
+				"X": 0.89293194,
+				"Y": 0.83413464,
+				"Z": -1.9633783
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 110.85472,
+			"WorldPosition": {
+				"X": 534.20703,
+				"Y": -2.38008,
+				"Z": 272.63947
+			},
+			"RelPosition": {
+				"X": 0.84371644,
+				"Y": -0.31994805,
+				"Z": 2.2517428
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 2,
+			"Driver": {
+				"Name": "Ale Di Pietro",
+				"Team": "",
+				"Nation": "ARG",
+				"Guid": "76561198087396860",
+				"GuidsList": [
+					"76561198087396860"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 31.97935,
+			"WorldPosition": {
+				"X": 574.16907,
+				"Y": -2.1014493,
+				"Z": 177.02687
+			},
+			"RelPosition": {
+				"X": -0.47298256,
+				"Y": -0.32008216,
+				"Z": 2.5076687
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 6,
+			"Driver": {
+				"Name": "Raphael Alves",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198096286731",
+				"GuidsList": [
+					"76561198096286731"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 20.832762,
+			"WorldPosition": {
+				"X": 0.98963714,
+				"Y": -1.1418422,
+				"Z": 411.66394
+			},
+			"RelPosition": {
+				"X": -0.89294195,
+				"Y": 0.83413434,
+				"Z": -1.963363
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 11,
+			"Driver": {
+				"Name": "Eduardo Lima",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198093334559",
+				"GuidsList": [
+					"76561198093334559"
+				]
+			},
+			"OtherCarId": 3,
+			"OtherDriver": {
+				"Name": "Victor Veloso",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198119680294",
+				"GuidsList": [
+					"76561198119680294"
+				]
+			},
+			"ImpactSpeed": 25.824005,
+			"WorldPosition": {
+				"X": 489.52582,
+				"Y": -2.2106965,
+				"Z": 312.97195
+			},
+			"RelPosition": {
+				"X": -0.5580748,
+				"Y": -0.23568557,
+				"Z": -1.9117497
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_CAR",
+			"CarId": 3,
+			"Driver": {
+				"Name": "Victor Veloso",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198119680294",
+				"GuidsList": [
+					"76561198119680294"
+				]
+			},
+			"OtherCarId": 11,
+			"OtherDriver": {
+				"Name": "Eduardo Lima",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198093334559",
+				"GuidsList": [
+					"76561198093334559"
+				]
+			},
+			"ImpactSpeed": 11.602791,
+			"WorldPosition": {
+				"X": 489.96832,
+				"Y": -2.2130709,
+				"Z": 312.91736
+			},
+			"RelPosition": {
+				"X": 0.10302842,
+				"Y": -0.10551164,
+				"Z": 2.518157
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 16,
+			"Driver": {
+				"Name": "Dalla Stella",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197984788684",
+				"GuidsList": [
+					"76561197984788684"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 10.803823,
+			"WorldPosition": {
+				"X": -17.571215,
+				"Y": -2.3564463,
+				"Z": 411.6842
+			},
+			"RelPosition": {
+				"X": -0.84373426,
+				"Y": -0.31994826,
+				"Z": 2.251724
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 2,
+			"Driver": {
+				"Name": "Ale Di Pietro",
+				"Team": "",
+				"Nation": "ARG",
+				"Guid": "76561198087396860",
+				"GuidsList": [
+					"76561198087396860"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 64.15338,
+			"WorldPosition": {
+				"X": 505.57687,
+				"Y": -2.172248,
+				"Z": 136.404
+			},
+			"RelPosition": {
+				"X": 0.000016152859,
+				"Y": -0.32011938,
+				"Z": 2.5793407
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 4,
+			"Driver": {
+				"Name": "Juliano Flores",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198009193147",
+				"GuidsList": [
+					"76561198009193147"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 8.586822,
+			"WorldPosition": {
+				"X": 757.93823,
+				"Y": -2.3431537,
+				"Z": 272.8675
+			},
+			"RelPosition": {
+				"X": -0.920331,
+				"Y": -0.32140768,
+				"Z": 1.8834627
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 5,
+			"Driver": {
+				"Name": "Gustavo Maia",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198066676011",
+				"GuidsList": [
+					"76561198066676011"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 85.51131,
+			"WorldPosition": {
+				"X": 724.65094,
+				"Y": -1.9777254,
+				"Z": 252.07448
+			},
+			"RelPosition": {
+				"X": 0.45056808,
+				"Y": 0.05079512,
+				"Z": 2.4352884
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 1,
+			"Driver": {
+				"Name": "Rodrigo Flores",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198322695941",
+				"GuidsList": [
+					"76561198322695941"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 37.079723,
+			"WorldPosition": {
+				"X": 588.4374,
+				"Y": -2.0924888,
+				"Z": 177.02739
+			},
+			"RelPosition": {
+				"X": 0.47295982,
+				"Y": -0.32008144,
+				"Z": 2.5076947
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 5,
+			"Driver": {
+				"Name": "Gustavo Maia",
+				"Team": "",
+				"Nation": "AC",
+				"Guid": "76561198066676011",
+				"GuidsList": [
+					"76561198066676011"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 35.50522,
+			"WorldPosition": {
+				"X": 250.1012,
+				"Y": -1.1297803,
+				"Z": 438.0678
+			},
+			"RelPosition": {
+				"X": -0.8929385,
+				"Y": 0.8341346,
+				"Z": -1.9633547
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 16,
+			"Driver": {
+				"Name": "Dalla Stella",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197984788684",
+				"GuidsList": [
+					"76561197984788684"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 32.39354,
+			"WorldPosition": {
+				"X": 431.96472,
+				"Y": -1.140621,
+				"Z": 101.72134
+			},
+			"RelPosition": {
+				"X": -0.89293087,
+				"Y": 0.83413416,
+				"Z": -1.9633609
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 10,
+			"Driver": {
+				"Name": "Ricardo Campos",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198012154649",
+				"GuidsList": [
+					"76561198012154649"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 53.919426,
+			"WorldPosition": {
+				"X": 561.0422,
+				"Y": -2.195804,
+				"Z": 176.99207
+			},
+			"RelPosition": {
+				"X": 0.84374535,
+				"Y": -0.31994838,
+				"Z": 2.251719
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 18.510353,
+			"WorldPosition": {
+				"X": 635.15424,
+				"Y": -2.3393092,
+				"Z": 178.45023
+			},
+			"RelPosition": {
+				"X": 0.47297978,
+				"Y": -0.3200815,
+				"Z": 2.5076923
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 7,
+			"Driver": {
+				"Name": "Fabio Lopes",
+				"Team": "",
+				"Nation": "",
+				"Guid": "76561198053334382",
+				"GuidsList": [
+					"76561198053334382"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 10.12035,
+			"WorldPosition": {
+				"X": 380.14258,
+				"Y": -2.1808252,
+				"Z": -6.7370915
+			},
+			"RelPosition": {
+				"X": -0.83424264,
+				"Y": -0.13081492,
+				"Z": 2.2360208
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 12,
+			"Driver": {
+				"Name": "Ruthem BERGER",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561197987393416",
+				"GuidsList": [
+					"76561197987393416"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 10.990527,
+			"WorldPosition": {
+				"X": 376.24582,
+				"Y": -2.367929,
+				"Z": -6.8840156
+			},
+			"RelPosition": {
+				"X": 0.8437476,
+				"Y": -0.31994808,
+				"Z": 2.2517273
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 8.9572935,
+			"WorldPosition": {
+				"X": 632.3791,
+				"Y": -2.3219035,
+				"Z": 137.25673
+			},
+			"RelPosition": {
+				"X": -0.8437449,
+				"Y": -0.31994817,
+				"Z": 2.2517319
+			}
+		},
+		{
+			"Type": "COLLISION_WITH_ENV",
+			"CarId": 14,
+			"Driver": {
+				"Name": "Henrique Ferreira",
+				"Team": "",
+				"Nation": "BRA",
+				"Guid": "76561198082121288",
+				"GuidsList": [
+					"76561198082121288"
+				]
+			},
+			"OtherCarId": -1,
+			"OtherDriver": {
+				"Name": "",
+				"Team": "",
+				"Nation": "",
+				"Guid": "",
+				"GuidsList": null
+			},
+			"ImpactSpeed": 12.255585,
+			"WorldPosition": {
+				"X": 773.27234,
+				"Y": -1.4363981,
+				"Z": 337.25247
+			},
+			"RelPosition": {
+				"X": 0.8437268,
+				"Y": -0.31994858,
+				"Z": 2.251712
+			}
+		}
+	]
+}

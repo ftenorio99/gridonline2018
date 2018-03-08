@@ -88,7 +88,7 @@
                     <hr>  
                     <h3>GridOnline Bitdefender Porsche SuperCup - Skin</h3>
                       <h4>
-                        <a href="https://www.dropbox.com/s/0ygdkw2n0l9fgdj/carsetPorscheSupercupGridonline2018_V2.zip?dl=0">Skinpack 2018 - S1</a>
+                        <a href="https://www.dropbox.com/s/qfe5tsvcxhgykil/carsetPorscheSupercupGridonline2018_V3.zip.zip?dl=0">Skinpack 2018 - S1</a>
                       </h4> 
                       <h4>
                         <a href="https://www.dropbox.com/s/9a2iujj1e8s1h1r/pp_porsche_911_gt3_cup_2017%20GridOnline.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Template</a>
