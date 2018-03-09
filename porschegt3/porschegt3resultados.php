@@ -166,7 +166,19 @@ $PDO3 = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root"
                                             </table>                         
                                       </div>
                                       <div class="modal-footer">
-                                        <a href="http://simresults.net/180302-XC8" target="_blank" class="btn btn-info" role="button">Detalhes</a>
+                                        <?php
+                                        $sql3 = "SELECT simresult FROM pistatorneio WHERE idsessionrace=:idsessao";
+                                                      
+                                                      $sth3 = $PDO3->prepare($sql3);
+                                                      $sth3->bindParam("idsessao", $row['idsessionrace'] );
+                                                      $sth3->execute(); 
+                                                      $result3 = $sth3->fetchAll( PDO::FETCH_ASSOC );
+                                                     
+                                                    foreach($result3 as $row3)
+                                                        {
+                                        ?>
+                                        <a <?php echo "href=". $row3['simresult']."" ?> target="_blank" class="btn btn-info" role="button">Detalhes</a>
+                                        <?php } ?>
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                                       </div>
                                     </div>                    
