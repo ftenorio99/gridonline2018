@@ -12,7 +12,7 @@ $PDO3 = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root"
 
 ?>
 
-</html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
