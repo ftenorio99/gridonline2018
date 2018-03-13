@@ -122,10 +122,17 @@ foreach($result as $row)
                   if ($_SESSION['user_nivel']=="A") {
                     echo "
                         <li><a href='panel.php'>Início</a></li>
-                        <li><a href='frmnumeracaooficial.php'>Alterar Número Asseto Corsa</a></li>                        
-                        <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>
-                        <li><a href='DaoReadJason.php'>Envio de Resultados</a></li>
-                        <li><a href='frmenviaremail.php'>Envio de E-mail</a></li>
+                        <li><a href='frmnumeracaooficial.php'>Alterar Número Asseto Corsa</a></li>  
+                        <li class='dropdown'>
+                            
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Admin
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>                                          
+                            <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>
+                            <li><a href='DaoReadJason.php'>Envio de Resultados</a></li>
+                            <li><a href='frmenviaremail.php'>Envio de E-mail</a></li>                          
+                          </ul>
+                        </li>
 
                         <li class='dropdown'>
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Skin
