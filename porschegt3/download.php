@@ -76,7 +76,12 @@
                     </h4>         
                     <h4>
                       <a href="https://www.dropbox.com/s/ktkqt10r7vq465v/okayama_v1.0.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Okayama</a>
-                    </h4>                      
+                    </h4> 
+                    <h4>
+                      <a href="http://www.racedepartment.com/downloads/paul-ricard.6115/">GridOnline - Paul Ricard</a>
+                    </h4> 
+
+                                       
                     <hr>                                        
                     <h3>GridOnline Bitdefender Porsche SuperCup - Apps</h3>
                       <h4>
