@@ -123,7 +123,8 @@ foreach($result as $row)
                 <li><a href="../index.php">Início</a></li>  
 <!--                 <li><a href="racereportporschegt3.php">Race Report</a></li>   -->                 
                 <li><a href="pilotos.php">Pilotos</a></li>
-                <li><a href="classificacao.php">Classificação</a></li>
+                <li><a href="classificacao.php">Classificação Pilotos</a></li>
+                <li><a href="classificacaoequipe.php">Classificação Equipe</a></li>
                 <li><a href="porschegt3resultados.php">Calendário/Resutados</a></li>
                 <li><a href="download.php">Downloads</a></li>
                 <li><a href="#">Regulamento</a></li>

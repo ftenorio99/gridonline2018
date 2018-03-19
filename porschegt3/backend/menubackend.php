@@ -128,9 +128,17 @@ foreach($result as $row)
                             <li class='divider'></li>
                             <li><a href='frmexcluirinscricao.php'>Excluir Piloto no Torneio</a></li>                            
                           </ul>
-                        </li>                         
-                        <li><a href='gravarentrylist.php'>Gerar entry_list do servidor</a></li>
-                        <li><a href='gravarserver_cfg.php'>Gerar server_cfg do servidor</a></li>                          
+                        </li>     
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Arquivos do Servidor
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='gravarentrylist.php'>Gerar entry_list dos servidores</a></li>
+                            <li><a href='gravarserver_cfg.php'>Gerar server_cfg do servidor de corrida</a></li>  
+                            <li><a href='gravarserver_cfg_pratice.php'>Gerar server_cfg do servidor de treino</a></li>                             
+                          </ul>
+                        </li>                    
+                      
                         ";
                       } 
                       if ($_SESSION['user_nivel']=="B") {

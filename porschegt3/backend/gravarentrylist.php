@@ -56,18 +56,21 @@ RESTRICTOR=0
     //$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/cfg/entry_list.ini';
     //Destino do servidor de Producao
     $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
+    $destino2 = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
 
     unlink($destino);
+    unlink($destino2);
 
     $origem = 'entry_list.ini';
 
     copy($origem, $destino);
+    copy($origem, $destino2);
 
     unlink($origem);
 
 
 
-     echo "<script>alert('Entry List gerado com sucesso')</script>";   
+     echo "<script>alert('Entry List gerado com sucesso nos servidores')</script>";   
      echo "<script>window.location = 'porschegt3backend.php';</script>";
     }catch(PDOException $erro){   
     echo "<script>alert('Entry List não foi gerado')</script>"; 

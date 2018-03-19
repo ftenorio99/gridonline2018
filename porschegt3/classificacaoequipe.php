@@ -61,7 +61,7 @@ $i=1;
 
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Bitdefender Porsche SuperCup - Classificação de Pilotos</h2></div>   
+          <div><h2>GridOnline Bitdefender Porsche SuperCup - Classificação de Equipes</h2></div>   
           <div><hr></div>  
         </div> 
 
@@ -72,20 +72,30 @@ $i=1;
                 <thead>
                   <tr>
                     <th width="10%">Posição</th>
-                    <th>Nome</th>
+                    <th>Equipe</th>
                     <th width="10%">Pontos</th>
                   </tr>
                 </thead>
                   <tbody>
                     <?php
-                        $sql = "SELECT jsonassetorace.drivername, sum(tabelapontuacao.ponto) as pontuacao
-                                FROM jsonassetorace
-                                 INNER JOIN tabelapontuacao ON jsonassetorace.posicao=tabelapontuacao.posicao
-                                 where jsonassetorace.idsession in (SELECT idsessionrace FROM  pistatorneio
-                                where
-                                idtorneio = 3)
-                                        group by jsonassetorace.drivername
-                                        order by pontuacao DESC";
+                        $sql = "SELECT 
+    
+       
+                                        team.name,
+                                        sum(tabelapontuacao.ponto) pontuacao
+                                        
+                                        
+                                        FROM pilototorneio
+                                        
+                                INNER JOIN piloto ON piloto.idpiloto = pilototorneio.idpiloto
+                                INNER JOIN team on team.idteam = pilototorneio.idteam
+                                INNER JOIN jsonassetorace on jsonassetorace.driverguid=piloto.guid
+                                INNER JOIN tabelapontuacao ON jsonassetorace.posicao=tabelapontuacao.posicao
+
+                                WHERE pilototorneio.idtorneio=3
+
+                                group by team.name
+                                                                        order by pontuacao DESC";
                         $select = $PDO->query( $sql );
                          
                         $result = $select->fetchAll( PDO::FETCH_ASSOC );
@@ -94,7 +104,7 @@ $i=1;
                         {?>
                         <tr>
                             <td align="center">  <?php echo $i;?></td>                                        
-                            <td>  <?php echo $row['drivername'];?></td>
+                            <td>  <?php echo $row['name'];?></td>
                             <td align="center">  <?php echo $row['pontuacao'];?></td>
                             
                         </tr>  
