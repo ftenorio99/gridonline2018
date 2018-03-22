@@ -294,15 +294,10 @@ function clearBrowserCache() {
             </form>  
         </div>
       </div>   
-    </div>
-
-       
+    </div>   
 <br>
 
 <hr>
-
-
-
 
 </body>
 </html>
