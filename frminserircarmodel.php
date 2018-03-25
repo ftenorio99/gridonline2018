@@ -88,6 +88,26 @@ require 'check.php';
 <hr>
 
 
+<div class="container">
+  <h2>Car Model</h2>
+  <p>Lista dos car models já cadastrados no sistema</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Car Model</th>
+        <th>Descrição</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
 </body>
 </html>      
       

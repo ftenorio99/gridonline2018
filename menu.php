@@ -174,7 +174,20 @@ foreach($result as $row)
                             <li class='divider'></li>
                             <li><a href='frmexcluircarmodel.php'>Desativar Carmodel</a></li>
                           </ul>
-                        </li>                            
+                        </li>             
+
+                        <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Torneio
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='frminserirtorneio.php'>Inserir Torneio</a></li>
+                            <li class='divider'></li>
+                            <li><a href='frmexcluirtorneio.php'>Desativar Torneio</a></li>
+                            <li class='divider'></li>
+                            <li><a href='frminserirpistatorneio.php'>Inserir Pistas no Torneio</a></li>
+                          </ul>                            
+                        </li> 
+
                          ";
                  }
                  if ($_SESSION['user_nivel']=="B") {

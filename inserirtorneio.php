@@ -12,43 +12,40 @@ try{
 
 	if ($_POST["botao"]=="Inserir") {
 
-			if (!empty($_POST["carmodel"]) && !empty($_POST["desccarmodel"])):   
+			if (!empty($_POST["nome"]) && !empty($_POST["categoria"])):   
 			try{
 
 			$total=0;
 
-			$sql= "SELECT idcarmodel FROM carmodel WHERE carmodel =:carmodel"; 
+			$sql= "SELECT idtorneio FROM torneio WHERE nome =:nome"; 
 			$stmt = $PDO->prepare($sql);
-			$stmt->bindParam(':carmodel', $_POST['carmodel'] , PDO::PARAM_STR); 
+			$stmt->bindParam(':nome', $_POST['nome'] , PDO::PARAM_STR); 
 			$stmt->execute();
 			$obj = $stmt->fetchObject();  
 			$total = $stmt->rowCount();
 
-
-			echo $total;
-
 					if ($total==0) {
-							$sql2 = "INSERT INTO carmodel (
+							$sql2 = "INSERT INTO torneio (
 												
-												carmodel,
-												desccarmodel,
+												nome,
+												categoria,
 												status
 													) VALUES (
-									             :carmodel,
-									             :desccarmodel,
+									             :nome,
+									             :categoria,
 									             :status
 									             ) ";                 
 									$status = "A";
 									$stmtp = $PDO->prepare($sql2);                                  
-									$stmtp->bindParam(':carmodel', $_POST['carmodel'], PDO::PARAM_STR);        
-									$stmtp->bindParam(':desccarmodel', $_POST['desccarmodel'], PDO::PARAM_INT); 
+									$stmtp->bindParam(':nome', $_POST['nome'], PDO::PARAM_STR);        
+									$stmtp->bindParam(':categoria', $_POST['categoria'], PDO::PARAM_INT); 
 									$stmtp->bindParam(':status',$status , PDO::PARAM_STR); 
 									$stmtp->execute(); 
-									echo "<script>alert('Carmodel inserida com sucesso')</script>";   
-					            	echo "<script>window.location = 'frminserircarmodel.php';</script>"; 
+									echo "<script>alert('Torneio inserido com sucesso')</script>";   
+					            	echo "<script>window.location = 'frminserirtorneio.php';</script>"; 
 					} else {
-									echo "<script>alert('Carmodel já existe no banco de dados')</script>";  
-									echo "<script>window.location = 'frminserircarmodel.php';</script>"; 
+									echo "<script>alert('Torneio já existe no banco de dados')</script>";  
+									echo "<script>window.location = 'frminserirtorneio.php';</script>"; 
 					}
 				}
 				catch(PDOException $erro){   
@@ -56,19 +53,19 @@ try{
 
 				}
 			endif; 	
-			echo "<script>window.location = 'frminserircarmodel.php';</script>"; 
+			echo "<script>window.location = 'frminserirtorneio.php';</script>"; 
 		}
 
 		if ($_POST["botao"]=="Excluir") {
 									$status="I";
-									$sql2 = "UPDATE carmodel SET status = :status 
-									            		WHERE idcarmodel = :idcarmodel";                 
+									$sql2 = "UPDATE torneio SET status = :status 
+									            		WHERE idnome = :idnome";                 
 											$stmtp = $PDO->prepare($sql2);                                  
 											$stmtp->bindParam(':status', $status , PDO::PARAM_STR); 
-											$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_STR);  
+											$stmtp->bindParam(':idnome', $_POST['nome'], PDO::PARAM_STR);  
 											$stmtp->execute();               
 		 
-											echo "<script>alert('Carmodel excluído com sucesso')</script>";   
+											echo "<script>alert('Torneio desativado com sucesso')</script>";   
 							            	echo "<script>window.location = 'panel.php';</script>"; 
 						}
 

@@ -14,7 +14,7 @@
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="#">
+              <a href="./lotusgtc/backend/lotusgtcbackend.php">
                 <img src="img/lambosf/lambosflogo.png">
               </a>
             </div>

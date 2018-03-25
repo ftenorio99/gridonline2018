@@ -2,8 +2,6 @@
 session_start();
 require_once 'init.php';
 require 'check.php';
-$PDO = db_connect(); 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,6 +29,7 @@ $PDO = db_connect();
     
     #div-back-image{
         background-image: url("img/fundoheader.png");
+      
       }
 
     .affix {
@@ -60,43 +59,49 @@ $PDO = db_connect();
             <main>
               <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4" id="form-cadastro">   
 
-                <form id="form" action="inserirequipe.php" method="post" enctype="multipart/form-data">  
+                <form id="form" action="inserirtorneio.php" method="post" enctype="multipart/form-data">  
 
-                  <fieldset>
+                    <fieldset>
 
-                  <legend>Inscrição da Equipe na GridOnline Asseto Corsa</legend>  
+                    <legend>Cadastro de Torneio na GridOnline Asseto Corsa</legend>  
 
-                        <div class="form-group">
-                          <label for="name">Name:</label>
-                          <input type="text" class="form-control" id="name" name="name" >
-                        </div>     
+
+                    <div class="form-group">
+                      <label for="name">Nome do Torneio:</label>
+                      <input type="text" class="form-control" id="nome" name="nome" >
+                    </div>     
+
+                    <div class="form-group">
+                      <label for="name">Categoria do Torneio:</label>
+                      <input type="text" class="form-control" id="categoria" name="categoria" >
+                    </div>                     
 
                     </fieldset>
-                    <input class="btn btn-primary btn-block" type="submit" value="Inserir" name="botao">
+                  <input class="btn btn-primary btn-block" type="submit" value="Inserir" name="botao">
                 </form>  
             </div>
           </div>   
         </div>
-
        
 <br>
 
 <hr>
 
+
 <div class="container">
-  <h2>Equipe</h2>
-  <p>Lista das equipes já cadastrados no sistema</p>            
+  <h2>Car Model</h2>
+  <p>Lista dos torneios já cadastrados no sistema</p>            
   <table class="table">
     <thead>
       <tr>
-        <th>Equipe</th>
-
+        <th>Torneio</th>
+        <th>Categoria</th>        
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>John</td>
-
+        <td>Doe</td>
       </tr>
     </tbody>
   </table>

@@ -84,6 +84,16 @@ $segundo_nome = $palavras[1];
 $nomeskin=$primeiro_nome.'_'.$segundo_nome.'_'.$_POST['carmodel'];
 $ext = pathinfo($_FILES["arquivo"]['name'], PATHINFO_EXTENSION);
 
+
+
+$sqlcarmodel= "SELECT carmodel FROM carmodel WHERE idcarmodel =:carmodel"; 
+$stmtcarmodel = $PDO->prepare($sqlcarmodel);
+$stmtcarmodel->bindParam(':carmodel', $_POST['carmodel'] , PDO::PARAM_INT); 
+$stmtcarmodel->execute();
+$objcarmodel = $stmtcarmodel->fetchObject();
+
+
+
 $total=0;
 
 try{
@@ -239,14 +249,14 @@ $total = $stmt->rowCount();
 
 				//parte da extração do arquivo enviado
 				$path = "uploads/";
-				$patchskin = "C:/xampp/htdocs/gridonline/img/porschegt3/skin/";
+				$patchskin = "C:/xampp/htdocs/gridonline/img/".$objcarmodel->carmodel."/skin/";
 				$diretorio = "C:/xampp/htdocs/gridonline/uploads/";
 
 				//Diretorio Servidor Producao
-				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/ks_porsche_911_gt3_cup_2017/skins/";
+				//$diretorioservidor = "C:/Gridonline/acPackage/content/cars/$objcarmodel->carmodel/skins/";
 
-				//Diretorio servidro Teste
-				//$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/ks_porsche_911_gt3_cup_2017/skins/";
+				//Diretorio servidor Teste
+				$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins/";
 				
 				$dh = opendir($path);
 
@@ -303,13 +313,13 @@ $total = $stmt->rowCount();
 	}
 
 
-echo "<script>window.location = 'porschegt3/backend/frminscrevertorneio.php';</script>";
+echo "<script>window.location = 'panel.php';</script>";
 
 
 
 
 
 
-endif; 	
+ endif; 	
 
 ?>
