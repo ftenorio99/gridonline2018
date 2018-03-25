@@ -253,10 +253,10 @@ $total = $stmt->rowCount();
 				$diretorio = "C:/xampp/htdocs/gridonline/uploads/";
 
 				//Diretorio Servidor Producao
-				//$diretorioservidor = "C:/Gridonline/acPackage/content/cars/$objcarmodel->carmodel/skins/";
+				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/".$objcarmodel->carmodel."/skins/";
 
 				//Diretorio servidor Teste
-				$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins/";
+				//$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins/";
 				
 				$dh = opendir($path);
 
