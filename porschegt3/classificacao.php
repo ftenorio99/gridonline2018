@@ -78,14 +78,19 @@ $i=1;
                 </thead>
                   <tbody>
                     <?php
-                        $sql = "SELECT jsonassetorace.drivername, sum(tabelapontuacao.ponto) as pontuacao
-                                FROM jsonassetorace
-                                 INNER JOIN tabelapontuacao ON jsonassetorace.posicao=tabelapontuacao.posicao
-                                 where jsonassetorace.idsession in (SELECT idsessionrace FROM  pistatorneio
-                                where
-                                idtorneio = 3)
-                                        group by jsonassetorace.drivername
-                                        order by pontuacao DESC";
+                        $sql = "SELECT
+                                jsonassetorace.drivername,          
+                                sum(IF(pistatorneio.pontuacaodobrada='S', tabelapontuacao.ponto*2,tabelapontuacao.ponto)) as pontuacao
+                                    
+                                    FROM jsonassetorace
+
+                            INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
+                            INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
+
+                            WHERE pistatorneio.idtorneio=3
+
+                            group by jsonassetorace.drivername
+                            order by pontuacao DESC";
                         $select = $PDO->query( $sql );
                          
                         $result = $select->fetchAll( PDO::FETCH_ASSOC );
