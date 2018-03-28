@@ -155,7 +155,7 @@ $PDO = db_connect();
         
       
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/geral/"></iframe>            
+          <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
         </div>
 
 
