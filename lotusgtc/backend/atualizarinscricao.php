@@ -1,5 +1,7 @@
 <?php
-require_once 'init.php';
+
+require_once '../../init.php';
+
 $PDO = db_connect(); 
 
 if (!empty($_POST["piloto"]) && !empty($_POST["team"]) && !empty($_POST["carmodel"]) && !empty($_POST["skin"])):   

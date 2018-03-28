@@ -74,7 +74,7 @@ $PDO3 = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root"
 
         <div class="container-fluid bg-3 text-center"> 
           <hr>
-          <div><h2>GridOnline Bitdefender Porsche SuperCup - Calendário/Resultados</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Calendário/Resultados</h2></div>   
           <hr>
         </div> 
 

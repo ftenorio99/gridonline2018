@@ -62,7 +62,7 @@ $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root",
 
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Lotus GTC Cup - Pilotos</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Pilotos</h2></div>   
         <div><hr></div>  
         </div> 
   

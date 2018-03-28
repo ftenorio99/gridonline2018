@@ -67,37 +67,31 @@
   
         <div class="container">
                   <div class="row" >
-                    <h3>GridOnline Bitdefender Porsche SuperCup - Pistas</h3>
+                    <h3>GridOnline Grid Online Lotus Trophy - Pistas</h3>
                     <h4>
-                      <a href="https://www.dropbox.com/s/aftc8crxvjpsj8p/mills.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Mills Road</a>
+                      <a href="http://www.racedepartment.com/downloads/donington-park.3031/">Grid Online Lotus Trophy - Donington Park </a>
                     </h4>  
                     <h4>
-                      <a href="https://www.dropbox.com/s/7msa7simj8jptdw/oulton_park.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Oulton Park</a>
+                      <a href="http://www.racedepartment.com/downloads/cadwell-park.11507/">Grid Online Lotus Trophy - Cadwell Park</a>
                     </h4>         
                     <h4>
-                      <a href="https://www.dropbox.com/s/ktkqt10r7vq465v/okayama_v1.0.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Okayama</a>
+                      <a href="http://www.racedepartment.com/downloads/snetterton-2011.7327/">Grid Online Lotus Trophy - Snetterton</a>
                     </h4> 
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/paul-ricard.6115/">GridOnline - Paul Ricard</a>
+                      <a href="http://www.racedepartment.com/downloads/knockhill-racing-circuit.8513/">Grid Online Lotus Trophy - Knockhill</a>
                     </h4> 
 
                                        
                     <hr>                                        
-                    <h3>GridOnline Bitdefender Porsche SuperCup - Apps</h3>
+                    <h3>GridOnline Grid Online Lotus Trophy - Apps</h3>
                       <h4>
                         <a href="http://n-e-y-s.de/downloads/ptracker/stable/ptracker-V3.4.0.exe">Ptracker v3.4.0</a>
-                      </h4>    
-                      <h4>
-                        <a href="https://www.dropbox.com/s/qpvffdkpk4yidjs/PitLanePenalty1.23.zip?dl=0">PitLanePenalty1.23</a>
-                      </h4>                  
+                      </h4>                     
                     <hr>  
-                    <h3>GridOnline Bitdefender Porsche SuperCup - Skin</h3>
+                    <h3>GridOnline Grid Online Lotus Trophy - Skin</h3>
                       <h4>
-                        <a href="https://www.dropbox.com/s/82yo5lcratm92ga/carsetPorscheSupercupGridonline2018_V4.zip?dl=0">Skinpack 2018 - S1</a>
+                        <a href="https://www.dropbox.com/s/82yo5lcratm92ga/carsetPorscheSupercupGridonline2018_V4.zip?dl=0">Skinpack 2018 - Grid Online Lotus Trophy</a>
                       </h4> 
-                      <h4>
-                        <a href="https://www.dropbox.com/s/9a2iujj1e8s1h1r/pp_porsche_911_gt3_cup_2017%20GridOnline.zip?dl=0">GridOnline Bitdefender Porsche SuperCup - Template</a>
-                      </h4>
                   </div>
         </div>       
 

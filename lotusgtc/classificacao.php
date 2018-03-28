@@ -62,7 +62,7 @@ $i=1;
 
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Bitdefender Porsche SuperCup - Classificação de Pilotos</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Classificação de Pilotos</h2></div>   
           <div><hr></div>  
         </div> 
 
@@ -81,7 +81,7 @@ $i=1;
                     <?php
                         $sql = "SELECT
                                       jsonassetorace.drivername,          
-                                      sum(IF(pistatorneio.pontuacaodobrada='S', tabelapontuacao.ponto*2,tabelapontuacao.ponto)) as pontuacao
+                                      sum(IF(pistatorneio.pontuacaodobrada='S', (tabelapontuacao.ponto*2) , tabelapontuacao.ponto )) as pontuacao
                                           
                                           FROM jsonassetorace
 

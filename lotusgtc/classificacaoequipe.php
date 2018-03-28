@@ -61,7 +61,7 @@ $i=1;
 
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Bitdefender Porsche SuperCup - Classificação de Equipes</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Classificação de Equipes</h2></div>   
           <div><hr></div>  
         </div> 
 
@@ -78,24 +78,22 @@ $i=1;
                 </thead>
                   <tbody>
                     <?php
-                        $sql = "SELECT 
-    
-       
-                                        team.name,
-                                        sum(tabelapontuacao.ponto) pontuacao
-                                        
-                                        
-                                        FROM pilototorneio
-                                        
-                                INNER JOIN piloto ON piloto.idpiloto = pilototorneio.idpiloto
-                                INNER JOIN team on team.idteam = pilototorneio.idteam
-                                INNER JOIN jsonassetorace on jsonassetorace.driverguid=piloto.guid
-                                INNER JOIN tabelapontuacao ON jsonassetorace.posicao=tabelapontuacao.posicao
+                        $sql = "SELECT
+                                               
+                                  team.name,
+                                  sum(IF(pistatorneio.pontuacaodobrada='S', tabelapontuacao.ponto*2,tabelapontuacao.ponto)) as pontuacao                                                                            
+                                          FROM jsonassetorace
 
-                                WHERE pilototorneio.idtorneio=6
+                                  INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
+                                  INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
+                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
+                                  INNER JOIN pilototorneio on pilototorneio.idpiloto=piloto.idpiloto
+                                  INNER JOIN team ON team.idteam=pilototorneio.idteam
 
-                                group by team.name
-                                                                        order by pontuacao DESC";
+                                  WHERE pistatorneio.idtorneio=6
+
+                                  group by pilototorneio.idteam
+                                  order by pontuacao DESC";
                         $select = $PDO->query( $sql );
                          
                         $result = $select->fetchAll( PDO::FETCH_ASSOC );

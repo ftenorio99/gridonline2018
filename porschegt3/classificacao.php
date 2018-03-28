@@ -80,7 +80,7 @@ $i=1;
                     <?php
                         $sql = "SELECT
                                 jsonassetorace.drivername,          
-                                sum(IF(pistatorneio.pontuacaodobrada='S', tabelapontuacao.ponto*2,tabelapontuacao.ponto)) as pontuacao
+                                sum(IF( (pistatorneio.pontuacaodobrada='S') , (tabelapontuacao.ponto*2) ,tabelapontuacao.ponto)) as pontuacao
                                     
                                     FROM jsonassetorace
 
