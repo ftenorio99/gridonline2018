@@ -1,16 +1,36 @@
 <?php
 
 //$PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
+
+
 $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
 
-    $sth = $PDO->prepare('SELECT * FROM  skin where idcarmodel = :id ');
-    $sth->bindValue(':id', $_POST['carmodel'], PDO::PARAM_INT);
-    $sth->execute();
-    $resultado = $sth->fetchAll(PDO::FETCH_ASSOC);
+	$sqlskinpiloto = "SELECT * FROM skin where skin =:nomepiloto and idcarmodel=:id";  
 
-    foreach($resultado as $res){
-        echo '<option value="'.$res['idskin'].'">'.$res['skin'].'</option>';
-    }//fim foreach 
+	  $stmt = $PDO->prepare($sqlskinpiloto); 
+	  $stmt->bindValue(':nomepiloto', $_POST['name'], PDO::PARAM_STR);
+	  $stmt->bindValue(':id', $_POST['carmodel'], PDO::PARAM_INT);
+	  $stmt->execute(); 
+	  $total = $stmt->rowCount(); 
+	  $resultskinpiloto = $stmt->fetchAll( PDO::FETCH_ASSOC );  						
+
+	    if ($total==1) {
+
+	    	    foreach($resultskinpiloto as $res){
+       				 echo '<option value="'.$res['idskin'].'">'.$res['skin'].'</option>';
+   				 }
+	      
+	    } else {
+
+	    	   	$sth = $PDO->prepare('SELECT * FROM `skin` where skin not in (SELECT name FROM piloto) and idcarmodel=:id');
+			    $sth->bindValue(':id', $_POST['carmodel'], PDO::PARAM_INT);
+			    $sth->execute();
+			    $resultado = $sth->fetchAll(PDO::FETCH_ASSOC);			    
+			    foreach($resultado as $res){
+       				 echo '<option value="'.$res['idskin'].'">'.$res['skin'].'</option>';
+   				 }
+	    }                                                
+
 ?>
 
 

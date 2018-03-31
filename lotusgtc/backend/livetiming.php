@@ -1,10 +1,21 @@
+<?php
+ 
+  if(!isset($_SESSION)){
+      session_start();
+      require_once '../../init.php';
+      require '../../check.php';
+    }
+
+    $PDO = db_connect(); 
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Grid Online</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -14,46 +25,39 @@
       margin-bottom: 0;
       border-radius: 0;
       background-color: white;
+
     }
-    
-    /* Add a gray background color and some padding to the footer */
+   
     #div-back-image{
         background-image: url("../img/lotus_evora_gtc/lotus_evora_gtcheader.png");
       }
-
-    .affix {
-      top: 0;
-      width: 100%;
-    }
-
-     .affix + .container-fluid {
-      padding-top: 70px;
-     }
-     #font{
-      color:#000000;
-      font-family:Roboto, sans-serif;
-      line-height:1.5;
-    }
-    #p1 {
-        background-color:yellow;
-        vertical-align:middle;
-    }
-    
-
+    #div-foto{
+        background-color: white;
+        align-content: center;       
+      }
   </style>
 </head>
 <body>
 
-<?php           
+<?php        
+    include 'menubackend.php';
     include 'menu.php';
 ?>
 
-    <div class="embed-responsive embed-responsive-16by9">
-        <iframe class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vQ6NAqsbAqkCWWxZDvR_7TbrZCahnWLMKit229Fu-rJ6xY8zJtGL2EnxUclJRdWz5Bo_SQqvEk3DF40/pub"></iframe>
-    </div>
-        
+  
+<div class="container-fluid bg-3 text-center"> 
+  <div><hr></div>   
+  <div><h2>Livetiming</h2></div>   
+  <div><hr></div>   
+</div>  
+
+<div class="embed-responsive embed-responsive-16by9" id="div-foto">
+  <iframe class="embed-responsive-item" src="http://18.231.168.55:50041/lapstat"></iframe>
+</div>
+
 <br>
 
-<hr>
+<br>
+
 </body>
 </html>

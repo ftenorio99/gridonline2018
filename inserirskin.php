@@ -78,10 +78,7 @@ $PDO = db_connect();
 if (!empty($_POST["piloto"]) && !empty($_POST["carmodel"]) && !empty($_FILES["arquivo"]['name'])): 
 
 $diretorio = "C:/xampp/htdocs/gridonline/uploads/";
-$palavras = explode(" ", $_SESSION['user_name']);
-$primeiro_nome = $palavras[0];
-$segundo_nome = $palavras[1];
-$nomeskin=$primeiro_nome.'_'.$segundo_nome.'_'.$_POST['carmodel'];
+$nomeskin=$_POST["piloto"];
 $ext = pathinfo($_FILES["arquivo"]['name'], PATHINFO_EXTENSION);
 
 
@@ -91,7 +88,6 @@ $stmtcarmodel = $PDO->prepare($sqlcarmodel);
 $stmtcarmodel->bindParam(':carmodel', $_POST['carmodel'] , PDO::PARAM_INT); 
 $stmtcarmodel->execute();
 $objcarmodel = $stmtcarmodel->fetchObject();
-
 
 
 $total=0;

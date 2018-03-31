@@ -87,6 +87,7 @@ function clearBrowserCache() {
 <?php    
     clearBrowserCache();
     include 'menubackend.php';
+    include 'menu.php';
 ?>
 
     <div class="container-fluid"><!-- container -->  

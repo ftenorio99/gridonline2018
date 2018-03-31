@@ -209,7 +209,7 @@ foreach($result as $row)
                  }                                                                                
                 } if(empty($_SESSION['user_name'])) {
                     echo "<li><a href='index.php'>Início</a></li>
-                          <li><a href='frminscricao.php'>Inscrição</a></li>";
+                          <li><a href='frminscricao.php'>Inscrição no portal Grid Online</a></li>";
                 }                  
 
             ?>  

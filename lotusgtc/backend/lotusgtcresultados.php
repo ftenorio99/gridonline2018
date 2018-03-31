@@ -1,8 +1,11 @@
 
 <?php
  
-require_once '../init.php';
-
+  if(!isset($_SESSION)){
+      session_start();
+      require_once '../../init.php';
+      require '../../check.php';
+    }
 
     $PDO = db_connect(); 
     $PDO2 = db_connect(); 
@@ -65,7 +68,7 @@ require_once '../init.php';
 <body>
 
 <?php        
-
+    include 'menubackend.php';
     include 'menu.php';
 ?>
 

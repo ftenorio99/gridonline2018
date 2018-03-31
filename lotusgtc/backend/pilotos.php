@@ -1,3 +1,4 @@
+
 <?php
  
   if(!isset($_SESSION)){
@@ -27,9 +28,8 @@
       background-color: white;
     }
     
-    /* Add a gray background color and some padding to the footer */
     #div-back-image{
-        background-image: url("../../img/lotus_evora_gtc/lotus_evora_gtcheader.png");
+        background-image: url("../img/lotus_evora_gtc/lotus_evora_gtcheader.png");
       }
 
     .affix {
@@ -45,11 +45,12 @@
       font-family:Roboto, sans-serif;
       line-height:1.5;
     }
-    #p1 {
-        background-color:yellow;
-        vertical-align:middle;
+    div.polaroid {
+      width: 76%;
+      background-color: white;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      margin-bottom: 15px;
     }
-    
 
   </style>
 </head>
@@ -60,14 +61,17 @@
     include 'menu.php';
 ?>
 
-<br>
+
+
+
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Lotus GTC - Pilotos</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Pilotos</h2></div>   
         <div><hr></div>  
         </div> 
   
 
+<!--         <div class="container-fluid" align="center"> -->
           <div class="container">
             <div class="row">
               <?php
@@ -91,8 +95,8 @@
                           INNER JOIN skin     ON    pilototorneio.idskin = skin.idskin 
                           INNER JOIN torneio    ON    pilototorneio.idtorneio = torneio.idtorneio
                           where
-                          torneio.idtorneio=6 
-                          order by team.name                        ";
+                          torneio.idtorneio=6    
+                          order by team.name                     ";
                         //alterar o idtorneio para o torneio que quer mostrar na página
               $select = $PDO->query( $sql );
               $result = $select->fetchAll( PDO::FETCH_ASSOC );
@@ -101,7 +105,7 @@
                  ?>
                   <div class="col-lg-4" id="font">                         
                       <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>               
-                      <img src=<?php echo "../../img/lotus_evora_gtc/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">                                        
+                      <img src=<?php echo "../img/lotus_evora_gtc/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">                                        
                       <br>                  
                       <br>
                   </div>
@@ -110,6 +114,8 @@
                 ?>
           </div>  
         </div>
+<!--         </div>  -->
 <hr>
+
 </body>
 </html>

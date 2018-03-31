@@ -61,12 +61,11 @@ $PDO = db_connect();
     $(document).ready(function(){         
       $("select[name=carmodel]").change(function(){
           $("select[name=skin]").html('<option value="0">Carregando...</option>');
-            $.post("inscrever.php",
-                  {carmodel:$(this).val()},
-                    function(valor){
-                    $("select[name=skin]").html(valor);
-                  }
-        );
+            $.post("inscrever.php", {carmodel:$(this).val()}, 
+                       function(valor){
+                          $("select[name=skin]").html(valor);
+                      }
+                  );
         });
     });
     function skinselec() {
@@ -115,9 +114,12 @@ $PDO = db_connect();
 </head>
 <body>
 
-<?php    
+<?php        
     include 'menubackend.php';
+    include 'menu.php';
+
 ?>
+
  
     <div class="container-fluid"><!-- container -->  
       <div class="row">

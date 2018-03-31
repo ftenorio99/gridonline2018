@@ -1,8 +1,9 @@
 <?php
- 
+require_once '../init.php';
 
-    $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
-    ?>
+
+    $PDO = db_connect(); 
+?>
 
 
 <!DOCTYPE html>
@@ -57,8 +58,8 @@
 
 
 
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/acgeralporsche/"></iframe>
+        <div class="embed-responsive embed-responsive-16by9">            
+            <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>
         </div>
         
 <br>

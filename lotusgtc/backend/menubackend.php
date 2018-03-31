@@ -198,7 +198,7 @@ foreach($result as $row)
 <!--         <div class="jumbotron" id="div-back-image">
           <div class="container text-center">
             <div align="center"> -->          
-            <br>          
+       
             <br>          
             <br>
             <br>

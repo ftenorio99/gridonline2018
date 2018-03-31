@@ -1,3 +1,14 @@
+<?php
+ 
+  if(!isset($_SESSION)){
+      session_start();
+      require_once '../../init.php';
+      require '../../check.php';
+    }
+
+    $PDO = db_connect(); 
+?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -54,7 +65,7 @@
 <body>
 
 <?php        
-
+    include 'menubackend.php';
     include 'menu.php';
 ?>
 

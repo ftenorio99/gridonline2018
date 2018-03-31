@@ -1,9 +1,14 @@
 <?php
+ 
+  if(!isset($_SESSION)){
+      session_start();
+      require_once '../../init.php';
+      require '../../check.php';
+    }
 
-//$PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
-$PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
-
+    $PDO = db_connect(); 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,16 +55,15 @@ $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root",
 </head>
 <body>
 
-<?php    
+<?php        
+    include 'menubackend.php';
     include 'menu.php';
 ?>
 
-
-
-<!--         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://gridonline.ddns.net/wordpress/category/acetapaporsche/"></iframe>
-        </div> -->
-       
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://docs.google.com/document/d/e/2PACX-1vQ6NAqsbAqkCWWxZDvR_7TbrZCahnWLMKit229Fu-rJ6xY8zJtGL2EnxUclJRdWz5Bo_SQqvEk3DF40/pub"></iframe>
+    </div>
+        
 <br>
 
 <hr>

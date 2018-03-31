@@ -31,12 +31,8 @@ function clearBrowserCache() {
     $(document).ready(function(){         
       $("select[name=carmodel]").change(function(){
           $("select[name=skin]").html('<option value="0">Carregando...</option>');
-            $.post("inscrever.php",
-                  {carmodel:$(this).val()},
-                    function(valor){
-                    $("select[name=skin]").html(valor);
-                  }
-        );
+
+            $.post("inscrever.php", {carmodel:$(this).val(), name:$("input[name=name]").val() }, function(valor) { $("select[name=skin]").html(valor); } );
         });
     });
     function skinselec() {
@@ -85,8 +81,13 @@ function clearBrowserCache() {
 </head>
 <body>
 
+
 <?php    
     include 'menubackend.php';
+    include 'menu.php';
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
     clearBrowserCache();
 ?>
  
@@ -120,7 +121,7 @@ function clearBrowserCache() {
                         <?php
                           if ($total==0) {
                             ?>
-                              <input type="text" class="form-control" id="name" name="name" disabled="true" value="Piloto já inscrito">
+                              <input type="text" class="form-control"  disabled="true" value="Piloto já inscrito">
                             <?php
                           } else {
                             foreach($resultpiloto as $row){
@@ -178,6 +179,7 @@ function clearBrowserCache() {
                                               </div>                              
                                               <div class="form-group">
                                                   <label for="skin">Skin</label>
+
                                                     <select id="skin" class="form-control" name="skin">
                                                          <option value="0" disabled="disabled">Escolha o skin</option>
                                                     </select>                              

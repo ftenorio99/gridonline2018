@@ -27,7 +27,7 @@
 </head>
 <body>
 
-<?php    
+<?php        
     include 'menu.php';
 ?>
 

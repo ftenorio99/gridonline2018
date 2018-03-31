@@ -1,5 +1,10 @@
 <?php
-require_once '../init.php';
+ 
+  if(!isset($_SESSION)){
+      session_start();
+      require_once '../../init.php';
+      require '../../check.php';
+    }
 
     $PDO = db_connect(); 
 
@@ -51,7 +56,8 @@ $i=1;
 </head>
   <body>
 
-<?php            
+<?php        
+    include 'menubackend.php';
     include 'menu.php';
 ?>
 
@@ -59,35 +65,38 @@ $i=1;
 
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>Grid Online Lotus Trophy - Classificação de Pilotos</h2></div>   
+          <div><h2>Grid Online Lotus Trophy - Classificação de Equipes</h2></div>   
           <div><hr></div>  
         </div> 
 
-        <div class="container-fluid">  
+        <div class="container-fluid"><!-- container -->  
           <div class="row" align="center">
             <div class="col-lg-6 col-md-6 col-lg-offset-3 col-md-offset-3">
               <table class="table table-striped" id="tabela" >
                 <thead>
                   <tr>
                     <th width="10%">Posição</th>
-                    <th>Nome</th>
+                    <th>Equipe</th>
                     <th width="10%">Pontos</th>
                   </tr>
                 </thead>
                   <tbody>
                     <?php
                         $sql = "SELECT
-                                      jsonassetorace.drivername,          
-                                      sum(IF(pistatorneio.pontuacaodobrada='S', (tabelapontuacao.ponto*2) , tabelapontuacao.ponto )) as pontuacao
-                                          
+                                               
+                                  team.name,
+                                  sum(IF(pistatorneio.pontuacaodobrada='S', tabelapontuacao.ponto*2,tabelapontuacao.ponto)) as pontuacao                                                                            
                                           FROM jsonassetorace
 
                                   INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
                                   INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
+                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
+                                  INNER JOIN pilototorneio on pilototorneio.idpiloto=piloto.idpiloto
+                                  INNER JOIN team ON team.idteam=pilototorneio.idteam
 
                                   WHERE pistatorneio.idtorneio=6
 
-                                  group by jsonassetorace.drivername
+                                  group by pilototorneio.idteam
                                   order by pontuacao DESC";
                         $select = $PDO->query( $sql );
                          
@@ -97,37 +106,8 @@ $i=1;
                         {?>
                         <tr>
                             <td align="center">  <?php echo $i;?></td>                                        
-                            <td>  <?php echo $row['drivername'];?></td>
-
-                              <?php
-
-                                $sql1= "SELECT pistatorneio.idsessionqualy
-                                        FROM
-                                        jsonassetorace
-                                        INNER JOIN 
-                                        pistatorneio ON jsonassetorace.idsession=pistatorneio.idsessionrace
-                                        WHERE
-                                        pistatorneio.idtorneio=6
-                                        GROUP BY pistatorneio.idsessionqualy"; 
-                                $select1 = $PDO->query( $sql1 );
-                                $result1 = $select1->fetchAll( PDO::FETCH_ASSOC );
-                                $pontoqualy=0;
-                                foreach($result1 as $row1)                                         
-                                  {
-                                     $sql2 = "SELECT drivername, min(bestlap) as bestlap, idsession FROM jsonassetoqualy WHERE idsession=:idsessionqualy";          
-                                              $stmtp = $PDO1->prepare($sql2);                                                                                   
-                                              $stmtp->bindParam(':idsessionqualy', $row1['idsessionqualy'], PDO::PARAM_STR);       
-                                              $stmtp->execute(); 
-                                              $obj2 = $stmtp->fetchObject();  
-
-                                            if ($obj2->drivername == $row['drivername'] ) {
-                                                 $pontoqualy = $pontoqualy+1;
-                                            }
-                                  }
-
-                              ?>
-
-                            <td align="center">  <?php echo $row['pontuacao']+$pontoqualy;?></td>
+                            <td>  <?php echo $row['name'];?></td>
+                            <td align="center">  <?php echo $row['pontuacao'];?></td>
                             
                         </tr>  
                       <?php
@@ -144,16 +124,3 @@ $i=1;
 
 
 
-<!-- SELECT
-    jsonassetorace.drivername,
-    jsonassetorace.driverguid,                
-        tabelapontuacao.ponto,
-        pistatorneio.idpista,
-        pistatorneio.pontuacaodobrada
-        
-        FROM jsonassetorace
-
-INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
-INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
-
-WHERE pistatorneio.idtorneio=3 -->

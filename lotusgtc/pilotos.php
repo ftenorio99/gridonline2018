@@ -1,11 +1,9 @@
 
 <?php
+ 
+    require_once '../init.php';
 
-//$PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
-$PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
-
-
-
+    $PDO = db_connect(); 
 ?>
 
 <!DOCTYPE html>
@@ -54,9 +52,11 @@ $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root",
 </head>
 <body>
 
-<?php    
+<?php        
+
     include 'menu.php';
 ?>
+
 
 
 

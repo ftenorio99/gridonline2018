@@ -120,8 +120,7 @@ foreach($result as $row)
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav">    
 
-                <li><a href="../index.php">Início</a></li>  
-<!--                 <li><a href="racereportlotusgtc.php">Race Report</a></li>   -->                 
+                <li><a href="../index.php">Início</a></li>                 
                 <li><a href="pilotos.php">Pilotos</a></li>
                 <li><a href="classificacao.php">Classificação Pilotos</a></li>
                 <li><a href="classificacaoequipe.php">Classificação Equipe</a></li>
