@@ -47,7 +47,7 @@ if (!empty($_SESSION['user_id']) && !empty($_POST["team"]) && !empty($_POST["car
 
 
 		 echo "<script>alert('Inscrição inserida com sucesso')</script>";   
-		 echo "<script>window.location = 'lotusgtcbackend.php';</script>";
+		 echo "<script>window.location = 'pilotos.php';</script>";
 		}catch(PDOException $erro){   
 		 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";   
 		}   

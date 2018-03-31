@@ -42,7 +42,7 @@ if ($total<1) {
 
 
 		 echo "<script>alert('Registro inserido com sucesso')</script>";   
-		 echo "<script>window.location = 'lotusgtcbackend.php';</script>";
+		 echo "<script>window.location = 'pilotos.php';</script>";
 		}catch(PDOException $erro){   
 		 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";   
 		}   
@@ -50,7 +50,7 @@ if ($total<1) {
 
 } else {
 	echo "<script>alert('Piloto já inserido neste campeonato')</script>"; 
-	echo "<script>window.location = 'lotusgtcbackend.php';</script>";
+	echo "<script>window.location = 'pilotos.php';</script>";
 }
 
 

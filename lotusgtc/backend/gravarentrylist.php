@@ -71,7 +71,7 @@ RESTRICTOR=0
 
 
      echo "<script>alert('Entry List gerado com sucesso nos servidores')</script>";   
-     echo "<script>window.location = 'lotusgtcbackend.php';</script>";
+     echo "<script>window.location = 'pilotos.php';</script>";
     }catch(PDOException $erro){   
     echo "<script>alert('Entry List não foi gerado')</script>"; 
     echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";   

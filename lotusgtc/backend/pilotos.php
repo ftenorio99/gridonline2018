@@ -104,8 +104,15 @@
                 {   
                  ?>
                   <div class="col-lg-4" id="font">                         
-                      <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>               
-                      <img src=<?php echo "../img/lotus_evora_gtc/skin/".$row["skin"]."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">                                        
+                      <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>        
+
+                      <?php
+                        $nomeskin=str_replace(" ", "%20", $row["skin"]);
+                      ?>
+                      
+
+                      <img src=<?php echo "../../img/lotus_evora_gtc/skin/".$nomeskin."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">
+                                        
                       <br>                  
                       <br>
                   </div>

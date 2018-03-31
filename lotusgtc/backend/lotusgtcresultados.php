@@ -102,7 +102,7 @@
                     <div class="col-sm-3">    
                       <br>                                                                                      
 
-                        <img <?php echo "src=../img/lotus_evora_gtc/tracks/".$row['imagemnome'].".png";?> >
+                        <img <?php echo "src=../../img/lotus_evora_gtc/tracks/".$row['imagemnome'].".png";?> >
                                                                                
                         <h4 id="font"><?php $date = date_create($row["data"]); echo date_format( $date ,"d/m/Y");?></h4>
                         

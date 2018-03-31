@@ -26,13 +26,12 @@ $stmtp = $PDO->prepare($sql2);
 $stmtp->bindParam(':idteam', $_POST['team'], PDO::PARAM_STR);       
 $stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_STR);    
 $stmtp->bindParam(':idskin', $_POST['skin'], PDO::PARAM_STR);
- 
 $stmtp->bindParam(':idpilototorneio', $obj->idpilototorneio , PDO::PARAM_STR);   
 $stmtp->execute();   
 
 
  echo "<script>alert('Registro atualizado com sucesso')</script>";  
- echo "<script>window.location = 'lotusgtcbackend.php';</script>"; 
+ echo "<script>window.location = 'pilotos.php';</script>"; 
 }catch(PDOException $erro){   
  echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";   
 }   

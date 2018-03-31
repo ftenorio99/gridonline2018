@@ -32,7 +32,7 @@ function clearBrowserCache() {
       $("select[name=carmodel]").change(function(){
           $("select[name=skin]").html('<option value="0">Carregando...</option>');
 
-            $.post("inscrever.php", {carmodel:$(this).val(), name:$("input[name=name]").val() }, function(valor) { $("select[name=skin]").html(valor); } );
+            $.post("inscrever.php", {carmodel:$(this).val(), piloto:$("select[name=piloto]").val() }, function(valor) { $("select[name=skin]").html(valor); } );
         });
     });
     function skinselec() {
@@ -133,8 +133,12 @@ function clearBrowserCache() {
                                         <div>
                                             <label>Nome:</label>                                                                                        
                                         </div>                     
-                                               
-                                              <input type="text" class="form-control" id="name" name="name" disabled="true" value="<?php echo $row["name"]?>">
+
+                                              <select id="piloto" class="form-control" name="piloto" required="required">
+                                                  <option value="<?php echo $_SESSION['user_id'] ?>"> <?php echo $row["name"] ?></option>
+                                              </select>
+                                                                                             
+
                                               <br>
                                               <div class="form-group">
                                                 <br>
@@ -179,7 +183,6 @@ function clearBrowserCache() {
                                               </div>                              
                                               <div class="form-group">
                                                   <label for="skin">Skin</label>
-
                                                     <select id="skin" class="form-control" name="skin">
                                                          <option value="0" disabled="disabled">Escolha o skin</option>
                                                     </select>                              
@@ -206,13 +209,6 @@ function clearBrowserCache() {
                         ?>
                         
                     </div>
-
-
-
-
-  
-
-
 
         </div>
       </div>   

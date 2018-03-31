@@ -1,18 +1,16 @@
 <?php
 
-//$PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
-
-
 $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
 
-	$sqlskinpiloto = "SELECT * FROM skin where skin =:nomepiloto and idcarmodel=:id";  
 
-	  $stmt = $PDO->prepare($sqlskinpiloto); 
-	  $stmt->bindValue(':nomepiloto', $_POST['name'], PDO::PARAM_STR);
-	  $stmt->bindValue(':id', $_POST['carmodel'], PDO::PARAM_INT);
-	  $stmt->execute(); 
-	  $total = $stmt->rowCount(); 
-	  $resultskinpiloto = $stmt->fetchAll( PDO::FETCH_ASSOC );  						
+	 $stmt = $PDO->prepare('SELECT idskin,skin FROM skin WHERE idcarmodel=:idcarmodel AND idpiloto=:idpiloto'); 
+	 $stmt->bindParam(':idpiloto', $_POST['piloto'], PDO::PARAM_INT);
+	 $stmt->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_INT);
+	 $stmt->execute(); 	
+	 $total = $stmt->rowCount(); 
+	 $resultskinpiloto = $stmt->fetchAll( PDO::FETCH_ASSOC );  
+
+					
 
 	    if ($total==1) {
 
@@ -22,7 +20,7 @@ $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root",
 	      
 	    } else {
 
-	    	   	$sth = $PDO->prepare('SELECT * FROM `skin` where skin not in (SELECT name FROM piloto) and idcarmodel=:id');
+	    	   	$sth = $PDO->prepare('SELECT * FROM skin where skin not in (SELECT name FROM piloto) and idcarmodel=:id');
 			    $sth->bindValue(':id', $_POST['carmodel'], PDO::PARAM_INT);
 			    $sth->execute();
 			    $resultado = $sth->fetchAll(PDO::FETCH_ASSOC);			    

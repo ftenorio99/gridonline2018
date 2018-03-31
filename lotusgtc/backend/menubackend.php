@@ -106,7 +106,7 @@ foreach($result as $row)
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
-              <a class="navbar-brand" href="lotusgtcbackend.php"> <img src="../../img/lotus_evora_gtc/lotus_evora_gtclogo.png" width="100" height="30" alt=""/> </a>                
+              <a class="navbar-brand" href="pilotos.php"> <img src="../../img/lotus_evora_gtc/lotus_evora_gtclogo.png" width="100" height="30" alt=""/> </a>                
             </div>
 
             <div class="collapse navbar-collapse" id="myNavbar">

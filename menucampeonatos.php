@@ -14,7 +14,7 @@
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="./lotusgtc/backend/lotusgtcbackend.php">
+              <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
             </div>
@@ -35,7 +35,7 @@
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="./lotusgtc/backend/lotusgtcbackend.php">
+              <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
             </div>
@@ -56,7 +56,7 @@
               </a>
             </div>
             <div class="col-sm-4">
-              <a href="./lotusgtc/backend/lotusgtcbackend.php">
+              <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
             </div>

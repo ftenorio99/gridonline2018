@@ -3,6 +3,7 @@ session_start();
 require_once 'init.php';
 require 'check.php';
 
+
 $PDO = db_connect();
 
 
@@ -105,15 +106,18 @@ $total = $stmt->rowCount();
 				$sql2 = "INSERT INTO skin (
 									
 									skin,
-									idcarmodel
+									idcarmodel,
+									idpiloto
 										) VALUES (
 						             :skin,
-						             :idcarmodel
+						             :idcarmodel,
+						             :idpiloto
 						             ) ";                 
 
 						$stmtp = $PDO->prepare($sql2);                                  
 						$stmtp->bindParam(':skin', $nomeskin, PDO::PARAM_STR);        
 						$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_INT); 
+						$stmtp->bindParam(':idpiloto', $_SESSION['user_id'], PDO::PARAM_INT); 
 						 
 
 						// Pasta onde o arquivo vai ser salvo
@@ -249,10 +253,10 @@ $total = $stmt->rowCount();
 				$diretorio = "C:/xampp/htdocs/gridonline/uploads/";
 
 				//Diretorio Servidor Producao
-				$diretorioservidor = "C:/Gridonline/acPackage/content/cars/".$objcarmodel->carmodel."/skins/";
+				//$diretorioservidor = "C:/Gridonline/acPackage/content/cars/".$objcarmodel->carmodel."/skins/";
 
 				//Diretorio servidor Teste
-				//$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins/";
+				$diretorioservidor = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins/";
 				
 				$dh = opendir($path);
 
