@@ -32,7 +32,7 @@ function clearBrowserCache() {
       $("select[name=carmodel]").change(function(){
           $("select[name=skin]").html('<option value="0">Carregando...</option>');
             $.post("inscrever.php",
-                  {carmodel:$(this).val()},
+                  {carmodel:$(this).val(),name:$("input[name=name]").val()},
                     function(valor){
                     $("select[name=skin]").html(valor);
                   }
