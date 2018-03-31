@@ -56,7 +56,7 @@ try{
 			echo "<script>window.location = 'frminserirtorneio.php';</script>"; 
 		}
 
-		if ($_POST["botao"]=="Excluir") {
+		if ($_POST["botao"]=="Desativar") {
 									$status="I";
 									$sql2 = "UPDATE torneio SET status = :status 
 									            		WHERE idnome = :idnome";                 

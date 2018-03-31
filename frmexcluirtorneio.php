@@ -86,7 +86,7 @@ require 'check.php';
                         </div>     
 
                     </fieldset>
-                  <input class="btn btn-primary btn-block" type="submit" value="Excluir" name="botao">
+                      <input class="btn btn-primary btn-block" type="submit" value="Desativar" name="botao">
                 </form>  
             </div>
           </div>   

@@ -102,6 +102,9 @@
                     <hr>  
                     <h3>GridOnline Grid Online Lotus Trophy - Skin</h3>
                       <h4>
+                        <a href="https://mega.nz/#!AtY2yYLb!MXhsXncn9GHMOmpaMtggH6RteP0IYLrGoR8WFnk6Ves">Skin Template 2018 - Grid Online Lotus Trophy</a>
+                      </h4>                       
+                      <h4>
                         <a href="https://www.dropbox.com/s/82yo5lcratm92ga/carsetPorscheSupercupGridonline2018_V4.zip?dl=0">Skinpack 2018 - Grid Online Lotus Trophy</a>
                       </h4> 
                   </div>
