@@ -87,7 +87,7 @@ function clearBrowserCache() {
 <?php    
     clearBrowserCache();
     include 'menubackend.php';
-    include 'menu.php';
+    include 'menu.php';    
 ?>
 
     <div class="container-fluid"><!-- container -->  
@@ -97,7 +97,7 @@ function clearBrowserCache() {
             <form id="form" name="form" action="atualizarinscricao.php" method="post" enctype="multipart/form-data">             
 
                 <fieldset>
-                    <legend>Inscrição</legend>
+                    <legend>Atualizar dados da Inscrição</legend>
       <!-- Se tiver nivel de admin constroi este combo -->
       <?php if ($_SESSION['user_nivel']=='A') { ?>
                     <div>                      
