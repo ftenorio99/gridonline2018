@@ -139,6 +139,7 @@ foreach($result as $row)
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
                             <li><a href='frminserirskin.php'>Inserir Skin</a></li>
+                            <li><a href='frminserirskinpublica.php'>Inserir Skin Pública</a></li>
 
                           </ul>
                         </li>

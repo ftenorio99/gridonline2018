@@ -76,10 +76,10 @@ $PDO = db_connect();
 
 
 
-if (!empty($_POST["piloto"]) && !empty($_POST["carmodel"]) && !empty($_FILES["arquivo"]['name'])): 
+if (!empty($_POST["carmodel"]) && !empty($_FILES["arquivo"]['name'])): 
 
 $diretorio = "C:/xampp/htdocs/gridonline/uploads/";
-$nomeskin=$_POST["piloto"];
+$nomeskin=$_FILES['arquivo']['name'];
 $ext = pathinfo($_FILES["arquivo"]['name'], PATHINFO_EXTENSION);
 
 
@@ -117,7 +117,7 @@ $total = $stmt->rowCount();
 						$stmtp = $PDO->prepare($sql2);                                  
 						$stmtp->bindParam(':skin', $nomeskin, PDO::PARAM_STR);        
 						$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_INT); 
-						$stmtp->bindParam(':idpiloto', $_SESSION['user_id'], PDO::PARAM_INT); 
+						$stmtp->bindParam(':idpiloto', '0' , PDO::PARAM_INT); 
 						 
 
 						// Pasta onde o arquivo vai ser salvo
@@ -314,10 +314,6 @@ $total = $stmt->rowCount();
 
 
 echo "<script>window.location = 'panel.php';</script>";
-
-
-
-
 
 
  endif; 	
