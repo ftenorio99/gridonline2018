@@ -79,7 +79,7 @@ $PDO = db_connect();
 if (!empty($_POST["carmodel"]) && !empty($_FILES["arquivo"]['name'])): 
 
 $diretorio = "C:/xampp/htdocs/gridonline/uploads/";
-$nomeskin=$_FILES['arquivo']['name'];
+$nomeskin=substr($_FILES['arquivo']['name'], 0, -4);
 $ext = pathinfo($_FILES["arquivo"]['name'], PATHINFO_EXTENSION);
 
 
