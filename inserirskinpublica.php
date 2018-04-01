@@ -117,7 +117,7 @@ $total = $stmt->rowCount();
 						$stmtp = $PDO->prepare($sql2);                                  
 						$stmtp->bindParam(':skin', $nomeskin, PDO::PARAM_STR);        
 						$stmtp->bindParam(':idcarmodel', $_POST['carmodel'], PDO::PARAM_INT); 
-						$stmtp->bindParam(':idpiloto', '0' , PDO::PARAM_INT); 
+						$stmtp->bindParam(':idpiloto', $total , PDO::PARAM_INT); 
 						 
 
 						// Pasta onde o arquivo vai ser salvo
