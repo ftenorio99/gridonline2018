@@ -296,7 +296,7 @@ $total = $stmt->rowCount();
 				            //copiar para diretorio skin do servidor
 				            mkdir($diretorioservidor.$nomedir, 0755);				            
 				            copiar_diretorio($diretorio.$nomedir, $diretorioservidor.$nomedir , $ver_acao = false);
-				            unlink($diretorio.$nomedir);
+				            
 				        } 
 				    }
 				 
@@ -312,7 +312,7 @@ $total = $stmt->rowCount();
 	 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";                  			
 	}
 
-
+unlink($diretorio.$nomedir);
 echo "<script>window.location = 'panel.php';</script>";
 
 
