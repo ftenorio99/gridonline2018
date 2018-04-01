@@ -64,7 +64,7 @@ $PDO = db_connect();
             <main>
               <div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4" id="form-cadastro">   
 
-            <form id="form" name="form" action="inserirskin.php" method="post" enctype="multipart/form-data">             
+            <form id="form" name="form" action="inserirskinpublica.php" method="post" enctype="multipart/form-data">             
 
                 <fieldset>
                     <legend>Inserir Skin</legend>
