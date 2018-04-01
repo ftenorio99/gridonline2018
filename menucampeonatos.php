@@ -7,7 +7,9 @@
               <a href="./porschegt3/backend/porschegt3backend.php">
                 <img src="img/porschegt3/porschegt3logo.png">
               </a>
-            </div>
+              <div>
+                <label for="insc">Campeonato encerrado</label>
+              </div>            </div>
             <div class="col-sm-4">
               <a href="#">
                 <img src="img/logogridonline.png">
@@ -17,6 +19,9 @@
               <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
+              <div>
+                <label for="insc">Inscrições abertas</label>
+              </div>              
             </div>
           </div>                                               
              ';
@@ -28,6 +33,9 @@
               <a href="./porschegt3/backend/porschegt3backend.php">
                 <img src="img/porschegt3/porschegt3logo.png">
               </a>
+              <div>
+                <label for="insc">Campeonato encerrado</label>
+              </div>
             </div>
             <div class="col-sm-4">
               <a href="#">
@@ -38,6 +46,9 @@
               <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
+              <div>
+                <label for="insc">Inscrições abertas</label>
+              </div> 
             </div>
           </div>                                        
              ';
@@ -49,6 +60,9 @@
               <a href="./porschegt3/backend/porschegt3backend.php">
                 <img src="img/porschegt3/porschegt3logo.png">
               </a>
+              <div>
+                <label for="insc">Campeonato encerrado</label>
+              </div>
             </div>
             <div class="col-sm-4">
               <a href="#">
@@ -59,6 +73,9 @@
               <a href="./lotusgtc/backend/pilotos.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
+              <div>
+                <label for="insc">Inscrições abertas</label>
+              </div> 
             </div>
           </div>                    
              ';
@@ -70,6 +87,9 @@
               <a href="./porschegt3/porschegt3.php">
                 <img src="img/porschegt3/porschegt3logo.png">
               </a>
+              <div>
+                <label for="insc">Campeonato encerrado</label>
+              </div>
             </div>
             <div class="col-sm-4">
               <a href="index.php">
@@ -80,6 +100,9 @@
               <a href="./lotusgtc/lotusgtc.php">
                 <img src="img/lotus_evora_gtc/lotus_evora_gtclogo.png">
               </a>
+              <div>
+                <label for="insc">Inscrições abertas</label>
+              </div> 
             </div>
           </div>                    ';
     }                  
