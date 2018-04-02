@@ -87,11 +87,11 @@
                       <a href="http://www.racedepartment.com/downloads/cadwell-park.11507/">Grid Online Lotus Trophy - Cadwell Park</a>
                     </h4>         
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/snetterton-2011.7327/">Grid Online Lotus Trophy - Snetterton</a>
+                      <a href="https://actrackrebootproject.wixsite.com/ac-track-re-boot/snetterton2017">Grid Online Lotus Trophy - Snetterton</a>
                     </h4> 
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/knockhill-racing-circuit.8513/">Grid Online Lotus Trophy - Knockhill</a>
-                    </h4> 
+                      <a href="https://actrackrebootproject.wixsite.com/ac-track-re-boot/knockhillcircuit2017">Grid Online Lotus Trophy - Knockhill</a>
+                    </h4>
                     <h4>
                       <a href="http://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
                     </h4>                      
