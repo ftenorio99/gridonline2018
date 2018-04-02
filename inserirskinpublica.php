@@ -312,7 +312,7 @@ $total = $stmt->rowCount();
 	 echo "<script>alert('Erro na linha: {$erro->getLine()}')</script>";                  			
 	}
 
-unlink($diretorio.$nomedir);
+
 echo "<script>window.location = 'panel.php';</script>";
 
 

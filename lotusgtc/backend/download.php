@@ -92,6 +92,9 @@
                     <h4>
                       <a href="http://www.racedepartment.com/downloads/knockhill-racing-circuit.8513/">Grid Online Lotus Trophy - Knockhill</a>
                     </h4> 
+                    <h4>
+                      <a href="http://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
+                    </h4>                      
 
                                        
                     <hr>                                        
