@@ -106,9 +106,9 @@ foreach($result as $row)
   $data = date_format( $date ,"d/m/Y");          
 ?>
         
-    <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid navbar-inverse">
+            <div class="navbar-header navbar-inverse">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -117,7 +117,7 @@ foreach($result as $row)
               <a class="navbar-brand" href="lotusgtc.php"> <img src="../img/lotus_evora_gtc/lotus_evora_gtclogo.png" width="100" height="30" alt=""/> </a>                
             </div>
 
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
               <ul class="nav navbar-nav">    
 
                 <li><a href="../index.php">Início</a></li>                 

@@ -98,8 +98,8 @@ foreach($result as $row)
   $date = date_create($datapista);
   $data = date_format( $date ,"d/m/Y");          
 ?>        
-    <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid navbar-inverse">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
@@ -109,7 +109,7 @@ foreach($result as $row)
               <a class="navbar-brand" href="pilotos.php"> <img src="../../img/lotus_evora_gtc/lotus_evora_gtclogo.png" width="100" height="30" alt=""/> </a>                
             </div>
 
-            <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
               <ul class="nav navbar-nav">                  
 
                 <?php         
@@ -198,9 +198,8 @@ foreach($result as $row)
 <!--         <div class="jumbotron" id="div-back-image">
           <div class="container text-center">
             <div align="center"> -->          
-       
-            <br>          
-            <br>
+            <p></p>
+            <br>                      
             <br>
 <!--             </div>
           </div>

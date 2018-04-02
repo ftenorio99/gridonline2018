@@ -1,6 +1,6 @@
 
-    <nav class="navbar navbar-default">
-          <div class="container-fluid">
+    <nav class="navbar navbar-inverse">
+          <div class="container-fluid navbar-inverse">
             <div class="navbar-nav">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar1">
                 <span class="icon-bar"></span>

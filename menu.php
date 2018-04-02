@@ -106,17 +106,17 @@ foreach($result as $row)
 
 
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid navbar-inverse">
+        <div class="navbar-header navbar-inverse">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>                
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">                                    
+        <div class="collapse navbar-collapse navbar-inverse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-inverse">                                    
             <?php      
                 if (!empty($_SESSION['user_name'])){        
                   if ($_SESSION['user_nivel']=="A") {
@@ -188,6 +188,7 @@ foreach($result as $row)
                             <li><a href='frminserirpistatorneio.php'>Inserir Pistas no Torneio</a></li>
                           </ul>                            
                         </li> 
+                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Birt Challenge</a></li>
 
                          ";
                  }
@@ -197,7 +198,8 @@ foreach($result as $row)
                         <li><a href='frmnumeracaooficial.php'>Alterar Número</a></li> 
                         <li><a href='frminserirskin.php'>Enviar Skin</a></li>                        
                         <li><a href='frminserirpiloto.php'>Atualizar Dados</a></li> 
-                        <li><a href='frminserirequipe.php'>Inserir Equipe</a></li>                       
+                        <li><a href='frminserirequipe.php'>Inserir Equipe</a></li> 
+                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Birt Challenge</a></li>                    
                          ";
                  } 
                  if ($_SESSION['user_nivel']=="I") {
@@ -211,7 +213,7 @@ foreach($result as $row)
                 } if(empty($_SESSION['user_name'])) {
                     echo "<li><a href='index.php'>Início</a></li>
                           <li><a href='frminscricao.php'>Inscrição no portal Grid Online</a></li>
-                          <li><a href='./lotusgtc/lotusgtc.php'>Lotus Trophy</a></li>";
+                          <li><a href='./lotusgtc/lotusgtc.php'>GridOnline Lotus Birt Challenge</a></li>";
                 }                  
 
             ?>  

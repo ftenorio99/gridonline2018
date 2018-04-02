@@ -147,64 +147,12 @@ $PDO = db_connect();
     include 'menu.php';
 ?>
 
-<!--       <div class="container-fluid text-center">  
-        <?php    
-            include 'menucampeonatos.php';
-        ?>
-        <hr> -->
         
       
         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
         </div>
 
-
-<!--           
-          <div class="col-sm-3 sidenav" align="center">
-            <div class="panel panel-default col-lg-8 col-lg-offset-2">
-              <h2 class="title">
-                <a href="#" title="">
-                  <span>Next Race</span>
-                </a>
-              </h2>
-              <div class="well well-sm" style="width: 250px ; background-color:#343739; color:#f8fafb;" >
-                  <?php
-
-                   $sql = "SELECT pistatorneio.data, pista.nome, torneio.nome as torneionome FROM pistatorneio INNER JOIN pista ON  pistatorneio.idpista = pista.idpista INNER JOIN torneio on pistatorneio.idtorneio = torneio.idtorneio WHERE pistatorneio.data>=CURRENT_DATE  order by pistatorneio.data LIMIT 1";
-
-                    $select = $PDO->query( $sql );
-                    $result = $select->fetchAll( PDO::FETCH_ASSOC );
-
-                    foreach($result as $row)            
-                          {   
-                            $nomepista = $row["nome"];
-                            $datapista = $row["data"];
-                            $nometorneio = $row["torneionome"];
-                          }
-                    ?>    
-                    <p><?php $date = date_create($datapista);
-                                      echo date_format( $date ,"d/m/Y");?></p>
-
-                <div class="countdown styled"></div>
-              </div>
-
-              <div class="well well-sm" style="width: 250px ; background-color:#343739; color:#f8fafb;" >                      
-                  <h3><?php echo $nomepista; ?></h3>
-                  <p><?php echo $nometorneio; ?></p>              
-              </div>
-            </div>
-            <br>
-            <br> 
--->
-
-<!--               
-              <div>
-                 <iframe  src="https://discordapp.com/widget?id=265546426908540939&theme=dark" width="350" height="350" allowtransparency="true" frameborder="0"></iframe> 
-              </div>  
--->         
-          </div>
-        </div>
-      </div>
 
   </body>
 </html>
