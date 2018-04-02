@@ -147,11 +147,11 @@ $PDO = db_connect();
     include 'menu.php';
 ?>
 
-      <div class="container-fluid text-center">  
+<!--       <div class="container-fluid text-center">  
         <?php    
             include 'menucampeonatos.php';
         ?>
-        <hr>
+        <hr> -->
         
       
         <div class="embed-responsive embed-responsive-16by9">

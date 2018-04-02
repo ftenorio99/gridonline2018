@@ -71,9 +71,9 @@ $(document).ready(function(){
 ?>
 
       <div class="container-fluid text-center">  
-        <?php    
+<!--         <?php    
             include 'menucampeonatos.php';
-        ?>
+        ?> -->
         <hr>        
 
         <hr>

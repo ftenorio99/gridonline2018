@@ -64,9 +64,9 @@ $PDO = db_connect();
 ?>
 
       <div class="container-fluid text-center">  
-        <?php    
+<!--         <?php    
           include 'menucampeonatos.php';
-        ?>
+        ?> -->
         </div>
       </div>
 
