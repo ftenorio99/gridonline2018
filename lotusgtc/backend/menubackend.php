@@ -149,7 +149,7 @@ foreach($result as $row)
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Torneio
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
-                            <li><a href='frminseririnscricao.php'>Inscrição no Torneio</a></li>
+                            <li><a href='frminscrevertorneio.php'>Inscrição no Torneio</a></li>
                             <li class='divider'></li>
                             <li><a href='frmatualizarinscricao.php'>Atualizar dados de inscrição no Torneio</a></li>
                             <li class='divider'></li>
@@ -166,7 +166,7 @@ foreach($result as $row)
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Torneio
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
-                            <li><a href='frminseririnscricao.php'>Inscrição no Torneio</a></li>
+                            <li><a href='frminscrevertorneio.php'>Inscrição no Torneio</a></li>
                             <li class='divider'></li>
                             <li><a href='frmatualizarinscricao.php'>Atualizar dados de inscrição no Torneio</a></li>
                             <li class='divider'></li>
