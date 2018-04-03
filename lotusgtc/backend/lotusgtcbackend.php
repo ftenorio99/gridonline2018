@@ -63,58 +63,20 @@
 <br>
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Lotus GTC - Pilotos</h2></div>   
+          <div><h2>GridOnline Lotus Birt Challenge</h2></div>   
         <div><hr></div>  
         </div> 
   
-
+        
           <div class="container">
-            <div class="row">
-              <?php
-                $sql =  "Select  
-                               piloto.name as piloto
-                              ,piloto.guid
-                              ,piloto.numero
-                              ,team.name as team
-                              ,carmodel.carmodel
-                              ,skin.skin
-                              ,torneio.nome 
-                              ,torneio.categoria
-
-                          from
-
-                          pilototorneio
-
-                          INNER JOIN piloto     ON    pilototorneio.idpiloto = piloto.idpiloto 
-                          INNER JOIN team     ON    pilototorneio.idteam = team.idteam
-                          INNER JOIN carmodel   ON    pilototorneio.idcarmodel = carmodel.idcarmodel
-                          INNER JOIN skin     ON    pilototorneio.idskin = skin.idskin 
-                          INNER JOIN torneio    ON    pilototorneio.idtorneio = torneio.idtorneio
-                          where
-                          torneio.idtorneio=6 
-                          order by team.name                        ";
-                        //alterar o idtorneio para o torneio que quer mostrar na página
-              $select = $PDO->query( $sql );
-              $result = $select->fetchAll( PDO::FETCH_ASSOC );
-              foreach($result as $row)            
-                {   
-                 ?>
-                  <div class="col-lg-4" id="font">                         
-                      <h5>#<?php echo $row["numero"] ?> - <?php echo $row["piloto"] ?> - <?php echo $row["team"] ?></h5>  
-                      <?php
-                        $nomeskin=str_replace(" ", "%20", $row["skin"]);
-                      ?>
-                      
-
-                      <img src=<?php echo "../../img/lotus_evora_gtc/skin/".$nomeskin."/preview.jpg"?> class="img-thumbnail" style="width:350px;height:200px;">                                        
-                      <br>                  
-                      <br>
-                  </div>
-                <?php
-                }
-                ?>
-          </div>  
-        </div>
+            <div class="row" align="center">
+              <img width="10%" height="10%"  src="../../img/lotus_evora_gtc/logolotus.jpg">
+            </div>   
+          </div>
 <hr>
+        <div class="embed-responsive embed-responsive-16by9">            
+            <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/lotus-trophy/"></iframe>
+        </div>
+
 </body>
 </html>

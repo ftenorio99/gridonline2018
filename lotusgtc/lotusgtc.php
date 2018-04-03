@@ -59,7 +59,7 @@ require_once '../init.php';
 
 
         <div class="embed-responsive embed-responsive-16by9">            
-            <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>
+            <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/lotus-trophy/"></iframe>
         </div>
         
 <br>
