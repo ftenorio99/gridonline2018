@@ -56,7 +56,7 @@ RESTRICTOR=0
     //$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/cfg/entry_list.ini';
     //Destino do servidor de Producao
     $destino = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
-    $destino2 = 'C:/Gridonline/acPackage/server2/cfg/entry_list.ini';
+    $destino2 = 'C:/Gridonline/acPackage/server/cfg/entry_list.ini';
 
     unlink($destino);
     unlink($destino2);
