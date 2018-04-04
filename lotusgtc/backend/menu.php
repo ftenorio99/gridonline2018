@@ -17,7 +17,7 @@
                         <li><a href='lotusgtcresultados.php'>Calendário/Resutados</a></li>
                         <li><a href='download.php'>Downloads</a></li>
                         <li><a href='regulamento.php'>Regulamento</a></li>
-                        <li><a href='#'>Pagamento de Inscrição</a></li>
+                        <li><a href='pagamento.php'>Pagamento de Inscrição</a></li>
                         <li><a href='livetiming.php'>Livetiming</a></li>    
               </ul>            
             </div>
