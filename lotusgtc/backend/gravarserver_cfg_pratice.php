@@ -35,8 +35,8 @@ try{
       {
               
 $txt ="[SERVER]
-NAME=".$row["torneionome"]." - Corrida - ".$row["nome"]."
-CARS=ks_porsche_911_gt3_cup_2017
+NAME=".$row["torneionome"]." - Treino - ".$row["nome"]."
+CARS=lotus_evora_gtc
 CONFIG_TRACK=".$row["config"]."
 TRACK=".$row["pista"]."
 SUN_ANGLE=16
