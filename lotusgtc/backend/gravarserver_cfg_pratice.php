@@ -14,6 +14,7 @@ try{
                               ,pista.pista
                               ,pista.nome
                               ,pista.config
+                              ,pista.slots
                               ,torneio.nome as torneionome
 
                               from
@@ -78,10 +79,10 @@ AUTOCLUTCH_ALLOWED=1
 TYRE_BLANKETS_ALLOWED=1
 FORCE_VIRTUAL_MIRROR=0
 REGISTER_TO_LOBBY=1
-MAX_CLIENTS=36
+MAX_CLIENTS=".$row["slots"]."
 NUM_THREADS=2
-UDP_PLUGIN_LOCAL_PORT=11000
-UDP_PLUGIN_ADDRESS=127.0.0.1:12000
+UDP_PLUGIN_LOCAL_PORT=11010
+UDP_PLUGIN_ADDRESS=127.0.0.1:12010
 AUTH_PLUGIN_ADDRESS=
 LEGAL_TYRES=
 RACE_EXTRA_LAP=1
