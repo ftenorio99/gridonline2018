@@ -33,18 +33,17 @@ try{
                   $result = $select->fetchAll( PDO::FETCH_ASSOC );
                   $i=0;
      foreach($result as $row)
-      {
-                    
-$txt ="[CAR_".$i."]
-MODEL=".$row["carmodel"]."
-SKIN=".$row["skin"]."
-SPECTATOR_MODE=0
-DRIVERNAME=".$row["piloto"]."
-TEAM=".$row["team"]."
-GUID=".$row["guid"]."
-BALLAST=0
-RESTRICTOR=0
-"."\n";
+      {                 
+        $txt ="[CAR_".$i."]
+        MODEL=".$row["carmodel"]."
+        SKIN=".$row["skin"]."
+        SPECTATOR_MODE=0
+        DRIVERNAME=".$row["piloto"]."
+        TEAM=".$row["team"]."
+        GUID=".$row["guid"]."
+        BALLAST=0
+        RESTRICTOR=0
+        "."\n";
         fwrite($myfile, $txt);
         $i++;
       }

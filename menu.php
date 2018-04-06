@@ -138,7 +138,7 @@ foreach($result as $row)
                           <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Skin
                           <span class='caret'></span></a>
                           <ul class='dropdown-menu'>
-                            <li><a href='frminserirskin.php'>Inserir Skin</a></li>
+                            <li><a href='frminserirskin.php'>Enviar Skin</a></li>
                             <li><a href='frminserirskinpublica.php'>Inserir Skin Pública</a></li>
 
                           </ul>

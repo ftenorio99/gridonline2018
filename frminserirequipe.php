@@ -94,10 +94,28 @@ $PDO = db_connect();
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
+                <?php
+                $sql =  "Select  
+                               *
+                          from
+                          team
+                          order by team.name                     ";
 
-      </tr>
+              $select = $PDO->query( $sql );
+              $result = $select->fetchAll( PDO::FETCH_ASSOC );
+              foreach($result as $row)            
+                {   
+                 ?>
+                 <tr>
+
+                  <td>                        
+                      <?php echo $row["name"] ?>         
+                  </td>
+                   </tr>
+                <?php
+                }
+            ?>
+     
     </tbody>
   </table>
 </div>
