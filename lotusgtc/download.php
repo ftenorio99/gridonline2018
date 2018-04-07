@@ -62,7 +62,7 @@
 
         <div class="container-fluid bg-3 text-center"> 
           <hr>
-          <div><h2>GridOnline Bitdefender Porsche SuperCup - Downloads</h2></div>   
+          <div><h2>GridOnline Grid Online Lotus Trophy - Downloads</h2></div>   
           <hr>
         </div> 
   

@@ -188,7 +188,7 @@ foreach($result as $row)
                             <li><a href='frminserirpistatorneio.php'>Inserir Pistas no Torneio</a></li>
                           </ul>                            
                         </li> 
-                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Birt Challenge</a></li>
+                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Trophy</a></li>
 
                          ";
                  }
@@ -199,7 +199,7 @@ foreach($result as $row)
                         <li><a href='frminserirskin.php'>Enviar Skin</a></li>                        
                         <li><a href='frminserirpiloto.php'>Atualizar Dados</a></li> 
                         <li><a href='frminserirequipe.php'>Inserir Equipe</a></li> 
-                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Birt Challenge</a></li>                    
+                        <li><a href='./lotusgtc/backend/lotusgtcbackend.php'>GridOnline Lotus Trophy</a></li>                    
                          ";
                  } 
                  if ($_SESSION['user_nivel']=="I") {
@@ -213,7 +213,7 @@ foreach($result as $row)
                 } if(empty($_SESSION['user_name'])) {
                     echo "<li><a href='index.php'>Início</a></li>
                           <li><a href='frminscricao.php'>Inscrição no portal Grid Online</a></li>
-                          <li><a href='./lotusgtc/lotusgtc.php'>GridOnline Lotus Birt Challenge</a></li>";
+                          <li><a href='./lotusgtc/lotusgtc.php'>GridOnline Lotus Trophy</a></li>";
                 }                  
 
             ?>  
