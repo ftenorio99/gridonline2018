@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../../init.php';
-require '../../check.php';
+//require '../../check.php';
 $PDO = db_connect(); 
 
 try{   
@@ -97,7 +97,7 @@ AUTOCLUTCH_ALLOWED=1
 TYRE_BLANKETS_ALLOWED=1
 FORCE_VIRTUAL_MIRROR=0
 REGISTER_TO_LOBBY=1
-MAX_CLIENTS=".$row["slots"]."
+MAX_CLIENTS=".$slots."
 NUM_THREADS=2
 UDP_PLUGIN_LOCAL_PORT=11010
 UDP_PLUGIN_ADDRESS=127.0.0.1:11010

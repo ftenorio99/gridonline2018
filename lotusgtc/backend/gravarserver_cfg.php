@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../../init.php';
-require '../../check.php';
+//require '../../check.php';
 $PDO = db_connect(); 
 
 
@@ -58,7 +58,7 @@ CARS=lotus_evora_gtc
 CONFIG_TRACK=".$row["config"]."
 TRACK=".$row["pista"]."
 SUN_ANGLE=16
-PASSWORD=".$row["imagemnome"]."grid2018
+PASSWORD=
 ADMIN_PASSWORD=ACAC
 UDP_PORT=9020
 TCP_PORT=9020
@@ -96,7 +96,7 @@ AUTOCLUTCH_ALLOWED=1
 TYRE_BLANKETS_ALLOWED=1
 FORCE_VIRTUAL_MIRROR=0
 REGISTER_TO_LOBBY=1
-MAX_CLIENTS=36
+MAX_CLIENTS=".$slots."
 NUM_THREADS=2
 UDP_PLUGIN_LOCAL_PORT=11020
 UDP_PLUGIN_ADDRESS=127.0.0.1:12020
