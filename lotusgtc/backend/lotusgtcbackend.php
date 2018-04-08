@@ -63,7 +63,7 @@
 <br>
         <div class="container-fluid bg-3 text-center"> 
           <div><hr></div>   
-          <div><h2>GridOnline Lotus Birt Challenge</h2></div>   
+          <div><h2>GridOnline Lotus Trophy</h2></div>   
         <div><hr></div>  
         </div> 
   

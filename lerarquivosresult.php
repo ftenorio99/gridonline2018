@@ -6,6 +6,8 @@ require 'check.php';
 $PDO = db_connect(); 
 
 
+
+
 // variável que define o diretório dos arquivos de resultado - desenvolvimento
 //$dir = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results'; 
 // variável que define o diretório dos arquivos de resultado - producao
@@ -26,10 +28,24 @@ while (false !== ($filename = readdir($dh))) {
 
 		$json_output = json_decode($info);
 
+
+						$sql= "SELECT idpistatorneio FROM pistatorneio INNER JOIN pista ON pista.idpista=pistatorneio.idpista WHERE pista.pista LIKE :trackname and pista.config LIKE :trackconfig";
+						$stmt = $PDO->prepare($sql);
+						$stmt->bindParam(':trackname', $json_output->TrackName, PDO::PARAM_STR);
+						$stmt->bindParam(':trackconfig', $json_output->TrackConfig, PDO::PARAM_STR);
+						$stmt->execute();
+						$total = $stmt->rowCount();
+						while ($row = $stmt->fetchObject()) {
+  								 $torneio = $row->idpistatorneio;
+								}
+		      					                     
+
 		$Result = $json_output->Result;
 
 				foreach ( $Result as $r ) 
 						{ 			
+								
+
 								if ($r->DriverName<>("")) {
 
 								$sql ="SELECT idpiloto from piloto where guid=:guid";																			
@@ -46,23 +62,81 @@ while (false !== ($filename = readdir($dh))) {
 											 	(:name, :guid)"; 			
 
 						    		$sth2 = $PDO->prepare($sql2);
-				    		        $sth2->bindParam("name", $r->DriverName);
-				    		        $sth2->bindParam("guid", $r->DriverGuid);
+				    		        $sth2->bindParam(':name', $r->DriverName);
+				    		        $sth2->bindParam(':guid', $r->DriverGuid);
 							        $sth2->execute();
 
 							        echo "Piloto inserido<br>";
 									echo "<b>Nome:</b> ". $r->DriverName;
-									echo "<b>GUID:</b> ".$r->DriverGuid;									
+									echo "<b>GUID:</b> ".$r->DriverGuid;
+									echo "<b>BestLap:</b> ".$r->BestLap;									
 									echo "<br/>";
 
 								}
 								else {
 									echo "Pilotos já se encontram na base de dados.<br>";
+									echo "<b>Nome:</b> ". $r->DriverName;
+									echo "<b>GUID:</b> ".$r->DriverGuid;	
+									echo "<b>BestLap:</b> ".$r->BestLap;								
+									echo "<br/>";									
 									 }					
 						        
 								}
+
+
+							 if ($r->BestLap<>"999999999") {
+
+							 	
+
+							 		$sqlbestlap ="SELECT idqualyresult,bestlap from qualyresult where guid=:guid";
+							 		$sthbestlap = $PDO->prepare($sqlbestlap);
+			     		        	$sthbestlap->bindParam(':guid', $r->DriverGuid);
+						         	$sthbestlap->execute();
+							 		$totalbestlap = $sthbestlap->rowCount();
+							 		$resultbestlap = $sthbestlap->fetchAll( PDO::FETCH_ASSOC );
+
+							 		
+							 		 if ($totalbestlap==0) {
+							 		 		$sqlpilotobestlap ="INSERT INTO qualyresult 
+							 		 								(guid,bestlap,idpistatorneio) 
+							 		 		 					VALUES 
+							 		 		 						(:guid, :bestlap, :idpistatorneio)"; 
+
+							 	     		$sthpilotobestlap = $PDO->prepare($sqlpilotobestlap);						    		        
+						      		        $sthpilotobestlap->bindParam(':guid', $r->DriverGuid);
+						      		        $sthpilotobestlap->bindParam(':bestlap', $r->BestLap);
+						      		        $sthpilotobestlap->bindParam(':idpistatorneio', $torneio);
+							 		        $sthpilotobestlap->execute();
+							 		 } 
+							 		else {
+							 		
+							 			foreach ($resultbestlap as $rbestlap ) {
+							 				$bestlap=$rbestlap['bestlap'];																					
+							 			}
+
+							 				if ($r->BestLap<$bestlap) {
+
+												$sqlpilotobestlap =
+
+													 	"UPDATE qualyresult SET 
+												             
+												            bestlap = :bestlap 												            
+
+												            WHERE idqualyresult =:idqualyresult";			
+
+										    		$sthpilotobestlap = $PDO->prepare($sqlpilotobestlap);						    		      								    	        
+								    		        $sthpilotobestlap->bindParam(':bestlap', $r->BestLap);								    		      
+								    		        $sthpilotobestlap->bindParam(':idqualyresult', $rbestlap['idqualyresult']);								    		        
+											        $sthpilotobestlap->execute();
+											
+										}
+
+							 		 }							 		
+							} 
+
 						    
 						}
+
 	$origem = $dir."/".$filename;
 	//Server de desenvolvimento
 	//$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results/lidosqualify'."/".$filename;

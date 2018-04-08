@@ -87,22 +87,39 @@ require 'check.php';
 
 <hr>
 
-
 <div class="container">
-  <h2>Car Model</h2>
-  <p>Lista dos car models já cadastrados no sistema</p>            
+  <h2>CarModel</h2>
+  <p>Lista dos CarModel já cadastrados no sistema</p>            
   <table class="table">
     <thead>
       <tr>
-        <th>Car Model</th>
-        <th>Descrição</th>        
+        <th>Carmodel</th>
+
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-      </tr>
+                <?php
+                $sql =  "Select  
+                               *
+                          from
+                          carmodel
+                          order by carmodel.desccarmodel                     ";
+
+              $select = $PDO->query( $sql );
+              $result = $select->fetchAll( PDO::FETCH_ASSOC );
+              foreach($result as $row)            
+                {   
+                 ?>
+                 <tr>
+
+                  <td>                        
+                      <?php echo $row["desccarmodel"] ?>         
+                  </td>
+                   </tr>
+                <?php
+                }
+            ?>
+     
     </tbody>
   </table>
 </div>
