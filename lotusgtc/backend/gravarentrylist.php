@@ -9,10 +9,11 @@ try{
 
     $myfile = fopen("entry_list.ini", "w") or die("Unable to open file!");
 
-    $sqlslots =  "SELECT pista.slots, pistatorneio.idtorneio, pistatorneio.idpistatorneio 
+    $sqlslots =  "SELECT pista.slots, pistatorneio.idpista, pistatorneio.idtorneio, pistatorneio.idpistatorneio 
                   FROM pistatorneio
                   INNER JOIN pista on pista.idpista=pistatorneio.idpista
-                  WHERE pistatorneio.data>CURRENT_DATE LIMIT 1";
+                  WHERE pistatorneio.data>CURRENT_DATE 
+                  ORDER BY pistatorneio.data asc LIMIT 1";
 
                   $selectslots = $PDO->query( $sqlslots );
                   $resultslots = $selectslots->fetchAll( PDO::FETCH_ASSOC );

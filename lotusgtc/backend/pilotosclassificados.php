@@ -63,7 +63,8 @@
     $sqlslots =  "SELECT pista.slots, pistatorneio.idpista, pistatorneio.idtorneio, pistatorneio.idpistatorneio 
                   FROM pistatorneio
                   INNER JOIN pista on pista.idpista=pistatorneio.idpista
-                  WHERE pistatorneio.data>CURRENT_DATE LIMIT 1";
+                  WHERE pistatorneio.data>CURRENT_DATE 
+                  ORDER BY pistatorneio.data asc LIMIT 1";
 
                   $selectslots = $PDO->query( $sqlslots );
                   $resultslots = $selectslots->fetchAll( PDO::FETCH_ASSOC );
@@ -102,7 +103,11 @@
 
                           INNER JOIN pista on pista.idpista=pistatorneio.idpista
 
+                          INNER JOIN pilototorneio on pilototorneio.idpiloto=piloto.idpiloto
+
                           WHERE qualyresult.idpistatorneio=:pista 
+
+                          and pilototorneio.idtorneio=:torneio
 
                           ORDER by qualyresult.bestlap ASC limit ".$slots."";
 
@@ -110,6 +115,7 @@
                         //alterar o idtorneio para o torneio que quer mostrar na página              
               $select = $PDO->prepare($sql);              
               $select->bindParam(':pista', $pistatorneio, PDO::PARAM_INT);
+              $select->bindParam(':torneio', $torneio, PDO::PARAM_INT);
               $select->execute();
               $result = $select->fetchAll( PDO::FETCH_ASSOC );
                  ?>                  
