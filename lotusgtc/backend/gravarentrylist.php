@@ -1,9 +1,6 @@
 <?php
-//session_start();
-require_once '../../init.php';
-//require '../../check.php';
-$PDO = db_connect(); 
 
+$PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
 
 try{   
 
