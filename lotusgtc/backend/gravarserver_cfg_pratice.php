@@ -1,4 +1,5 @@
 <?php
+ 
  $PDO = new PDO("mysql:host=localhost;dbname=gridonline;charset=utf8mb4", "root", ""); 
 
 try{   
