@@ -21,12 +21,12 @@
 
                 WHERE
 
-                gridonline.pilototorneio.idtorneio=3
+                gridonline.pilototorneio.idtorneio=:torneio
                 AND
                 gridonline.piloto.email<>''";
                       
                       $sth = $PDO->prepare($sql);   
-                      $sth->bindParam('torneio', $_POST["torneio"], PDO::PARAM_STR);                             
+                      $sth->bindParam(':torneio', $_POST["torneio"], PDO::PARAM_STR);                             
                       $sth->execute(); 
                       $result = $sth->fetchAll( PDO::FETCH_ASSOC );   
   
