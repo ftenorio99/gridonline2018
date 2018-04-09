@@ -134,7 +134,12 @@
                                    <tr>
 
                                     <td>                        
-                                       <?php echo $row["name"]?> - <?php echo $row["bestlap"]; ?>         
+                                       <?php echo $row["name"]?> - <?php 
+                                                                                $numstring = strval($row['bestlap']);
+                                                                                $milesimos= substr($numstring, -3);
+                                                                                $segundos= substr($numstring, 0, -3);
+                                                                                $tempo=gmdate("i:s", $segundos);
+                                                                                echo  $tempo.'.'.$milesimos;?>         
                                     </td>
                                      </tr>
                                   <?php
