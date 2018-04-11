@@ -1,7 +1,7 @@
 <?php
-session_start();
+//session_start();
 require_once 'init.php';
-require 'check.php';
+//require 'check.php';
 
 $PDO = db_connect(); 
 
@@ -9,9 +9,9 @@ $PDO = db_connect();
 
 
 // variável que define o diretório dos arquivos de resultado - desenvolvimento
-//$dir = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results'; 
+$dir = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results'; 
 // variável que define o diretório dos arquivos de resultado - producao
-$dir = 'C:/Gridonline/acPackage/server/results'; 
+//$dir = 'C:/Gridonline/acPackage/server/results'; 
 
 
 // esse seria o "handler" do diretório
@@ -139,9 +139,9 @@ while (false !== ($filename = readdir($dh))) {
 
 	$origem = $dir."/".$filename;
 	//Server de desenvolvimento
-	//$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results/lidosqualify'."/".$filename;
+	$destino = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results/lidosqualify'."/".$filename;
 	//Server de produção
-	$destino = 'C:/Gridonline/acPackage/server/results/lidosqualify'."/".$filename;
+	//$destino = 'C:/Gridonline/acPackage/server/results/lidosqualify'."/".$filename;
 	
 	
 
@@ -164,9 +164,9 @@ while (false !== ($filename = readdir($dh))) {
 	if (substr($filename,-13) == "PRACTICE.json"){
 		$origem2 = $dir."/".$filename;
 		//server de desenvolvimento
-		//$destino2 = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results/lidospratice'."/".$filename;
+		$destino2 = 'C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/server/results/lidospratice'."/".$filename;
 		//server de produção
-		$destino2 = 'C:/Gridonline/acPackage/server/results/lidospratice'."/".$filename;
+		//$destino2 = 'C:/Gridonline/acPackage/server/results/lidospratice'."/".$filename;
 		if (copy($origem2, $destino2))
 		{	
 		unlink($origem2);
