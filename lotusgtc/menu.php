@@ -122,8 +122,8 @@ foreach($result as $row)
 
                 <li><a href="../index.php">Início</a></li>                 
                 <li><a href="pilotos.php">Pilotos</a></li>
-                <li><a href="classificacao.php">Classificação Pilotos</a></li>
-                <li><a href="classificacaoequipe.php">Classificação Equipe</a></li>
+                <li><a href="classificacaov2.php">Classificação Pilotos</a></li>
+                <li><a href="classificacaoequipev2.php">Classificação Equipe</a></li>
                 <li><a href="lotusgtcresultados.php">Calendário/Resutados</a></li>
                 <li><a href="download.php">Downloads</a></li>
                 <li><a href="regulamento.php">Regulamento</a></li>
