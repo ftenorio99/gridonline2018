@@ -130,7 +130,8 @@ foreach($result as $row)
                           <ul class='dropdown-menu'>                                          
                             <li><a href='lerarquivosresult.php'>Ler arquivos do diretório result</a></li>
                             <li><a href='DaoReadJason.php'>Envio de Resultados</a></li>
-                            <li><a href='frmenviaremail.php'>Envio de E-mail</a></li>                          
+                            <li><a href='frmenviaremail.php'>Envio de E-mail</a></li> 
+                            <li><a href='frmcarset.php'>Geração do Carset</a></li>                           
                           </ul>
                         </li>
 

@@ -82,7 +82,7 @@
                       <a href="https://actrackrebootproject.wixsite.com/ac-track-re-boot/knockhillcircuit2017">Grid Online Lotus Trophy - Knockhill</a>
                     </h4> 
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
+                      <a href="https://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
                     </h4>                     
 
                                        

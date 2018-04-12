@@ -66,7 +66,7 @@
 
 <?php        
     include 'menubackend.php';
-    include 'menu.php';
+    include 'menu.php';    
 ?>
 
 
@@ -93,7 +93,7 @@
                       <a href="https://actrackrebootproject.wixsite.com/ac-track-re-boot/knockhillcircuit2017">Grid Online Lotus Trophy - Knockhill</a>
                     </h4>
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
+                      <a href="https://www.racedepartment.com/downloads/goodwood-circuit.17228/">Grid Online Lotus Trophy - Goodwood</a>
                     </h4>                      
 
                                        
@@ -108,7 +108,7 @@
                         <a href="https://mega.nz/#!AtY2yYLb!MXhsXncn9GHMOmpaMtggH6RteP0IYLrGoR8WFnk6Ves">Skin Template 2018 - Grid Online Lotus Trophy</a>
                       </h4>                       
                       <h4>
-                        <a href="#">Skinpack 2018 - Grid Online Lotus Trophy</a>
+                        <a href="http://http://18.231.168.55/gridonline/lotus_evora_gtc.zip">Skin Pack - Grid Online Lotus Trophy</a>
                       </h4> 
                   </div>
         </div>       
