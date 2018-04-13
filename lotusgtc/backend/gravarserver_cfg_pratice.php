@@ -17,8 +17,7 @@ try{
                   $selectslots = $PDO->query( $sqlslots );
                   $resultslots = $selectslots->fetchAll( PDO::FETCH_ASSOC );
                   foreach($resultslots as $row)
-                    {
-                      $slots = $row['slots'];
+                    {                     
                       $torneio = $row['idtorneio'];
                       $pistatorneio = $row['idpistatorneio'];
                     }
@@ -95,7 +94,7 @@ AUTOCLUTCH_ALLOWED=1
 TYRE_BLANKETS_ALLOWED=1
 FORCE_VIRTUAL_MIRROR=0
 REGISTER_TO_LOBBY=1
-MAX_CLIENTS=".$slots."
+MAX_CLIENTS=".$row["slots"]."
 NUM_THREADS=2
 UDP_PLUGIN_LOCAL_PORT=11010
 UDP_PLUGIN_ADDRESS=127.0.0.1:12010
