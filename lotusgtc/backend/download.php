@@ -108,7 +108,7 @@
                         <a href="https://mega.nz/#!AtY2yYLb!MXhsXncn9GHMOmpaMtggH6RteP0IYLrGoR8WFnk6Ves">Skin Template 2018 - Grid Online Lotus Trophy</a>
                       </h4>                       
                       <h4>
-                        <a href="http://http://18.231.168.55/gridonline/lotus_evora_gtc.zip">Skin Pack - Grid Online Lotus Trophy</a>
+                        <a href="http://18.231.168.55/gridonline/lotus_evora_gtc.zip">Skin Pack - Grid Online Lotus Trophy</a>
                       </h4> 
                   </div>
         </div>       
