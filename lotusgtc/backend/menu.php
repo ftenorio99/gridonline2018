@@ -13,8 +13,8 @@
               <ul class="nav navbar-nav">     
                         <li><a href='pilotos.php'>Pilotos</a></li>
                         <li><a href='pilotosclassificados.php'>Pilotos Classificados para Próxima etapa</a></li>
-                        <li><a href='classificacaov2.php'>Classificação Campeoanto de Pilotos</a></li>
-                        <li><a href='classificacaoequipev2.php'>Classificação Campeoanto de Equipes</a></li>
+                        <li><a href='classificacaov2.php'>Campeoanto de Pilotos</a></li>
+                        <li><a href='classificacaoequipev2.php'>Campeoanto de Equipes</a></li>
                         <li><a href='lotusgtcresultados.php'>Calendário/Resutados</a></li>
                         <li><a href='download.php'>Downloads</a></li>
                         <li><a href='regulamento.php'>Regulamento</a></li>
