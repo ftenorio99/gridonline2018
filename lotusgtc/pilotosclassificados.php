@@ -5,6 +5,9 @@
       session_start();
       require_once '../init.php';
       require '../check.php';
+    } else
+    {
+      require_once '../init.php';
     }
 
     $PDO = db_connect(); 
