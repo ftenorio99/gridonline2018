@@ -1,14 +1,8 @@
 
 <?php
  
-  if(!isset($_SESSION)){
-      session_start();
-      require_once '../init.php';
-      require '../check.php';
-    } else
-    {
-      require_once '../init.php';
-    }
+   require_once '../init.php';
+
 
     $PDO = db_connect(); 
 ?>
@@ -59,8 +53,7 @@
 </head>
 <body>
 
-<?php        
-    include 'menubackend.php';
+<?php            
     include 'menu.php';
 
     $sqlslots =  "SELECT pista.slots, pistatorneio.idpista, pistatorneio.idtorneio, pistatorneio.idpistatorneio 
