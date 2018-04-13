@@ -104,6 +104,11 @@ require 'check.php';
                       <input class="form-control" type="file" name="fileRaceUpload">
                     </div>  
 
+                    <div class="form-group">
+					  <label for="end">Endereço SimResults:</label>
+					  <input type="text" class="form-control" id="end" name="end">
+					</div>
+
                     </fieldset>
                   <input class="btn btn-primary btn-block" type="submit" value="Enviar" name="botao">
                 </form>  
@@ -128,7 +133,7 @@ require 'check.php';
       $nomearquivo = $_FILES['fileRaceUpload']['name'];
 
 	
-	// $PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
+	
 	$PDO = db_connect();
 
 
@@ -193,7 +198,7 @@ require 'check.php';
 
 			foreach ( $Result as $r ) 
 			{ 			
-				if ($r->DriverName<>("")) {
+				if ($r->DriverName<>("") && $r->BestLap<>("999999999")) {
 				$pos=$pos+1;	
 
 				$sql ="INSERT INTO jsonassetorace 
@@ -224,7 +229,7 @@ require 'check.php';
 
 			foreach ( $Laps as $l ) 
 			{ 			
-				if ($l->DriverName<>("")) {						
+				if ($l->DriverName<>("") && $r->BestLap<>("999999999")) {						
 
 				$sql ="INSERT INTO lapracesassetto 
 							(drivername, driverguid, laptime, sectors0, sectors1, sectors2, cuts, tyre, laptimestamp ,idsession,nomesession) 
@@ -301,7 +306,7 @@ require 'check.php';
 
 				//Passar a session como parâmetro
 
-				// $PDO = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99"); 
+				 
 				$PDO = db_connect();
 
 
@@ -330,7 +335,7 @@ require 'check.php';
 
 				foreach ( $Result as $r ) 
 						{ 			
-								if ($r->DriverName<>("")) {
+								if ($r->DriverName<>("") && $r->BestLap<>("999999999")) {
 									
 
 								$sql ="INSERT INTO jsonassetoqualy 
@@ -385,18 +390,19 @@ require 'check.php';
 
 			      					try {
 
-										// $PDOEtapa = new PDO("mysql:host=mysql.hostinger.com.br;dbname=u240322781_teste;charset=utf8mb4", "u240322781_root", "chemical99");
+										
 										$PDOEtapa =  db_connect();
 
 										$sql ="UPDATE pistatorneio
-													SET idsessionrace =:sessaorace, idsessionqualy =:sessaoqualy
+													SET idsessionrace =:sessaorace, idsessionqualy =:sessaoqualy, simresult=:simresult
 													WHERE idpistatorneio=:torneio;"; 			
 
 											    		$sth = $PDOEtapa->prepare($sql);
 									    		        $sth->bindParam("torneio", $idpistatorneio);
 			        			        				$sth->bindParam("sessaorace", $valorsessao);
 												        $sth->bindParam("sessaoqualy", $valorsessaoqualy);
-												        
+												        $sth->bindParam("sessaoqualy", $valorsessaoqualy);
+												        $sth->bindParam("simresult", $_POST['end']);
 												        $sth->execute();
 												        
 											    		echo "Update PistaTorneio successfully<br>";

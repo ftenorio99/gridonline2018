@@ -70,10 +70,10 @@
                   <div class="row" >
                     <h3>GridOnline Grid Online Lotus Trophy - Pistas</h3>
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/donington-park.3031/">Grid Online Lotus Trophy - Donington Park </a>
+                      <a href="https://www.racedepartment.com/downloads/donington-park.3031/">Grid Online Lotus Trophy - Donington Park </a>
                     </h4>  
                     <h4>
-                      <a href="http://www.racedepartment.com/downloads/croft-circuit.16806/">Grid Online Lotus Trophy - Croft</a>
+                      <a href="https://www.racedepartment.com/downloads/croft-circuit.16806/">Grid Online Lotus Trophy - Croft</a>
                     </h4>         
                     <h4>
                       <a href="https://actrackrebootproject.wixsite.com/ac-track-re-boot/snetterton2017">Grid Online Lotus Trophy - Snetterton</a>
