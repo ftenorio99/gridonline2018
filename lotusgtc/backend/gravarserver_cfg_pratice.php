@@ -168,8 +168,8 @@ WIND_VARIATION_DIRECTION=30
 
 [DATA]
 DESCRIPTION=Server 1
-EXSERVEREXE=
-EXSERVERBAT=
+EXSERVEREXE=C:\Gridonline\acPackage\server\acServer.exe
+EXSERVERBAT=C:\Gridonline\acPackage\server\acServerGridonlineTreinosStracker.bat
 EXSERVERHIDEWIN=0
 WEBLINK=
 WELCOME_PATH=
