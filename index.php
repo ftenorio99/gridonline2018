@@ -149,9 +149,9 @@ $PDO = db_connect();
 
         
       
-        <div class="embed-responsive embed-responsive-16by9">
+<!--         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
-        </div>
+        </div> -->
 
 
   </body>
