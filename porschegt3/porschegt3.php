@@ -58,7 +58,8 @@
 
 
         <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="http://gridonline.com.br/#porsche-cup"></iframe>
+            <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/porsche-supercup/"></iframe>
+            
         </div>
         
 <br>
