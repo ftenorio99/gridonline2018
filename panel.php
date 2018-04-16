@@ -63,9 +63,9 @@ $PDO = db_connect();
     include 'menu.php';
 ?>
 
-        <div class="embed-responsive embed-responsive-16by9">
+<!--         <div class="embed-responsive embed-responsive-16by9">
           <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
         </div>
-
+ -->
   </body>
 </html>
