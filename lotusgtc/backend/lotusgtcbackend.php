@@ -74,9 +74,9 @@
             </div>   
           </div>
 <hr>
-        <div class="embed-responsive embed-responsive-16by9">            
+<!--         <div class="embed-responsive embed-responsive-16by9">            
             <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/lotus-trophy/"></iframe>
-        </div>
+        </div> -->
 
 </body>
 </html>
