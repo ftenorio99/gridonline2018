@@ -13,8 +13,15 @@
               <ul class="nav navbar-nav">     
                         <li><a href='pilotos.php'>Pilotos</a></li>
                        <!--  <li><a href='pilotosclassificados.php'>Pilotos Classificados para Próxima etapa</a></li> -->
-                        <li><a href='classificacaov2.php'>Campeonato de Pilotos</a></li>
-                        <li><a href='classificacaoequipev2.php'>Campeonato de Equipes</a></li>
+                          <li class='dropdown'>
+                          <a class='dropdown-toggle' data-toggle='dropdown' href='#'>Classificação
+                          <span class='caret'></span></a>
+                          <ul class='dropdown-menu'>
+                            <li><a href='classificacaov2.php'>Classificação de Pilotos</a></li>
+                            <li class='divider'></li>
+                            <li><a href='classificacaoequipev2.php'>Classificação de Equipes</a></li>                          
+                          </ul>
+                        </li> 
                         <li><a href='lotusgtcresultados.php'>Calendário/Resultados</a></li>
                         <li><a href='download.php'>Downloads</a></li>
                         <li><a href='regulamento.php'>Regulamento</a></li>
