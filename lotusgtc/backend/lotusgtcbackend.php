@@ -70,13 +70,14 @@
         
           <div class="container">
             <div class="row" align="center">
-              <img width="10%" height="10%"  src="../../img/lotus_evora_gtc/logolotus.jpg">
+              <img width="30%" height="30%"  src="../../img/lotus_evora_gtc/logolotus.jpg">
             </div>   
           </div>
 <hr>
 <!--         <div class="embed-responsive embed-responsive-16by9">            
             <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/lotus-trophy/"></iframe>
         </div> -->
+       <!--  <img src="http://gridonline.com.br/wp-content/uploads/2018/04/Screenshot_lotus_evora_gtc_lilski_watkins_glen_2-4-118-9-29-47.jpg"> -->
 
 </body>
 </html>

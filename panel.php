@@ -67,5 +67,8 @@ $PDO = db_connect();
           <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
         </div>
  -->
+
+    <img src="http://gridonline.com.br/wp-content/uploads/2018/04/Screenshot_lotus_evora_gtc_lilski_watkins_glen_2-4-118-9-29-47.jpg">
+
   </body>
 </html>
