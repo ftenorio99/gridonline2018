@@ -55,9 +55,7 @@ $source_path = "C:/Gridonline/acPackage/content/cars/".$objcarmodel->carmodel."/
 // Diretorio Server Teste
 //$source_path = "C:/Program Files (x86)/Steam/steamapps/common/assettocorsa/content/cars/".$objcarmodel->carmodel."/skins";
 
-$filename = Compress($source_path,$objcarmodel->carmodel);
-
-echo $filename;
+echo Compress($source_path,$objcarmodel->carmodel);
 
 echo "<script>alert('Carset gerado com sucesso')</script>";
 ?>
