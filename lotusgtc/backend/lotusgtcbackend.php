@@ -76,7 +76,7 @@
 <hr>
 <div class="container">
   <div class="row" align="center">
-  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='http://http://18.231.168.55/gridonline/lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
+  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='http://18.231.168.55/gridonline/lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
 </div>
 </div>
 <!--         <div class="embed-responsive embed-responsive-16by9">            
