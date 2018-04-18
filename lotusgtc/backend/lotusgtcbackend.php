@@ -67,6 +67,12 @@
         <div><hr></div>  
         </div> 
   
+<div class="container">
+  <div class="row" align="center">
+  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='http://18.231.168.55/gridonline/lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
+</div>
+</div>
+<hr>
         
           <div class="container">
             <div class="row" align="center">
@@ -74,11 +80,7 @@
             </div>   
           </div>
 <hr>
-<div class="container">
-  <div class="row" align="center">
-  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='http://18.231.168.55/gridonline/lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
-</div>
-</div>
+
 <!--         <div class="embed-responsive embed-responsive-16by9">            
             <iframe class="embed-responsive-item" src="http://gridonline.com.br/category/lotus-trophy/"></iframe>
         </div> -->

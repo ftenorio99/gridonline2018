@@ -67,16 +67,19 @@ $PDO = db_connect();
           <iframe class="embed-responsive-item" src="http://gridonline.com.br/"></iframe>            
         </div>
  -->
+<div class="container">
+  <div class="row" align="center">
+  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
+</div>
+</div>
+
+ <hr>
           <div class="container">
             <div class="row" align="center">
               <img width="30%" height="30%"  src="img/lotus_evora_gtc/logolotus.jpg">
             </div>   
           </div>
 <hr>
-<div class="container">
-  <div class="row" align="center">
-  <button type="button" class="btn btn-warning btn btn-primary btn-lg" onClick="parent.location='lotusgtc/backend/frminseririnscricao.php'" >Inscreva-se</button>
-</div>
-</div>
+
   </body>
 </html>
