@@ -167,6 +167,7 @@
 
 
 						                if ($etapaspiloto>=$qtdetapa) {
+						                	
 						                	$sqlmenorpontuacao = "SELECT
 			                                                                                                                
 			                                     MIN(tabelapontuacao.ponto) as menorpontuacao
