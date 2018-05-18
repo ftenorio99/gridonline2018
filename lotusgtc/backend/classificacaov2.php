@@ -166,42 +166,41 @@
 						                        } 
 
 
-						                if ($etapaspiloto==$qtdetapa) {
-								                	$sqlmenorpontuacao = "SELECT
-					                                                                                                                
-					                                     MIN(tabelapontuacao.ponto) as menorpontuacao
-					                                      			                                          
-					                                          FROM jsonassetorace
+						                if ($etapaspiloto>=$qtdetapa) {
+						                	$sqlmenorpontuacao = "SELECT
+			                                                                                                                
+			                                     MIN(tabelapontuacao.ponto) as menorpontuacao
+			                                      			                                          
+			                                          FROM jsonassetorace
 
-					                                  INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
-					                                  INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
-					                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
+			                                  INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
+			                                  INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
+			                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
 
-					                                  WHERE pistatorneio.idtorneio=6       
-					                                  AND piloto.idpiloto=:piloto  
-					                                  AND pistatorneio.pontuacaodobrada='N'                                                     
-					                                  
-					                                  
-					                                  order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC					                                                                                                
-					                                 ";
+			                                  WHERE pistatorneio.idtorneio=6       
+			                                  AND piloto.idpiloto=:piloto  
+			                                  AND pistatorneio.pontuacaodobrada='N'                                                     
+			                                  
+			                                  
+			                                  order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC					                                                                                                
+			                                 ";
 
+												$stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
+						                      	$stmenorpontuacao->bindParam(':piloto', $row['idpiloto'], PDO::PARAM_INT);
+						                      	$stmenorpontuacao->execute();                       	
+						                      	$resultmenorpontuacao = $stmenorpontuacao->fetchAll( PDO::FETCH_ASSOC );   
 
-											$stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
-					                      	$stmenorpontuacao->bindParam(':piloto', $row['idpiloto'], PDO::PARAM_INT);
-					                      	$stmenorpontuacao->execute();                       	
-					                      	$resultmenorpontuacao = $stmenorpontuacao->fetchAll( PDO::FETCH_ASSOC );   
+						                      	foreach($resultmenorpontuacao as $rowresultmenorpontuacao)
+						                        { 
+						                        	$menorpontuacao = $rowresultmenorpontuacao['menorpontuacao'];
+						                        } 
 
-					                      	foreach($resultmenorpontuacao as $rowresultmenorpontuacao)
-					                        { 
-					                        	$menorpontuacao = $rowresultmenorpontuacao['menorpontuacao'];
-					                        } 
-
-					                        if ($pontuacao==$menorpontuacao) {
-					                        	$pontuacaofinal=$pontuacao;
-					                        } else {
-					                        	$pontuacaofinal=$pontuacao-$menorpontuacao;
-					                        }
-						                } else{
+						                        if ($pontuacao==$menorpontuacao) {
+						                        	$pontuacaofinal=$pontuacao;
+						                        } else {
+						                        	$pontuacaofinal=$pontuacao-$menorpontuacao;
+						                        }
+						                } else {
 						                	$pontuacaofinal=$pontuacao-0;
 						                }
 			                     					                        		                        
