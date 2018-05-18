@@ -112,7 +112,9 @@ require_once '../init.php';
                 $pontuacaofinal=0;
 
 
-                            $sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM jsonassetorace WHERE driverguid=:driverguid ";
+                            $sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM jsonassetorace WHERE driverguid=:driverguid  and idsession in (SELECT idsessionrace FROM pistatorneio WHERE idtorneio=6)
+
+ ";
 
 
                   $stetapaspiloto = $PDO5->prepare($sqletapaspiloto); 
@@ -124,7 +126,8 @@ require_once '../init.php';
                               { 
                                 $etapaspiloto = $rowresultetapaspiloto['etapaspiloto'];
                               } 
-                              echo $etapaspiloto ;
+
+                             // echo $etapaspiloto ;
 
                               $sqlpontuacao = "SELECT
                                                                                                                       
@@ -158,7 +161,7 @@ require_once '../init.php';
 
                             if ($etapaspiloto>=$qtdetapa) {
 
-                              $sqlmenorpontuacao = "SELECT
+                                    $sqlmenorpontuacao = "SELECT
                                                                                                                       
                                            MIN(tabelapontuacao.ponto) as menorpontuacao
                                                                                             
@@ -176,7 +179,7 @@ require_once '../init.php';
                                         order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC                                                                                                         
                                        ";
 
-                        $stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
+                                    $stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
                                     $stmenorpontuacao->bindParam(':piloto', $row['idpiloto'], PDO::PARAM_INT);
                                     $stmenorpontuacao->execute();                         
                                     $resultmenorpontuacao = $stmenorpontuacao->fetchAll( PDO::FETCH_ASSOC );   
@@ -195,18 +198,17 @@ require_once '../init.php';
                               $pontuacaofinal=$pontuacao-0;
                             }
                                                                                         
+                             $sqlqualy= "SELECT pistatorneio.idsessionqualy
+                                       FROM
+                                       jsonassetorace
+                                       INNER JOIN 
+                                       pistatorneio ON jsonassetorace.idsession=pistatorneio.idsessionrace
+                                       WHERE
+                                       pistatorneio.idtorneio=6
+                                       GROUP BY pistatorneio.idsessionqualy"; 
 
-                                   $sqlqualy= "SELECT pistatorneio.idsessionqualy
-                                             FROM
-                                             jsonassetorace
-                                             INNER JOIN 
-                                             pistatorneio ON jsonassetorace.idsession=pistatorneio.idsessionrace
-                                             WHERE
-                                             pistatorneio.idtorneio=6
-                                             GROUP BY pistatorneio.idsessionqualy"; 
 
-
-                  $stqualy = $PDO3->prepare($sqlqualy); 
+                              $stqualy = $PDO3->prepare($sqlqualy); 
                               $stqualy->execute();                      
                               $resultqualy = $stqualy->fetchAll( PDO::FETCH_ASSOC );                                                 
 

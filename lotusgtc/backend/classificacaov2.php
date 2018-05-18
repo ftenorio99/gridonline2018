@@ -115,7 +115,9 @@
 								$pontuacaofinal=0;
 
 
-			                     	$sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM jsonassetorace WHERE driverguid=:driverguid ";
+			                     	$sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM jsonassetorace WHERE driverguid=:driverguid  and idsession in (SELECT idsessionrace FROM pistatorneio WHERE idtorneio=6)
+
+ ";
 
 
 									$stetapaspiloto = $PDO5->prepare($sqletapaspiloto); 
