@@ -91,10 +91,10 @@ require_once '../init.php';
 
   ";
 
-            $stetapa = $PDO4->prepare($sqlqtdetapas);                               
+                        $stetapa = $PDO4->prepare($sqlqtdetapas);                               
                         $stetapa->execute();                        
-                        $resultetapa = $stetapa->fetchAll( PDO::FETCH_ASSOC );   
-                        $qtdetapa=$stetapa->rowCount();                       
+                        $qtdetapa=$stetapa->rowCount(); 
+
 
                       $a=array();
                       $b=array();
