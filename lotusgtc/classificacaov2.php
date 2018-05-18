@@ -87,16 +87,14 @@ require_once '../init.php';
                   <tbody>
                     <?php
 
-                      $sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM pistatorneio WHERE idtorneio = 6 AND pontuacaodobrada<>'N'  ";
+                      $sqlqtdetapas = "SELECT idpistatorneio as etapa FROM pistatorneio WHERE idtorneio = 6 and pontuacaodobrada ='N'
+
+  ";
 
             $stetapa = $PDO4->prepare($sqlqtdetapas);                               
                         $stetapa->execute();                        
                         $resultetapa = $stetapa->fetchAll( PDO::FETCH_ASSOC );   
-
-                        foreach($resultetapa as $rowresultetapa)
-                        { 
-                          $qtdetapa = $rowresultetapa['etapa'];
-                        } 
+                        $qtdetapa=$stetapa->rowCount();                       
 
                       $a=array();
                       $b=array();
