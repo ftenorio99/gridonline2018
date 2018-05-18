@@ -88,11 +88,24 @@
                 </thead>
                   <tbody>
                     <?php
+
+                     	$sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM `pistatorneio` WHERE idtorneio = 6                                                          
+                                 ";
+
+						$stetapa = $PDO2->prepare($sqlqtdetapas); 			                      	
+                      	$stetapa->execute();                       	
+                      	$resultetapa = $stetapa->fetchAll( PDO::FETCH_ASSOC );   
+
+                      	foreach($resultetapa as $rowresultetapa)
+                        { 
+                        	$qtdetapa = $rowresultetapa['etapa'];
+                        } 
+
                     	$a=array();
                     	$b=array();
 
 
-						$sqlpiloto = "SELECT piloto.idpiloto,piloto.name FROM piloto
+						$sqlpiloto = "SELECT piloto.idpiloto,piloto.name,piloto.guid FROM piloto
 											INNER JOIN pilototorneio on piloto.idpiloto = pilototorneio.idpiloto
 										AND
 										pilototorneio.idtorneio=6";
@@ -103,6 +116,25 @@
                         foreach($resultpiloto as $row){
 
 								$pontuacaofinal=0;
+
+
+
+
+			                     			$sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM `jsonassetorace` WHERE driverguid=:driverguid                                               
+			                                                                                                
+			                                 ";
+
+
+									$stetapaspiloto = $PDO2->prepare($sqletapaspiloto); 
+			                      	$stetapaspiloto->bindParam(':driverguid', $row['guid'], PDO::PARAM_INT);
+			                      	$stetapaspiloto->execute();                       	
+			                      	$resultetapaspiloto = $stetapaspiloto->fetchAll( PDO::FETCH_ASSOC );   
+
+			                      	foreach($resultetapaspiloto as $rowresultetapaspiloto)
+			                        { 
+			                        	$etapaspiloto = $rowresultmenorpontuacao['etapaspiloto'];
+			                        } 
+
 
 			                        $sqlpontuacao = "SELECT
 			                                                                                                                
@@ -134,45 +166,45 @@
 						                        } 
 
 
-			                     			$sqlmenorpontuacao = "SELECT
-			                                                                                                                
-			                                     MIN(tabelapontuacao.ponto) as menorpontuacao
-			                                      
-			                                          
-			                                          FROM jsonassetorace
+						                if ($etapaspiloto==$qtdetapa) {
+								                	$sqlmenorpontuacao = "SELECT
+					                                                                                                                
+					                                     MIN(tabelapontuacao.ponto) as menorpontuacao
+					                                      			                                          
+					                                          FROM jsonassetorace
 
-			                                  INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
-			                                  INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
-			                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
+					                                  INNER JOIN tabelapontuacao on tabelapontuacao.posicao=jsonassetorace.posicao
+					                                  INNER JOIN pistatorneio on pistatorneio.idsessionrace=jsonassetorace.idsession
+					                                  INNER JOIN piloto on piloto.guid=jsonassetorace.driverguid
 
-			                                  WHERE pistatorneio.idtorneio=6       
-			                                  AND piloto.idpiloto=:piloto  
-			                                  AND pistatorneio.pontuacaodobrada='N'                                                     
-			                                  
-			                                  
-			                                  order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC                                                                                               
-			                                                                                                
-			                                 ";
+					                                  WHERE pistatorneio.idtorneio=6       
+					                                  AND piloto.idpiloto=:piloto  
+					                                  AND pistatorneio.pontuacaodobrada='N'                                                     
+					                                  
+					                                  
+					                                  order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC					                                                                                                
+					                                 ";
 
 
-									$stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
-			                      	$stmenorpontuacao->bindParam(':piloto', $row['idpiloto'], PDO::PARAM_INT);
-			                      	$stmenorpontuacao->execute();                       	
-			                      	$resultmenorpontuacao = $stmenorpontuacao->fetchAll( PDO::FETCH_ASSOC );   
+											$stmenorpontuacao = $PDO2->prepare($sqlmenorpontuacao); 
+					                      	$stmenorpontuacao->bindParam(':piloto', $row['idpiloto'], PDO::PARAM_INT);
+					                      	$stmenorpontuacao->execute();                       	
+					                      	$resultmenorpontuacao = $stmenorpontuacao->fetchAll( PDO::FETCH_ASSOC );   
 
-			                      	foreach($resultmenorpontuacao as $rowresultmenorpontuacao)
-			                        { 
-			                        	$menorpontuacao = $rowresultmenorpontuacao['menorpontuacao'];
-			                        } 
+					                      	foreach($resultmenorpontuacao as $rowresultmenorpontuacao)
+					                        { 
+					                        	$menorpontuacao = $rowresultmenorpontuacao['menorpontuacao'];
+					                        } 
 
-			                        if ($pontuacao==$menorpontuacao) {
-			                        	$pontuacaofinal=$pontuacao;
-			                        } else {
-			                        	$pontuacaofinal=$pontuacao-$menorpontuacao;
-			                        }
-			                        
-
-			                        
+					                        if ($pontuacao==$menorpontuacao) {
+					                        	$pontuacaofinal=$pontuacao;
+					                        } else {
+					                        	$pontuacaofinal=$pontuacao-$menorpontuacao;
+					                        }
+						                } else{
+						                	$pontuacaofinal=$pontuacao-0;
+						                }
+			                     					                        		                        
 
 	                                 $sqlqualy= "SELECT pistatorneio.idsessionqualy
 		                                         FROM
