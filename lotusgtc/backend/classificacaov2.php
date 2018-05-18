@@ -159,8 +159,9 @@
 						                        } 
 
 
-						                if ($etapaspiloto==$qtdetapa) {
-
+						                if ($etapaspiloto>=$qtdetapa) {
+						                	// echo "Entrei aqui pra calcular a menorpontuacao";
+						                	// echo "<br>";
 						                	$sqlmenorpontuacao = "SELECT
 			                                                                                                                
 			                                     MIN(tabelapontuacao.ponto) as menorpontuacao
@@ -195,7 +196,10 @@
 						                        	$pontuacaofinal=$pontuacao-$menorpontuacao;
 						                        }
 						                } else {
-						                	$pontuacaofinal=$pontuacao-0;
+											// echo "Entrei aqui pq o piloto participou de menos etapas";
+						     //            	echo "<br>";						                	
+						                	$pontuacaofinal=$pontuacao;
+
 						                }
 			                     					                        		                        
 

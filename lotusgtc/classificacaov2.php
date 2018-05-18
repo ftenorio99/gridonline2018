@@ -156,7 +156,7 @@ require_once '../init.php';
                                     } 
 
 
-                            if ($etapaspiloto==$qtdetapa) {
+                            if ($etapaspiloto>=$qtdetapa) {
 
                               $sqlmenorpontuacao = "SELECT
                                                                                                                       
