@@ -94,7 +94,9 @@ require_once '../init.php';
                         $stetapa = $PDO4->prepare($sqlqtdetapas);                               
                         $stetapa->execute();                        
                         $qtdetapa=$stetapa->rowCount(); 
-
+                        echo "<br>";
+                        echo $qtdetapa;
+                        echo "<br>";
 
                       $a=array();
                       $b=array();
