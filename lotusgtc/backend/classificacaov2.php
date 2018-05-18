@@ -9,6 +9,8 @@
     $PDO1 = db_connect();
     $PDO2 = db_connect();
     $PDO3 = db_connect();
+    $PDO4 = db_connect();
+    $PDO5 = db_connect();
 
 
 ?>
@@ -89,10 +91,9 @@
                   <tbody>
                     <?php
 
-                     	$sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM `pistatorneio` WHERE idtorneio = 6                                                          
-                                 ";
+                     	$sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM pistatorneio WHERE idtorneio = 6";
 
-						$stetapa = $PDO2->prepare($sqlqtdetapas); 			                      	
+						$stetapa = $PDO4->prepare($sqlqtdetapas); 			                      	
                       	$stetapa->execute();                       	
                       	$resultetapa = $stetapa->fetchAll( PDO::FETCH_ASSOC );   
 
@@ -118,14 +119,10 @@
 								$pontuacaofinal=0;
 
 
+			                     	$sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM jsonassetorace WHERE driverguid=:driverguid ";
 
 
-			                     			$sqletapaspiloto = "SELECT COUNT(driverguid) as etapaspiloto FROM `jsonassetorace` WHERE driverguid=:driverguid                                               
-			                                                                                                
-			                                 ";
-
-
-									$stetapaspiloto = $PDO2->prepare($sqletapaspiloto); 
+									$stetapaspiloto = $PDO5->prepare($sqletapaspiloto); 
 			                      	$stetapaspiloto->bindParam(':driverguid', $row['guid'], PDO::PARAM_INT);
 			                      	$stetapaspiloto->execute();                       	
 			                      	$resultetapaspiloto = $stetapaspiloto->fetchAll( PDO::FETCH_ASSOC );   
@@ -167,7 +164,7 @@
 
 
 						                if ($etapaspiloto>=$qtdetapa) {
-						                	
+
 						                	$sqlmenorpontuacao = "SELECT
 			                                                                                                                
 			                                     MIN(tabelapontuacao.ponto) as menorpontuacao
