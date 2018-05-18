@@ -143,7 +143,7 @@ require_once '../init.php';
                                         order BY jsonassetorace.driverguid, tabelapontuacao.ponto ASC                                                            
                                        ";
 
-                      $stpontuacao = $PDO1->prepare($sqlpontuacao); 
+                                  $stpontuacao = $PDO1->prepare($sqlpontuacao); 
                                   $stpontuacao->bindParam(':piloto', $row['idpiloto'] , PDO::PARAM_INT);
                                   $stpontuacao->execute();                      
                                   $resultpontuacao = $stpontuacao->fetchAll( PDO::FETCH_ASSOC );   
@@ -156,7 +156,7 @@ require_once '../init.php';
                                     } 
 
 
-                            if ($etapaspiloto=$qtdetapa) {
+                            if ($etapaspiloto==$qtdetapa) {
 
                               $sqlmenorpontuacao = "SELECT
                                                                                                                       

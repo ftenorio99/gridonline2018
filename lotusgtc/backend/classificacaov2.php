@@ -159,7 +159,7 @@
 						                        } 
 
 
-						                if ($etapaspiloto>=$qtdetapa) {
+						                if ($etapaspiloto==$qtdetapa) {
 
 						                	$sqlmenorpontuacao = "SELECT
 			                                                                                                                
