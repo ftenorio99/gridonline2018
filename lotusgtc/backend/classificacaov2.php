@@ -96,12 +96,10 @@
 						$stetapa = $PDO4->prepare($sqlqtdetapas); 			                      	
                       	$stetapa->execute();  
                       	$qtdetapa=$stetapa->rowCount();                      	
-                      	echo "<br>";
-                      	echo $qtdetapa;
-                      	echo "<br>";
 
                     	$a=array();
                     	$b=array();
+
 
 
 						$sqlpiloto = "SELECT piloto.idpiloto,piloto.name,piloto.guid FROM piloto
@@ -127,9 +125,9 @@
 
 			                      	foreach($resultetapaspiloto as $rowresultetapaspiloto)
 			                        { 
-			                        	$etapaspiloto = $rowresultmenorpontuacao['etapaspiloto'];
+			                        	$etapaspiloto = $rowresultetapaspiloto['etapaspiloto'];
 			                        } 
-
+									
 
 			                        $sqlpontuacao = "SELECT
 			                                                                                                                
@@ -242,11 +240,13 @@
 						array_push($a,$row['name']);       
 						array_push($b,$pontuacaofinal); 
 
+
                       }?>  
 	<?php 
 
 			arsort($a,1);
 			arsort($b,1);
+
 			$y=1;
 				foreach ($b AS $indice=>$valor)
 				{				  
@@ -255,7 +255,7 @@
 						<tr>                 
 							<td >  <?php echo $y;?></td>                                                 
                             <td >  <?php echo $a[$indice];?></td>
-                            <td align="center">  <?php echo $b[$indice];?></td>                            
+                            <td align="center">  <?php echo $b[$indice];?></td>                        
                         </tr>   
 
 		<?php $y++;	}
