@@ -198,14 +198,18 @@ require 'check.php';
 
 			foreach ( $Result as $r ) 
 			{ 			
-				if ($r->DriverName<>("") && $r->BestLap<>("999999999")) {
+				if ($r->DriverName<>("")
+				 	//&& $r->BestLap<>("999999999")
+					) {
 				$pos=$pos+1;	
 
 				$sql ="INSERT INTO jsonassetorace 
 							(drivername, driverguid, carmodel, bestlap, totaltime, posicao, carid, trackname, trackconfig,idsession,nomesession) 
 						 VALUES 
 						 	(:drivername, :driverguid, :carmodel, :bestlap, :totaltime, :posicao, :carid, :trackname, :trackconfig, :idsession, :nomesession) "; 		
-
+				if ($r->BestLap==("999999999")) {
+										 		$pos=36;
+										 	}						 	
 				$sth = $PDO->prepare($sql);
 			    $sth->bindParam("drivername", $r->DriverName);
 			    $sth->bindParam("driverguid", $r->DriverGuid);

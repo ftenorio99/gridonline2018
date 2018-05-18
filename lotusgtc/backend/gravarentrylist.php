@@ -9,7 +9,7 @@ try{
     $sqlslots =  "SELECT pista.slots, pistatorneio.idpista, pistatorneio.idtorneio, pistatorneio.idpistatorneio 
                   FROM pistatorneio
                   INNER JOIN pista on pista.idpista=pistatorneio.idpista
-                  WHERE pistatorneio.data>CURRENT_DATE 
+                  WHERE pistatorneio.data>=CURRENT_DATE 
                   ORDER BY pistatorneio.data asc LIMIT 1";
 
                   $selectslots = $PDO->query( $sqlslots );
