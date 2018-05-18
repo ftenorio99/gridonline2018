@@ -87,7 +87,7 @@ require_once '../init.php';
                   <tbody>
                     <?php
 
-                      $sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM pistatorneio WHERE idtorneio = 6 AND pontuacaodobrada='N'  ";
+                      $sqlqtdetapas = "SELECT COUNT(idpistatorneio) as etapa FROM pistatorneio WHERE idtorneio = 6 AND pontuacaodobrada<>'N'  ";
 
             $stetapa = $PDO4->prepare($sqlqtdetapas);                               
                         $stetapa->execute();                        
