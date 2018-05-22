@@ -127,7 +127,7 @@ require_once '../init.php';
                                 $etapaspiloto = $rowresultetapaspiloto['etapaspiloto'];
                               } 
 
-                             // echo $etapaspiloto ;
+                            
 
                               $sqlpontuacao = "SELECT
                                                                                                                       
